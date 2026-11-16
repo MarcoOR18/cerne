@@ -90,6 +90,22 @@ const CENAS = {
   ${cubo(300, 190, .5, 'i-bg', 'i-lil', 'i-ink')}
   <circle class="i-pet i-tr" cx="52" cy="210" r="13"/>`),
 
+  /* análise: o dado sorteia a ação; o arco é a única lente por onde se olha o cerne */
+  analise: svg(360, 380, `
+  <circle class="i-sol i-tr" cx="70" cy="86" r="46"/>
+  ${piso(52, 330, 300, 8, 352, 352, 8, 3)}
+  ${arco(140, 44, 176, 258, 'i-ceu')}
+  ${tronco(228, 176, 62)}
+  <path class="i-ln" d="M140 302 V132 a88 88 0 0 1 176 0 V302"/>
+  <ellipse class="i-som" cx="92" cy="318" rx="56" ry="8"/>
+  <g transform="translate(40 222) scale(1.5)">
+    <polygon class="i-bg i-tr" points="0,14 30,0 60,14 30,28"/><polygon class="i-sol i-tr" points="0,14 30,28 30,62 0,48"/><polygon class="i-ink i-tr" points="60,14 30,28 30,62 60,48"/>
+    <ellipse class="i-ink" cx="30" cy="14" rx="4.6" ry="2.4"/>
+    <circle class="i-ink" cx="9" cy="30" r="2.8"/><circle class="i-ink" cx="21" cy="50" r="2.8"/>
+    <circle class="i-bg" cx="38" cy="36" r="2.6"/><circle class="i-bg" cx="45" cy="42" r="2.6"/><circle class="i-bg" cx="52" cy="26" r="2.6"/>
+  </g>
+  ${nuvem(232, 18, .78, 'i-bg', ' i-flutua')}`),
+
   /* indicadores: um olho cuja íris é o tronco; abaixo, uma nuvem pesa mais que um cubo */
   indicadores: svg(360, 400, `
   <circle class="i-ceu i-tr" cx="180" cy="128" r="112"/>

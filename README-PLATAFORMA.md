@@ -15,6 +15,8 @@ site/gerar-indicadores.js   monta a área de indicadores (formato dos dados expl
 site/indicadores/*.js       textos dos 33 indicadores, por categoria, e o glossário
 site/indicadores-calc.js    contas dos indicadores; lido pelo gerador e pelo navegador (exemplo interativo)
 site/indicadores.js         exemplo interativo, busca, progresso e decomposição DuPont
+analise-na-pratica.html     uma ação fictícia estudada por uma estratégia só (gerada)
+site/gerar-analise.js       monta a análise na prática; os números vêm de site/indicadores-calc.js
 site/ilustracoes.js         ilustrações vetoriais (SVG embutido), usadas pelo gerador
 site/fontes/              Bricolage Grotesque e Instrument Serif (licença OFL), servidas pelo próprio site
 site/site.css, site.js    estilo-base e comportamento comuns

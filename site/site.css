@@ -269,7 +269,7 @@ figure { margin: 0; }
 .metodo-chamada { display: grid; gap: 2.5rem; align-items: start; }
 @media (min-width: 900px) { .metodo-chamada { grid-template-columns: 1fr 1fr; gap: 4rem; } }
 .metodo-resumo { display: grid; gap: 1rem; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--line-forte); padding: 1.2rem 0; margin-bottom: 2rem; }
-@media (min-width: 700px) { .metodo-resumo { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 700px) { .metodo-resumo { grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); } }
 .metodo-resumo p { margin: 0; }
 .metodo-resumo b { display: block; font: 600 2rem/1.1 var(--serif); letter-spacing: -.02em; }
 .metodo-resumo span { color: var(--ink-2); }

@@ -79,7 +79,7 @@ ${o.corpo}
       </div>
       <div>
         <h2>Aprender</h2>
-        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="analise-na-pratica.html">Análise na prática</a></li><li><a href="glossario.html">Glossário</a></li></ul>
       </div>
       <div>
         <h2>${MARCA}</h2>
@@ -126,7 +126,11 @@ const AVISO = `<p class="aviso"><b>Conteúdo educacional</b>Não é recomendaç�
 const AVISO_MERCADO = `<p class="aviso"><b>Leia antes</b>As informações deste painel têm caráter informativo. Cada dado traz a data e a fonte para que você possa conferir. Avalie o cenário com os seus próprios critérios e tome as suas próprias decisões.</p>`;
 
 /* ------------------------------------------------------------ indicadores -- */
-const { INDICADORES, PAGINAS_INDICADORES, PORTAL } = require('./gerar-indicadores.js')({ MARCA, CENAS, cena, AVISO });
+const IND = require('./gerar-indicadores.js')({ MARCA, CENAS, cena, AVISO });
+const { INDICADORES, PAGINAS_INDICADORES, PORTAL } = IND;
+
+/* ------------------------------------------------------ análise na prática -- */
+const ANALISE = require('./gerar-analise.js')({ MARCA, cena, AVISO, IND });
 
 /* --------------------------------------------------------------- aprender -- */
 MODULOS.forEach((m) => { const ordem = MODULOS.filter((x) => x.trilha === m.trilha).indexOf(m) + 1; m.num = `${m.trilha}.${ordem}`; m.arquivo = `aula-${m.slug}.html`; });
@@ -374,7 +378,6 @@ const paginas = [
     <div><h2><span class="marca-ponto" aria-hidden="true"></span>A decisão é sua</h2><p>O método organiza o estudo e não aponta o que comprar. Conheça o tema, forme a sua opinião e tome as suas próprias decisões.</p></div>
   </div>
   <div class="metodo-resumo">
-    <p><b>13 horas</b><span>para o primeiro estudo completo</span></p>
     <p><b>8 entregáveis</b><span>um por etapa, escritos por você</span></p>
     <p><b>Etapa 7</b><span>é quando o preço entra</span></p>
   </div>
@@ -412,6 +415,7 @@ const paginas = [
     <p class="lead">${TRILHAS.length} trilhas e ${MODULOS.length} módulos, na ordem em que devem ser estudados. Não é preciso saber nada antes. Cada módulo começa com a ideia em uma frase e uma comparação do dia a dia, e só depois entra nos detalhes. O objetivo é que você consiga estudar e decidir por conta própria.</p>
   </div>${cena('aprender')}</div>
   ${PORTAL}
+  ${ANALISE.CHAMADA}
   <div class="progresso" id="progresso" data-total="${MODULOS.length}">
     <p class="progresso-num"><span id="progresso-feitos">0</span><small>de ${MODULOS.length} módulos concluídos</small></p>
     <div class="trilho" aria-hidden="true"><i id="progresso-barra"></i></div>
@@ -627,6 +631,7 @@ const paginas = [
 
 MODULOS.forEach((m, i) => paginas.push(paginaAula(m, i)));
 PAGINAS_INDICADORES.forEach((p) => paginas.push(p));
+paginas.push(ANALISE.pagina);
 paginas.forEach((p) => fs.writeFileSync(path.join(RAIZ, p.arquivo), pagina(p)));
 fs.writeFileSync(path.join(__dirname, 'favicon.svg'), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><style>.f{fill:#F5EEDF}.a{stroke:#1B1633}@media (prefers-color-scheme:dark){.f{fill:#15112B}.a{stroke:#F5EEDF}}</style><rect class="f" width="32" height="32" rx="7"/><circle class="a" cx="16" cy="16" r="11.5" fill="none" stroke-width="2.8"/><circle class="a" cx="14.6" cy="17" r="6.3" fill="none" stroke-width="2.8"/><circle fill="#E4572E" cx="13.6" cy="17.9" r="2.6"/></svg>\n`);
 console.log(paginas.length + ' páginas geradas.');

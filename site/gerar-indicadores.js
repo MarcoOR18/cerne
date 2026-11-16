@@ -347,5 +347,5 @@ module.exports = function (o) {
     ${o.cena('indicadores')}
   </section>`;
   const paginas = [paginaIndice(o), paginaConjunto(o), paginaGlossario(o)].concat(INDICADORES.map((d, i) => paginaIndicador(d, i, o)));
-  return { INDICADORES, PAGINAS_INDICADORES: paginas, PORTAL, CATS };
+  return { INDICADORES, PAGINAS_INDICADORES: paginas, PORTAL, CATS, CALC, GLOSS, porSlug, laboratorio, termosHtml };
 };

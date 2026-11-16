@@ -446,6 +446,7 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -.02em; }
 .marca-nome { font-family: var(--display); font-weight: 400; font-size: 1.45rem; letter-spacing: -.01em; }
 .btn-topo { border-radius: 999px; }
 .btn-topo:hover { background: none; border-color: var(--ink); }
+a.btn-topo { color: inherit; text-decoration: none; }
 .cartao { border: 2px solid var(--ink); border-radius: 16px; }
 .btn { border-radius: 999px; border: 2px solid var(--ink); box-shadow: 3px 3px 0 var(--sombra-cor); transition: transform .12s, box-shadow .12s; }
 .btn:hover { transform: translate(1px, 1px); box-shadow: 2px 2px 0 var(--sombra-cor); }
@@ -473,3 +474,4 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -.02em; }
 .rodape { border-top: 2px solid var(--ink); background: var(--surface); }
 #msc-pop, #msc-tip { box-shadow: 3px 3px 0 var(--acento); }
 @media print { .btn, .cartao, .opcao { box-shadow: none !important; } }
+@media (max-width: 420px) { .marca-nome { font-size: 1.2rem; } }
