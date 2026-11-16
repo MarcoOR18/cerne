@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>P/VP (Preço/Valor Patrimonial) — Indicadores — Cerne</title>
+<meta name="description" content="P/VP (Preço/Valor Patrimonial): Compara o preço da ação com o patrimônio contábil que cabe a cada ação. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cerne">
+<meta property="og:title" content="P/VP (Preço/Valor Patrimonial) — Indicadores — Cerne">
+<meta property="og:description" content="P/VP (Preço/Valor Patrimonial): Compara o preço da ação com o patrimônio contábil que cabe a cada ação. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta property="og:image" content="https://marcoor18.github.io/cerne/site/og-cerne.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site/site.css">
+<link rel="stylesheet" href="site/vetor.css">
+<script src="carteira/js/tema.js"></script>
+</head>
+<body data-pagina="aprender">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="dentro">
+    <a class="marca" href="index.html" aria-label="Cerne, página inicial"><svg class="logo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span class="marca-nome">Cerne</span></a>
+    <nav class="nav" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+    <div class="topo-acoes">
+      <button type="button" class="btn-topo" id="btn-tema" aria-pressed="false" aria-label="Modo escuro"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="btn-topo" id="btn-nav" aria-expanded="false" aria-controls="nav-movel" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <nav class="nav-movel" id="nav-movel" aria-label="Principal, celular" hidden><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+</header>
+<main id="conteudo">
+<article class="secao" data-indicador="pvp"><div class="dentro">
+  <div class="ind-cab">
+    <div>
+      <p class="olho"><a href="aprender.html">Aprender</a> · <a href="indicadores.html">Indicadores</a> · <a href="indicadores.html#valuation">Valuation</a> · 1.2</p>
+      <h1 class="titulo">P/VP (Preço/Valor Patrimonial)</h1>
+      <p class="lead">Compara o preço da ação com o patrimônio contábil que cabe a cada ação.</p>
+      <p class="ind-tags"><span class="tag tag-mista" title="Combina preço de mercado com dado contábil.">Mercado + contábil</span><span class="tag tag-lida" id="selo-lido" hidden>Estudado</span></p>
+    </div>
+    <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><circle class="i-ceu i-tr" cx="80" cy="74" r="62"/><g transform="translate(80 40) scale(0.62)">
+  <polygon class="i-ink" points="-16,96 16,96 0,22"/><rect class="i-ink" x="-34" y="94" width="68" height="8" rx="2"/>
+  <path class="i-ln" d="M-78 34 L78 6"/><circle class="i-sol i-tr" cx="0" cy="20" r="8"/>
+  <path class="i-ln-f" d="M-78 34 L-98 78 M-78 34 L-58 78 M78 6 L58 44 M78 6 L98 44"/>
+  <path class="i-bg i-tr" d="M-104 78 h52 a26 14 0 0 1 -52 0 Z"/><path class="i-bg i-tr" d="M52 44 h52 a26 14 0 0 1 -52 0 Z"/>
+</g><circle class="i-sol i-tr" cx="32" cy="72" r="13"/><text x="32" y="77" text-anchor="middle" class="i-ink" style="font:700 13px sans-serif">$</text><g transform="translate(112 34) scale(0.42)"><polygon class="i-bg i-tr" points="0,14 30,0 60,14 30,28"/><polygon class="i-ac i-tr" points="0,14 30,28 30,62 0,48"/><polygon class="i-ink i-tr" points="60,14 30,28 30,62 60,48"/></g></svg></figure>
+  </div>
+  <div class="aula-grade">
+  <nav class="aula-indice" aria-label="Nesta página">
+    <p>Nesta página</p>
+    <ol><li><a href="#o-que-e">O que é</a></li><li><a href="#o-que-mede">O que mede</a></li><li><a href="#como-calcular">Como calcular</a></li><li><a href="#exemplo">Exemplo prático</a></li><li><a href="#interpretar">Como interpretar</a></li><li><a href="#bom-resultado">O que é um bom resultado</a></li><li><a href="#aplicacao">Aplicação prática</a></li><li><a href="#limitacoes">Limitações e ressalvas</a></li><li><a href="#complementares">Indicadores complementares</a></li></ol>
+  </nav>
+  <div class="ind-corpo">
+    <section class="num" id="o-que-e"><h2>O que é</h2><p>O P/VP divide o preço da ação pelo valor patrimonial por ação (VPA), que é o patrimônio líquido da empresa dividido pelo número de ações. O patrimônio líquido é o que sobra dos ativos depois de descontadas todas as dívidas e obrigações, segundo o balanço.</p><p>É, portanto, a relação entre o que o mercado paga e o que a contabilidade registra como pertencente aos sócios.</p></section>
+    <section class="num" id="o-que-mede"><h2>O que mede</h2><p>Mede o prêmio ou o desconto do preço em relação ao capital contábil dos acionistas. Um P/VP de 2 significa que o mercado avalia a empresa pelo dobro do que os sócios têm registrado no balanço.</p><p>Esse prêmio tem uma lógica: uma empresa vale mais do que o seu patrimônio quando consegue retorno (ROE) acima do custo do capital. Se o retorno for menor, é coerente que valha menos.</p>
+      <div class="destaque destaque-ressalva"><b>Mercado + contábil</b><p>Combina preço de mercado com dado contábil. Por isso varia todos os dias, mesmo que nada mude na empresa.</p></div>
+    </section>
+    <section class="num" id="como-calcular"><h2>Como calcular</h2>
+      <div class="quadro-formula"><p>P/VP = <i>Preço da ação</i> ÷ <i>Valor patrimonial por ação</i></p><p>VPA = Patrimônio líquido ÷ Número de ações</p></div>
+      <dl class="variaveis"><div><dt>Preço da ação</dt><dd>Cotação atual. Métrica de mercado.</dd></div><div><dt>Patrimônio líquido</dt><dd>Ativo total menos passivo total, conforme o último balanço. Métrica contábil: reflete custos históricos, e não o valor de venda dos ativos.</dd></div><div><dt>Número de ações</dt><dd>Total de ações emitidas, sem as que a empresa mantém em tesouraria.</dd></div></dl>
+    </section>
+    <section class="num" id="exemplo"><h2>Exemplo prático</h2>
+      <p>A <b>Companhia Alfa</b> é uma empresa fictícia, com números realistas, usada em todas as páginas desta área. A conta, passo a passo:</p>
+      <ol class="passos-ex"><li>Preço da ação: R$ 24,00.</li><li>Valor patrimonial por ação (patrimônio líquido ÷ número de ações): R$ 16,00.</li><li>P/VP = 24,00 ÷ 16,00 = 1,5×.</li><li>Leitura: o mercado paga R$ 1,50 por cada R$ 1,00 de patrimônio contábil.</li></ol>
+      <div class="lab" id="laboratorio" data-lab="pvp" data-presets="{&quot;padrao&quot;:{&quot;preco&quot;:24,&quot;vpa&quot;:16},&quot;a&quot;:{&quot;preco&quot;:14,&quot;vpa&quot;:20},&quot;b&quot;:{&quot;preco&quot;:44,&quot;vpa&quot;:20}}">
+      <div class="lab-topo"><b>Experimente: mude os valores</b>
+        <ul class="chips" aria-label="Carregar valores de exemplo"><li><button type="button" class="chip" data-preset="padrao" aria-pressed="true">Companhia Alfa</button></li><li><button type="button" class="chip" data-preset="a" aria-pressed="false">Banco Litoral</button></li><li><button type="button" class="chip" data-preset="b" aria-pressed="false">Banco Serra Alta</button></li></ul>
+      </div>
+      <div class="lab-grade">
+        <form class="lab-entradas" novalidate>
+        <div class="campo"><label for="lab-preco">Preço da ação</label><div class="entrada"><span>R$</span><input id="lab-preco" data-id="preco" type="text" inputmode="decimal" autocomplete="off" value="24"></div></div>
+        <div class="campo"><label for="lab-vpa">Valor patrimonial por ação</label><div class="entrada"><span>R$</span><input id="lab-vpa" data-id="vpa" type="text" inputmode="decimal" autocomplete="off" value="16"></div></div>
+        </form>
+        <div class="lab-saida" aria-live="polite">
+          <p class="lab-rotulo">P/VP</p>
+          <p class="lab-valor" data-lab-valor>1,50×</p>
+          <div data-lab-medidor><div class="medidor" aria-hidden="true"><i style="left:25.0%"></i></div><div class="medidor-escala" aria-hidden="true"><span>0×</span><span>6× ou mais</span></div></div>
+          <p class="lab-leitura" data-lab-leitura>Entre 1 e 3: faixa frequente em bancos rentáveis e empresas de ativos pesados. Compare sempre com o ROE: P/VP alto só se sustenta com retorno alto.</p>
+          <ol class="lab-passos" data-lab-passos><li>Preço da ação: R$ 24,00.</li><li>Valor patrimonial por ação (patrimônio líquido ÷ número de ações): R$ 16,00.</li><li>P/VP = 24,00 ÷ 16,00 = 1,5×.</li><li>Leitura: o mercado paga R$ 1,50 por cada R$ 1,00 de patrimônio contábil.</li></ol>
+        </div>
+      </div>
+      <p class="lab-nota">Empresas e números fictícios. A leitura automática é uma pista para estudo, baseada em faixas genéricas; ela não conhece o setor, o ciclo nem a qualidade dos dados. Não é recomendação.</p>
+    </div>
+    </section>
+    <section class="num" id="interpretar"><h2>Como interpretar</h2>
+      <dl class="faixas"><div><dt>Abaixo de 1</dt><dd>O mercado paga menos do que o patrimônio contábil. Pode ser oportunidade, ou sinal de que os ativos valem menos do que o balanço indica, ou de que a empresa rende menos do que o custo do capital.</dd></div><div><dt>Entre 1 e 3</dt><dd>Faixa frequente em bancos e empresas com muitos ativos físicos. A coerência se verifica pelo ROE: quanto maior e mais durável o retorno, maior o P/VP justificável.</dd></div><div><dt>Acima de 3</dt><dd>Comum em empresas cujo valor está em ativos que o balanço quase não registra: marca, tecnologia, base de clientes. Nesses casos o P/VP informa pouco.</dd></div></dl>
+      <div class="destaque"><b>Conceito importante</b><p>P/VP, ROE e P/L estão ligados por uma identidade: P/VP = P/L × ROE. Não são três informações independentes: são três ângulos da mesma relação entre preço, lucro e patrimônio.</p></div>
+    </section>
+    <section class="num" id="bom-resultado"><h2>O que é considerado um bom resultado</h2><p>Não há número certo. A referência teórica é: P/VP igual a 1 faz sentido quando o ROE esperado é igual ao custo do capital próprio. Acima disso, o prêmio precisa ser justificado por retorno acima do custo; abaixo, o desconto costuma refletir retorno insuficiente.</p><p>Por isso o P/VP é sempre lido <b>em dupla com o ROE</b>. Banco com P/VP de 0,7 e ROE de 6% não está necessariamente barato; banco com P/VP de 2 e ROE de 22% não está necessariamente caro.</p></section>
+    <section class="num" id="aplicacao"><h2>Aplicação prática</h2><p>É mais útil em negócios cujo ativo é financeiro ou facilmente avaliável: bancos, seguradoras, empresas de propriedades e holdings. Nesses, o patrimônio contábil fica próximo do valor econômico.</p><p>Na comparação entre companhias, coloque lado a lado P/VP e ROE do mesmo período. Quem tem P/VP mais alto deveria ter ROE mais alto e mais estável.</p>
+      <h3>Duas empresas fictícias, lado a lado</h3>
+      <div class="duelo"><div class="duelo-lado"><h3>Banco Litoral</h3><p>ROE de 9% ao ano</p><dl><div><dt>Preço da ação</dt><dd>R$ 14,00</dd></div><div><dt>Valor patrimonial por ação</dt><dd>R$ 20,00</dd></div></dl><p class="duelo-res"><span>P/VP</span><b>0,70×</b></p></div><div class="duelo-lado"><h3>Banco Serra Alta</h3><p>ROE de 21% ao ano</p><dl><div><dt>Preço da ação</dt><dd>R$ 44,00</dd></div><div><dt>Valor patrimonial por ação</dt><dd>R$ 20,00</dd></div></dl><p class="duelo-res"><span>P/VP</span><b>2,20×</b></p></div></div><p>Os dois bancos têm o mesmo patrimônio por ação. O Litoral negocia com desconto de 30% sobre o patrimônio, e o Serra Alta, por mais que o dobro dele. Parece que o primeiro é a pechincha. Só que o Serra Alta gera R$ 4,20 de lucro por ação, e o Litoral, R$ 1,80: os P/L são 10,5 e 7,8. O desconto do Litoral é o preço de um retorno que talvez não cubra o custo do capital. A pergunta certa é se o ROE de cada um vai durar.</p>
+      <h3>O mesmo indicador em setores diferentes</h3>
+      <ul class="setores"><li><b>Bancos</b><span>É o múltiplo de referência do setor, pois os ativos são financeiros e marcados perto do valor justo. Sempre ao lado do ROE.</span></li><li><b>Tecnologia</b><span>Pouco informativo: o valor está em intangíveis fora do balanço. P/VP de 10 ou mais é comum e não significa, por si, sobrepreço.</span></li><li><b>Indústria</b><span>Útil com ressalvas. Verifique a idade dos ativos e se há baixas contábeis (impairment) pendentes.</span></li><li><b>Varejo</b><span>Depois da norma IFRS 16, contratos de aluguel entram no balanço e alteram ativos e passivos, mas o efeito sobre o patrimônio é pequeno.</span></li></ul>
+    </section>
+    <section class="num" id="limitacoes"><h2>Limitações e ressalvas</h2>
+      <div class="destaque destaque-erro"><b>Erro comum</b><p>Tratar P/VP abaixo de 1 como "comprar R$ 1,00 por menos de R$ 1,00". O patrimônio contábil não é dinheiro em caixa: são ativos registrados por custo histórico, que podem valer bem menos (ou bem mais) em uma venda.</p></div>
+      <ul class="ressalvas"><li><b>Custo histórico.</b> Um terreno comprado há 40 anos aparece por valor irrisório; uma fábrica obsoleta pode aparecer por valor alto. O patrimônio contábil não é valor de mercado dos ativos.</li><li><b>Intangíveis gerados internamente.</b> Marca, software e relacionamento com clientes construídos pela própria empresa em geral não entram no balanço. Negócios leves em ativos parecem "caros" pelo P/VP.</li><li><b>Ágio de aquisições (goodwill).</b> Empresas que compraram outras carregam ágio no ativo, o que infla o patrimônio e reduz o P/VP sem que haja ativo tangível por trás.</li><li><b>Recompras e prejuízos acumulados.</b> Reduzem o patrimônio e podem levar o P/VP a níveis altíssimos, ou a patrimônio negativo, sem relação com a qualidade do negócio.</li><li><b>Inflação.</b> Em períodos longos de inflação, o custo histórico fica defasado e subestima o patrimônio.</li></ul>
+      <p class="nota">Todo indicador calculado com dados passados descreve o que já aconteceu. Usá-lo para projetar o futuro supõe que as condições vão se repetir, o que nem sempre ocorre.</p>
+    </section>
+    <section class="num" id="complementares"><h2>Indicadores complementares</h2>
+      <p>Nenhum indicador responde sozinho. Para uma leitura mais confiável, analise junto:</p>
+      <ul class="junto"><li><a href="indicador-roe.html"><b>ROE</b><span>Par inseparável: explica se o prêmio ou o desconto sobre o patrimônio faz sentido.</span></a></li><li><a href="indicador-pl.html"><b>P/L</b><span>Completa a identidade P/VP = P/L × ROE.</span></a></li><li><a href="indicador-divida-bruta-pl.html"><b>Dívida Bruta/Patrimônio Líquido</b><span>Mostra quanto do ativo é financiado por terceiros.</span></a></li><li><a href="indicador-roic.html"><b>ROIC</b><span>Em empresas não financeiras, mede o retorno sem o efeito da alavancagem.</span></a></li></ul>
+      <p>Veja casos em que um indicador isolado engana em <a href="indicadores-em-conjunto.html">Indicadores em conjunto</a>.</p>
+      <h3>Termos usados nesta página</h3>
+      <ul class="termos"><li><a class="chip" href="glossario.html#patrimonio-liquido">Patrimônio líquido</a></li><li><a class="chip" href="glossario.html#vpa">VPA (valor patrimonial por ação)</a></li><li><a class="chip" href="glossario.html#custo-historico">Custo histórico</a></li><li><a class="chip" href="glossario.html#intangivel">Ativo intangível</a></li><li><a class="chip" href="glossario.html#agio">Ágio (goodwill)</a></li><li><a class="chip" href="glossario.html#custo-de-capital">Custo de capital</a></li><li><a class="chip" href="glossario.html#tesouraria">Ações em tesouraria</a></li></ul>
+    </section>
+    <div class="marcar"><p><b>Terminou de estudar este indicador?</b> A marcação fica guardada só neste navegador.</p><button type="button" class="btn btn-secundario btn-pequeno" id="marcar-lido" aria-pressed="false">Marcar como estudado</button></div>
+    <nav class="aula-passos" aria-label="Indicadores vizinhos">
+      <a href="indicador-pl.html"><span>Anterior · 1.1</span><b>P/L</b></a>
+      <a href="indicador-ev-ebitda.html"><span>Próximo · 1.3</span><b>EV/EBITDA</b></a>
+    </nav>
+    <div style="margin-top:2rem"><p class="aviso"><b>Conteúdo educacional</b>Não é recomendação de investimento individualizada e não substitui um profissional habilitado. Não há garantia de retorno. A decisão é de quem investe.</p></div>
+  </div>
+  </div>
+</div></article>
+</main>
+<aside class="decida" aria-label="Orientação ao leitor"><div class="dentro">
+  <p class="decida-titulo">Estude. Compare.<br><em>Decida por você.</em></p>
+  <p class="decida-texto">A Cerne explica e oferece ferramentas. Não diz o que comprar nem o que vender. Leia as fontes, forme a sua própria opinião e tome as suas decisões. Elas, e a responsabilidade por elas, são suas.</p>
+  <div class="decida-cena"><svg viewBox="0 0 176 210" aria-hidden="true" focusable="false">
+  <path class="i-sol" d="M120 22 a22 22 0 1 0 22 36 a18 18 0 0 1 -22 -36 Z"/>
+  <circle class="i-lua" cx="34" cy="40" r="2"/><circle class="i-lua" cx="70" cy="18" r="1.6"/><circle class="i-lua" cx="150" cy="96" r="1.8"/><circle class="i-lua" cx="20" cy="110" r="1.4"/>
+  <path class="i-ln-lua" d="M52 210 V124 a36 36 0 0 1 72 0 V210"/>
+  <path class="i-sol" d="M58 210 V125 a30 30 0 0 1 60 0 V210 Z"/>
+  <polygon class="i-ac" points="58,210 58,112 92,128 92,210"/>
+  <circle class="i-lua" cx="86" cy="172" r="2.6"/>
+  <polygon class="i-sol" opacity=".28" points="92,210 118,210 176,236 110,236"/></svg></div>
+</div></aside>
+<footer class="rodape">
+  <div class="dentro">
+    <div class="rodape-grade">
+      <div>
+        <p class="rodape-marca"><svg class="logo" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span>Cerne</span></p>
+        <p>Valor real antes do preço. Educação financeira de base fundamentalista, para quem busca liberdade e tranquilidade com o próprio dinheiro.</p>
+      </div>
+      <div>
+        <h2>Ferramentas</h2>
+        <ul><li><a href="carteira/">Monte sua carteira</a></li><li><a href="juros.html">Juros compostos</a></li><li><a href="liberdade.html">Liberdade financeira</a></li><li><a href="roteiro.html">Checagem do estudo</a></li></ul>
+      </div>
+      <div>
+        <h2>Aprender</h2>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+      </div>
+      <div>
+        <h2>Cerne</h2>
+        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
+      </div>
+    </div>
+    <p class="rodape-legal">Cerne é um projeto educacional. Não é corretora, gestora, consultoria nem analista de valores mobiliários, não tem registro na CVM e não vende produtos financeiros. Nada aqui é recomendação de investimento individualizada nem promessa de retorno. As decisões e os riscos são de quem investe.</p>
+  </div>
+</footer>
+<script src="site/site.js"></script>
+<script src="site/indicadores-calc.js"></script>
+<script src="site/indicadores.js"></script>
+</body>
+</html>

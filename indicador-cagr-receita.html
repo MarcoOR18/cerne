@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CAGR da receita — Indicadores — Cerne</title>
+<meta name="description" content="CAGR da receita: A taxa anual constante que levaria a receita do valor inicial ao valor final. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cerne">
+<meta property="og:title" content="CAGR da receita — Indicadores — Cerne">
+<meta property="og:description" content="CAGR da receita: A taxa anual constante que levaria a receita do valor inicial ao valor final. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta property="og:image" content="https://marcoor18.github.io/cerne/site/og-cerne.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site/site.css">
+<link rel="stylesheet" href="site/vetor.css">
+<script src="carteira/js/tema.js"></script>
+</head>
+<body data-pagina="aprender">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="dentro">
+    <a class="marca" href="index.html" aria-label="Cerne, página inicial"><svg class="logo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span class="marca-nome">Cerne</span></a>
+    <nav class="nav" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+    <div class="topo-acoes">
+      <button type="button" class="btn-topo" id="btn-tema" aria-pressed="false" aria-label="Modo escuro"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="btn-topo" id="btn-nav" aria-expanded="false" aria-controls="nav-movel" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <nav class="nav-movel" id="nav-movel" aria-label="Principal, celular" hidden><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+</header>
+<main id="conteudo">
+<article class="secao" data-indicador="cagr-receita"><div class="dentro">
+  <div class="ind-cab">
+    <div>
+      <p class="olho"><a href="aprender.html">Aprender</a> · <a href="indicadores.html">Indicadores</a> · <a href="indicadores.html#crescimento">Crescimento</a> · 4.1</p>
+      <h1 class="titulo">CAGR da receita</h1>
+      <p class="lead">A taxa anual constante que levaria a receita do valor inicial ao valor final.</p>
+      <p class="ind-tags"><span class="tag tag-contabil" title="Calculada com dados das demonstrações financeiras. Só muda a cada balanço.">Métrica contábil</span><span class="tag tag-lida" id="selo-lido" hidden>Estudado</span></p>
+    </div>
+    <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><circle class="i-lil i-tr" cx="112" cy="50" r="38"/><path class="i-bg i-tr" d="M18 146 v-20 h22 v-20 h22 v-20 h22 v-20 h22 v-20 h22 V146 Z"/><path class="i-ln-ac" d="M22 108 L128 26 M128 26 h-26 M128 26 v26"/><path class="i-bg i-tr" transform="translate(4 20) scale(0.56)" d="M12 44 Q-4 44 -2 30 Q0 18 14 18 Q18 2 36 4 Q52 -6 64 10 Q84 6 88 24 Q102 26 100 38 Q98 44 88 44 Z"/></svg></figure>
+  </div>
+  <div class="aula-grade">
+  <nav class="aula-indice" aria-label="Nesta página">
+    <p>Nesta página</p>
+    <ol><li><a href="#o-que-e">O que é</a></li><li><a href="#o-que-mede">O que mede</a></li><li><a href="#como-calcular">Como calcular</a></li><li><a href="#exemplo">Exemplo prático</a></li><li><a href="#interpretar">Como interpretar</a></li><li><a href="#bom-resultado">O que é um bom resultado</a></li><li><a href="#aplicacao">Aplicação prática</a></li><li><a href="#limitacoes">Limitações e ressalvas</a></li><li><a href="#complementares">Indicadores complementares</a></li></ol>
+  </nav>
+  <div class="ind-corpo">
+    <section class="num" id="o-que-e"><h2>O que é</h2><p>CAGR é a sigla em inglês de taxa de crescimento anual composta. Aplicado à receita, é a taxa única que, repetida todos os anos, faria a receita sair do valor do primeiro ano e chegar ao valor do último.</p><p>É a mesma matemática dos juros compostos, usada ao contrário: em vez de aplicar uma taxa para achar o valor final, parte-se dos dois valores para achar a taxa.</p></section>
+    <section class="num" id="o-que-mede"><h2>O que mede</h2><p>Mede o ritmo médio de expansão das vendas em um período de vários anos, suavizando as oscilações de cada ano. É a medida de crescimento mais difícil de fabricar com contabilidade, porque a receita está no topo da demonstração de resultado.</p>
+      <div class="destaque destaque-ressalva"><b>Métrica contábil</b><p>Calculada com dados das demonstrações financeiras. Só muda a cada balanço. O número depende das escolhas contábeis da empresa e fica parado entre uma divulgação e outra.</p></div>
+    </section>
+    <section class="num" id="como-calcular"><h2>Como calcular</h2>
+      <div class="quadro-formula"><p>CAGR = <i>(Valor final ÷ Valor inicial)</i><sup>1 ÷ n</sup> − 1</p><p>n = número de anos entre o primeiro e o último valor</p></div>
+      <dl class="variaveis"><div><dt>Valor inicial</dt><dd>Receita líquida do primeiro ano da série.</dd></div><div><dt>Valor final</dt><dd>Receita líquida do último ano.</dd></div><div><dt>n</dt><dd>Número de períodos <b>entre</b> os dois valores. De 2020 a 2025 são cinco anos, embora haja seis balanços.</dd></div></dl>
+    </section>
+    <section class="num" id="exemplo"><h2>Exemplo prático</h2>
+      <p>A <b>Companhia Alfa</b> é uma empresa fictícia, com números realistas, usada em todas as páginas desta área. A conta, passo a passo:</p>
+      <ol class="passos-ex"><li>Receita final ÷ receita inicial = 20.000 ÷ 12.000 = 1,6667 (alta total de 66,7%).</li><li>Tira-se a raiz de índice 5, que é o número de anos: 1,6667 ^ (1 ÷ 5) = 1,1076.</li><li>Subtrai-se 1: CAGR = 10,8% ao ano.</li><li>Conferência: 12.000 crescendo 10,8% ao ano por 5 anos chega a 20.000. Dividir a alta total pelos anos (13,3%) estaria errado, porque ignora o efeito composto.</li></ol>
+      <div class="lab" id="laboratorio" data-lab="cagr-receita" data-presets="{&quot;padrao&quot;:{&quot;ini&quot;:12000,&quot;fim&quot;:20000,&quot;anos&quot;:5},&quot;a&quot;:{&quot;ini&quot;:1000,&quot;fim&quot;:1611,&quot;anos&quot;:5},&quot;b&quot;:{&quot;ini&quot;:1000,&quot;fim&quot;:1611,&quot;anos&quot;:5}}">
+      <div class="lab-topo"><b>Experimente: mude os valores</b>
+        <ul class="chips" aria-label="Carregar valores de exemplo"><li><button type="button" class="chip" data-preset="padrao" aria-pressed="true">Companhia Alfa</button></li><li><button type="button" class="chip" data-preset="a" aria-pressed="false">Padaria Trigal</button></li><li><button type="button" class="chip" data-preset="b" aria-pressed="false">Brinquedos Pião</button></li></ul>
+      </div>
+      <div class="lab-grade">
+        <form class="lab-entradas" novalidate>
+        <div class="campo"><label for="lab-ini">Receita no ano inicial</label><div class="entrada"><span>R$</span><input id="lab-ini" data-id="ini" type="text" inputmode="decimal" autocomplete="off" value="12.000"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-fim">Receita no ano final</label><div class="entrada"><span>R$</span><input id="lab-fim" data-id="fim" type="text" inputmode="decimal" autocomplete="off" value="20.000"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-anos">Número de anos entre os dois</label><div class="entrada"><input id="lab-anos" data-id="anos" type="text" inputmode="decimal" autocomplete="off" value="5"><span>anos</span></div></div>
+        </form>
+        <div class="lab-saida" aria-live="polite">
+          <p class="lab-rotulo">CAGR receita</p>
+          <p class="lab-valor" data-lab-valor>10,8%</p>
+          <div data-lab-medidor><div class="medidor" aria-hidden="true"><i style="left:41.5%"></i></div><div class="medidor-escala" aria-hidden="true"><span>-10%</span><span>40% ou mais</span></div></div>
+          <p class="lab-leitura" data-lab-leitura>Crescimento moderado a bom. Confira quanto veio de volume, de preço e de aquisições.</p>
+          <ol class="lab-passos" data-lab-passos><li>Receita final ÷ receita inicial = 20.000 ÷ 12.000 = 1,6667 (alta total de 66,7%).</li><li>Tira-se a raiz de índice 5, que é o número de anos: 1,6667 ^ (1 ÷ 5) = 1,1076.</li><li>Subtrai-se 1: CAGR = 10,8% ao ano.</li><li>Conferência: 12.000 crescendo 10,8% ao ano por 5 anos chega a 20.000. Dividir a alta total pelos anos (13,3%) estaria errado, porque ignora o efeito composto.</li></ol>
+        </div>
+      </div>
+      <p class="lab-nota">Empresas e números fictícios. A leitura automática é uma pista para estudo, baseada em faixas genéricas; ela não conhece o setor, o ciclo nem a qualidade dos dados. Não é recomendação.</p>
+    </div>
+    </section>
+    <section class="num" id="interpretar"><h2>Como interpretar</h2>
+      <dl class="faixas"><div><dt>Negativo ou abaixo da inflação</dt><dd>A receita encolheu em termos reais. Com inflação média de 5% ao ano, um CAGR nominal de 4% é queda real.</dd></div><div><dt>Um pouco acima da inflação</dt><dd>Crescimento real modesto, típico de empresas maduras em setores estáveis.</dd></div><div><dt>Muito acima da inflação</dt><dd>Expansão forte. Investigue a origem: volume, preço, novos mercados ou aquisições.</dd></div></dl>
+      <div class="destaque"><b>Conceito importante</b><p>O CAGR só enxerga dois pontos: o primeiro e o último. Tudo o que aconteceu no meio do caminho, inclusive quedas fortes, fica invisível.</p></div>
+    </section>
+    <section class="num" id="bom-resultado"><h2>O que é considerado um bom resultado</h2><p>Compare com três referências: a inflação do período (para saber o crescimento real), o crescimento do setor (para saber se a empresa ganhou ou perdeu participação) e o PIB nominal. E pergunte quanto custou: crescimento que exige mais capital do que devolve não cria valor.</p></section>
+    <section class="num" id="aplicacao"><h2>Aplicação prática</h2><p>Calcule em janelas diferentes (três, cinco e dez anos) e veja se a taxa está acelerando ou perdendo força. Separe o crescimento orgânico do adquirido: os relatórios de administração costumam informar. Compare com o CAGR do lucro, para ver se as margens acompanharam.</p>
+      <h3>Duas empresas fictícias, lado a lado</h3>
+      <div class="duelo"><div class="duelo-lado"><h3>Padaria Trigal</h3><p>Cresce de forma regular</p><dl><div><dt>Receita no ano inicial</dt><dd>R$ 1.000 mi</dd></div><div><dt>Receita no ano final</dt><dd>R$ 1.611 mi</dd></div><div><dt>Número de anos entre os dois</dt><dd>5 anos</dd></div></dl><p class="duelo-res"><span>CAGR receita</span><b>10,0%</b></p></div><div class="duelo-lado"><h3>Brinquedos Pião</h3><p>Caiu 40% no terceiro ano e depois se recuperou</p><dl><div><dt>Receita no ano inicial</dt><dd>R$ 1.000 mi</dd></div><div><dt>Receita no ano final</dt><dd>R$ 1.611 mi</dd></div><div><dt>Número de anos entre os dois</dt><dd>5 anos</dd></div></dl><p class="duelo-res"><span>CAGR receita</span><b>10,0%</b></p></div></div><p>O CAGR das duas é idêntico, 10% ao ano, porque os valores inicial e final coincidem. A Trigal cresceu perto de 10% em cada um dos cinco anos. A Pião subiu, despencou 40% no terceiro ano e recuperou. Para quem depende da estabilidade do negócio (credores, acionistas que recebem dividendos), são empresas muito diferentes. O CAGR resume; a série ano a ano mostra o risco.</p>
+      <h3>O mesmo indicador em setores diferentes</h3>
+      <ul class="setores"><li><b>Tecnologia</b><span>Taxas altas são comuns em fases iniciais; a desaceleração com o tamanho é a regra.</span></li><li><b>Varejo</b><span>Separe o crescimento de lojas novas do crescimento das mesmas lojas (same-store sales).</span></li><li><b>Commodities</b><span>A receita segue o preço internacional e o câmbio; o CAGR depende mais do ciclo do que da empresa.</span></li><li><b>Bancos</b><span>Acompanha-se o crescimento da carteira de crédito e das receitas de serviços.</span></li></ul>
+    </section>
+    <section class="num" id="limitacoes"><h2>Limitações e ressalvas</h2>
+      <div class="destaque destaque-erro"><b>Erro comum</b><p>Escolher, sem perceber, um ano inicial fraco. Um CAGR medido a partir de 2020 (ano de pandemia) parece espetacular para muitos setores, e é só recuperação.</p></div>
+      <ul class="ressalvas"><li><b>Sensível aos extremos.</b> Trocar o ano inicial ou final em um ano pode mudar muito a taxa.</li><li><b>Esconde a volatilidade.</b> Duas empresas com o mesmo CAGR podem ter trajetórias opostas: uma regular, outra errática.</li><li><b>Valores nominais.</b> No Brasil, parte relevante do crescimento é inflação.</li><li><b>Aquisições.</b> Comprar concorrentes aumenta a receita sem que o negócio original tenha crescido.</li><li><b>Passado não é projeção.</b> Taxas altas tendem a cair à medida que a empresa cresce e o mercado satura.</li><li><b>Não fala de rentabilidade.</b> Receita pode crescer com descontos que destroem a margem.</li></ul>
+      <p class="nota">Todo indicador calculado com dados passados descreve o que já aconteceu. Usá-lo para projetar o futuro supõe que as condições vão se repetir, o que nem sempre ocorre.</p>
+    </section>
+    <section class="num" id="complementares"><h2>Indicadores complementares</h2>
+      <p>Nenhum indicador responde sozinho. Para uma leitura mais confiável, analise junto:</p>
+      <ul class="junto"><li><a href="indicador-cagr-lucro.html"><b>CAGR do lucro</b><span>Mostra se o crescimento chegou ao resultado.</span></a></li><li><a href="indicador-margem-ebit.html"><b>Margem EBIT</b><span>Crescer perdendo margem pode ser comprar receita.</span></a></li><li><a href="indicador-roic.html"><b>ROIC</b><span>Diz se o crescimento cria valor.</span></a></li><li><a href="indicador-ps.html"><b>P/S</b><span>Múltiplos de receita altos exigem crescimento alto.</span></a></li><li><a href="indicador-fluxo-de-caixa-livre.html"><b>Fluxo de Caixa Livre</b><span>Indica quanto caixa o crescimento consome.</span></a></li></ul>
+      <p>Veja casos em que um indicador isolado engana em <a href="indicadores-em-conjunto.html">Indicadores em conjunto</a>.</p>
+      <h3>Termos usados nesta página</h3>
+      <ul class="termos"><li><a class="chip" href="glossario.html#cagr">CAGR</a></li><li><a class="chip" href="glossario.html#receita-liquida">Receita líquida</a></li><li><a class="chip" href="glossario.html#crescimento-organico">Crescimento orgânico</a></li><li><a class="chip" href="glossario.html#base-de-comparacao">Base de comparação</a></li><li><a class="chip" href="glossario.html#valores-nominais">Valores nominais e reais</a></li></ul>
+    </section>
+    <div class="marcar"><p><b>Terminou de estudar este indicador?</b> A marcação fica guardada só neste navegador.</p><button type="button" class="btn btn-secundario btn-pequeno" id="marcar-lido" aria-pressed="false">Marcar como estudado</button></div>
+    <nav class="aula-passos" aria-label="Indicadores vizinhos">
+      <a href="indicador-fluxo-de-caixa-livre.html"><span>Anterior · 3.6</span><b>FCF</b></a>
+      <a href="indicador-cagr-lucro.html"><span>Próximo · 4.2</span><b>CAGR lucro</b></a>
+    </nav>
+    <div style="margin-top:2rem"><p class="aviso"><b>Conteúdo educacional</b>Não é recomendação de investimento individualizada e não substitui um profissional habilitado. Não há garantia de retorno. A decisão é de quem investe.</p></div>
+  </div>
+  </div>
+</div></article>
+</main>
+<aside class="decida" aria-label="Orientação ao leitor"><div class="dentro">
+  <p class="decida-titulo">Estude. Compare.<br><em>Decida por você.</em></p>
+  <p class="decida-texto">A Cerne explica e oferece ferramentas. Não diz o que comprar nem o que vender. Leia as fontes, forme a sua própria opinião e tome as suas decisões. Elas, e a responsabilidade por elas, são suas.</p>
+  <div class="decida-cena"><svg viewBox="0 0 176 210" aria-hidden="true" focusable="false">
+  <path class="i-sol" d="M120 22 a22 22 0 1 0 22 36 a18 18 0 0 1 -22 -36 Z"/>
+  <circle class="i-lua" cx="34" cy="40" r="2"/><circle class="i-lua" cx="70" cy="18" r="1.6"/><circle class="i-lua" cx="150" cy="96" r="1.8"/><circle class="i-lua" cx="20" cy="110" r="1.4"/>
+  <path class="i-ln-lua" d="M52 210 V124 a36 36 0 0 1 72 0 V210"/>
+  <path class="i-sol" d="M58 210 V125 a30 30 0 0 1 60 0 V210 Z"/>
+  <polygon class="i-ac" points="58,210 58,112 92,128 92,210"/>
+  <circle class="i-lua" cx="86" cy="172" r="2.6"/>
+  <polygon class="i-sol" opacity=".28" points="92,210 118,210 176,236 110,236"/></svg></div>
+</div></aside>
+<footer class="rodape">
+  <div class="dentro">
+    <div class="rodape-grade">
+      <div>
+        <p class="rodape-marca"><svg class="logo" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span>Cerne</span></p>
+        <p>Valor real antes do preço. Educação financeira de base fundamentalista, para quem busca liberdade e tranquilidade com o próprio dinheiro.</p>
+      </div>
+      <div>
+        <h2>Ferramentas</h2>
+        <ul><li><a href="carteira/">Monte sua carteira</a></li><li><a href="juros.html">Juros compostos</a></li><li><a href="liberdade.html">Liberdade financeira</a></li><li><a href="roteiro.html">Checagem do estudo</a></li></ul>
+      </div>
+      <div>
+        <h2>Aprender</h2>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+      </div>
+      <div>
+        <h2>Cerne</h2>
+        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
+      </div>
+    </div>
+    <p class="rodape-legal">Cerne é um projeto educacional. Não é corretora, gestora, consultoria nem analista de valores mobiliários, não tem registro na CVM e não vende produtos financeiros. Nada aqui é recomendação de investimento individualizada nem promessa de retorno. As decisões e os riscos são de quem investe.</p>
+  </div>
+</footer>
+<script src="site/site.js"></script>
+<script src="site/indicadores-calc.js"></script>
+<script src="site/indicadores.js"></script>
+</body>
+</html>

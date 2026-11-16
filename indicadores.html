@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Indicadores de empresas — Aprender — Cerne</title>
+<meta name="description" content="33 indicadores financeiros explicados do zero: valuation, rentabilidade, endividamento, crescimento e mercado. Fórmula, exemplo interativo, interpretação e limitações de cada um.">
+<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cerne">
+<meta property="og:title" content="Indicadores de empresas — Aprender — Cerne">
+<meta property="og:description" content="33 indicadores financeiros explicados do zero: valuation, rentabilidade, endividamento, crescimento e mercado. Fórmula, exemplo interativo, interpretação e limitações de cada um.">
+<meta property="og:image" content="https://marcoor18.github.io/cerne/site/og-cerne.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site/site.css">
+<link rel="stylesheet" href="site/vetor.css">
+<script src="carteira/js/tema.js"></script>
+</head>
+<body data-pagina="aprender">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="dentro">
+    <a class="marca" href="index.html" aria-label="Cerne, página inicial"><svg class="logo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span class="marca-nome">Cerne</span></a>
+    <nav class="nav" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+    <div class="topo-acoes">
+      <button type="button" class="btn-topo" id="btn-tema" aria-pressed="false" aria-label="Modo escuro"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="btn-topo" id="btn-nav" aria-expanded="false" aria-controls="nav-movel" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <nav class="nav-movel" id="nav-movel" aria-label="Principal, celular" hidden><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+</header>
+<main id="conteudo">
+<section class="secao"><div class="dentro">
+  <div class="cabeca-cena"><div class="cabeca">
+    <p class="olho"><a href="aprender.html">Aprender</a> · Indicadores de empresas</p>
+    <h1 class="manchete">Indicador é pista.<br><em>Não é veredito.</em></h1>
+    <p class="lead">33 indicadores usados para analisar empresas, explicados para quem nunca viu um balanço. Cada página traz a definição, a fórmula, um exemplo que você pode alterar, a interpretação, as armadilhas e os indicadores que devem ser lidos junto.</p>
+  </div><figure class="cena"><svg viewBox="0 0 360 400" aria-hidden="true" focusable="false">
+  <circle class="i-ceu i-tr" cx="180" cy="128" r="112"/>
+  <path class="i-bg i-tr" d="M34 128 Q180 14 326 128 Q180 242 34 128 Z"/>
+  <circle class="i-ink" cx="180" cy="128" r="56"/><circle class="i-ac" cx="180" cy="128" r="50.9"/><circle class="i-ln-f" cx="177.5" cy="129.9" r="40.7"/><circle class="i-ln-f" cx="174.9" cy="131.8" r="30.5"/><circle class="i-ln-f" cx="172.4" cy="133.7" r="21"/><circle class="i-ln-f" cx="170.5" cy="135" r="12.7"/><circle class="i-sol i-tr" cx="169.2" cy="136.3" r="5.7"/>
+  <path class="i-ln-f" d="M70 84 l-12 -18 M108 60 l-8 -20 M152 46 l-3 -21 M208 46 l3 -21 M252 60 l8 -20 M290 84 l12 -18"/>
+  <g transform="translate(180 268)">
+    <polygon class="i-ink" points="-16,96 16,96 0,22"/><rect class="i-ink" x="-40" y="94" width="80" height="8" rx="2"/>
+    <path class="i-ln" d="M-96 6 L96 40"/><circle class="i-sol i-tr" cx="0" cy="22" r="9"/>
+    <path class="i-ln-f" d="M-96 6 L-118 46 M-96 6 L-74 46 M96 40 L74 82 M96 40 L118 82"/>
+    <path class="i-bg i-tr" d="M-124 46 h56 a28 14 0 0 1 -56 0 Z"/><path class="i-bg i-tr" d="M68 82 h56 a28 14 0 0 1 -56 0 Z"/>
+  </g>
+  <g transform="translate(66 266) scale(0.6)"><polygon class="i-bg i-tr" points="0,14 30,0 60,14 30,28"/><polygon class="i-ac i-tr" points="0,14 30,28 30,62 0,48"/><polygon class="i-ink i-tr" points="60,14 30,28 30,62 60,48"/></g>
+  <path class="i-bg i-tr" transform="translate(238 308) scale(0.72)" d="M12 44 Q-4 44 -2 30 Q0 18 14 18 Q18 2 36 4 Q52 -6 64 10 Q84 6 88 24 Q102 26 100 38 Q98 44 88 44 Z"/>
+  <ellipse class="i-som" cx="180" cy="384" rx="120" ry="8"/></svg></figure></div>
+  <div class="orientacao">
+    <div><h2><span class="marca-ponto" aria-hidden="true"></span>Contábil ou de mercado</h2><p>Métricas contábeis vêm do balanço e só mudam a cada trimestre. Métricas de mercado dependem do preço e mudam a cada negócio. Muitos múltiplos misturam as duas. Cada página indica o tipo.</p></div>
+    <div><h2><span class="marca-ponto" aria-hidden="true"></span>O setor muda a leitura</h2><p>Um número bom para um banco pode ser péssimo para uma indústria. Alguns indicadores nem se aplicam a certos setores. Compare empresas parecidas.</p></div>
+    <div><h2><span class="marca-ponto" aria-hidden="true"></span>Nunca um só</h2><p>Todo indicador tem um ponto cego. Lidos em conjunto, um cobre a falha do outro. Veja exemplos em <a href="indicadores-em-conjunto.html">Indicadores em conjunto</a>.</p></div>
+  </div>
+  <div class="filtro" id="filtro">
+    <div><label for="busca-ind">Procurar um indicador</label><div class="entrada"><input id="busca-ind" type="search" autocomplete="off" placeholder="P/L, margem, dívida…"></div></div>
+    <div><ul class="chips" aria-label="Filtrar por categoria"><li><button type="button" class="chip" data-filtro="" aria-pressed="true">Todos</button></li><li><button type="button" class="chip" data-filtro="valuation" aria-pressed="false">Valuation</button></li><li><button type="button" class="chip" data-filtro="rentabilidade" aria-pressed="false">Rentabilidade e eficiência</button></li><li><button type="button" class="chip" data-filtro="endividamento" aria-pressed="false">Endividamento e saúde financeira</button></li><li><button type="button" class="chip" data-filtro="crescimento" aria-pressed="false">Crescimento</button></li><li><button type="button" class="chip" data-filtro="mercado" aria-pressed="false">Indicadores de mercado e ações</button></li></ul>
+    <p class="nota" id="ind-progresso" role="status" style="margin:.7rem 0 0"></p></div>
+  </div>
+  <p class="filtro-vazio" id="filtro-vazio" hidden>Nenhum indicador encontrado. Tente outra palavra ou veja o <a href="glossario.html">glossário</a>.</p>
+  
+  <section class="cat" id="valuation" data-cat="valuation">
+    <div class="cat-cab">
+      <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><circle class="i-ceu i-tr" cx="80" cy="74" r="62"/><g transform="translate(80 40) scale(0.62)">
+  <polygon class="i-ink" points="-16,96 16,96 0,22"/><rect class="i-ink" x="-34" y="94" width="68" height="8" rx="2"/>
+  <path class="i-ln" d="M-78 34 L78 6"/><circle class="i-sol i-tr" cx="0" cy="20" r="8"/>
+  <path class="i-ln-f" d="M-78 34 L-98 78 M-78 34 L-58 78 M78 6 L58 44 M78 6 L98 44"/>
+  <path class="i-bg i-tr" d="M-104 78 h52 a26 14 0 0 1 -52 0 Z"/><path class="i-bg i-tr" d="M52 44 h52 a26 14 0 0 1 -52 0 Z"/>
+</g><circle class="i-sol i-tr" cx="32" cy="72" r="13"/><text x="32" y="77" text-anchor="middle" class="i-ink" style="font:700 13px sans-serif">$</text><g transform="translate(112 34) scale(0.42)"><polygon class="i-bg i-tr" points="0,14 30,0 60,14 30,28"/><polygon class="i-ac i-tr" points="0,14 30,28 30,62 0,48"/><polygon class="i-ink i-tr" points="60,14 30,28 30,62 60,48"/></g></svg></figure>
+      <span class="cat-num">Categoria 1 · Quanto custa?</span>
+      <h2>Valuation</h2>
+      <p>Relacionam o preço da ação, ou o valor da empresa, com o que ela lucra, possui ou gera de caixa. Dizem quanto se paga. Não dizem se vale a pena.</p>
+    </div>
+    <ul class="ind-lista">
+      <li data-busca="p/l (preço/lucro) p/l quantos reais o mercado paga por cada real de lucro anual da empresa."><a class="ind-cartao" href="indicador-pl.html" data-indicador="pl"><span class="ind-cartao-formula">1.1</span><span class="ind-cartao-nome">P/L (Preço/Lucro)</span><span class="ind-cartao-desc">Quantos reais o mercado paga por cada real de lucro anual da empresa.</span><span class="ind-cartao-pe"><span class="tag tag-mista">Mercado + contábil</span></span></a></li>
+      <li data-busca="p/vp (preço/valor patrimonial) p/vp compara o preço da ação com o patrimônio contábil que cabe a cada ação."><a class="ind-cartao" href="indicador-pvp.html" data-indicador="pvp"><span class="ind-cartao-formula">1.2</span><span class="ind-cartao-nome">P/VP (Preço/Valor Patrimonial)</span><span class="ind-cartao-desc">Compara o preço da ação com o patrimônio contábil que cabe a cada ação.</span><span class="ind-cartao-pe"><span class="tag tag-mista">Mercado + contábil</span></span></a></li>
+      <li data-busca="ev/ebitda ev/ebitda relaciona o valor da empresa inteira, com a dívida, ao resultado operacional antes da depreciação."><a class="ind-cartao" href="indicador-ev-ebitda.html" data-indicador="ev-ebitda"><span class="ind-cartao-formula">1.3</span><span class="ind-cartao-nome">EV/EBITDA</span><span class="ind-cartao-desc">Relaciona o valor da empresa inteira, com a dívida, ao resultado operacional antes da depreciação.</span><span class="ind-cartao-pe"><span class="tag tag-mista">Mercado + contábil</span></span></a></li>
+      <li data-busca="ev/ebit ev/ebit como o ev/ebitda, mas usando o lucro operacional já depois da depreciação."><a class="ind-cartao" href="indicador-ev-ebit.html" data-indicador="ev-ebit"><span class="ind-cartao-formula">1.4</span><span class="ind-cartao-nome">EV/EBIT</span><span class="ind-cartao-desc">Como o EV/EBITDA, mas usando o lucro operacional já depois da depreciação.</span><span class="ind-cartao-pe"><span class="tag tag-mista">Mercado + contábil</span></span></a></li>
+      <li data-busca="p/s (preço/vendas) p/s quanto o mercado paga por cada real de receita, sem olhar para o lucro."><a class="ind-cartao" href="indicador-ps.html" data-indicador="ps"><span class="ind-cartao-formula">1.5</span><span class="ind-cartao-nome">P/S (Preço/Vendas)</span><span class="ind-cartao-desc">Quanto o mercado paga por cada real de receita, sem olhar para o lucro.</span><span class="ind-cartao-pe"><span class="tag tag-mista">Mercado + contábil</span></span></a></li>
+      <li data-busca="peg ratio peg divide o p/l pela taxa de crescimento esperada do lucro."><a class="ind-cartao" href="indicador-peg.html" data-indicador="peg"><span class="ind-cartao-formula">1.6</span><span class="ind-cartao-nome">PEG Ratio</span><span class="ind-cartao-desc">Divide o P/L pela taxa de crescimento esperada do lucro.</span><span class="ind-cartao-pe"><span class="tag tag-mista">Mercado + contábil</span></span></a></li>
+      <li data-busca="dividend yield dy proventos pagos por ação em um ano, como porcentagem do preço."><a class="ind-cartao" href="indicador-dividend-yield.html" data-indicador="dividend-yield"><span class="ind-cartao-formula">1.7</span><span class="ind-cartao-nome">Dividend Yield</span><span class="ind-cartao-desc">Proventos pagos por ação em um ano, como porcentagem do preço.</span><span class="ind-cartao-pe"><span class="tag tag-mista">Mercado + contábil</span></span></a></li>
+      <li data-busca="fcf yield fcf yield fluxo de caixa livre de um ano como porcentagem do valor de mercado."><a class="ind-cartao" href="indicador-fcf-yield.html" data-indicador="fcf-yield"><span class="ind-cartao-formula">1.8</span><span class="ind-cartao-nome">FCF Yield</span><span class="ind-cartao-desc">Fluxo de caixa livre de um ano como porcentagem do valor de mercado.</span><span class="ind-cartao-pe"><span class="tag tag-mista">Mercado + contábil</span></span></a></li>
+    </ul>
+  </section>
+  <section class="cat" id="rentabilidade" data-cat="rentabilidade">
+    <div class="cat-cab">
+      <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><circle class="i-sol i-tr" cx="80" cy="118" r="34"/><circle class="i-ln-f" cx="80" cy="118" r="22"/><path class="i-ln" d="M80 84 V36"/><path class="i-men i-tr" d="M80 62 Q44 60 38 28 Q74 26 80 62 Z"/><path class="i-pet i-tr" d="M80 48 Q112 44 122 14 Q88 14 80 48 Z"/><path class="i-bg i-tr" transform="translate(96 60) scale(0.5)" d="M12 44 Q-4 44 -2 30 Q0 18 14 18 Q18 2 36 4 Q52 -6 64 10 Q84 6 88 24 Q102 26 100 38 Q98 44 88 44 Z"/></svg></figure>
+      <span class="cat-num">Categoria 2 · O negócio é bom?</span>
+      <h2>Rentabilidade e eficiência</h2>
+      <p>Medem quanto a empresa ganha em relação ao que vende e ao capital que usa. São contábeis: não dependem do preço da ação.</p>
+    </div>
+    <ul class="ind-lista">
+      <li data-busca="roe (retorno sobre o patrimônio líquido) roe quanto lucro a empresa gera para cada real de capital dos sócios."><a class="ind-cartao" href="indicador-roe.html" data-indicador="roe"><span class="ind-cartao-formula">2.1</span><span class="ind-cartao-nome">ROE (Retorno sobre o Patrimônio Líquido)</span><span class="ind-cartao-desc">Quanto lucro a empresa gera para cada real de capital dos sócios.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="roic (retorno sobre o capital investido) roic retorno operacional, depois de impostos, sobre todo o capital aplicado no negócio."><a class="ind-cartao" href="indicador-roic.html" data-indicador="roic"><span class="ind-cartao-formula">2.2</span><span class="ind-cartao-nome">ROIC (Retorno sobre o Capital Investido)</span><span class="ind-cartao-desc">Retorno operacional, depois de impostos, sobre todo o capital aplicado no negócio.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="roa (retorno sobre o ativo) roa lucro gerado para cada real de ativos, qualquer que seja a origem do dinheiro."><a class="ind-cartao" href="indicador-roa.html" data-indicador="roa"><span class="ind-cartao-formula">2.3</span><span class="ind-cartao-nome">ROA (Retorno sobre o Ativo)</span><span class="ind-cartao-desc">Lucro gerado para cada real de ativos, qualquer que seja a origem do dinheiro.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="margem bruta margem bruta quanto sobra de cada real vendido depois do custo direto do produto ou serviço."><a class="ind-cartao" href="indicador-margem-bruta.html" data-indicador="margem-bruta"><span class="ind-cartao-formula">2.4</span><span class="ind-cartao-nome">Margem bruta</span><span class="ind-cartao-desc">Quanto sobra de cada real vendido depois do custo direto do produto ou serviço.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="margem ebitda margem ebitda parcela da receita que sobra como resultado operacional antes de depreciação, juros e impostos."><a class="ind-cartao" href="indicador-margem-ebitda.html" data-indicador="margem-ebitda"><span class="ind-cartao-formula">2.5</span><span class="ind-cartao-nome">Margem EBITDA</span><span class="ind-cartao-desc">Parcela da receita que sobra como resultado operacional antes de depreciação, juros e impostos.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="margem ebit margem ebit parcela da receita que sobra como lucro operacional, já descontada a depreciação."><a class="ind-cartao" href="indicador-margem-ebit.html" data-indicador="margem-ebit"><span class="ind-cartao-formula">2.6</span><span class="ind-cartao-nome">Margem EBIT</span><span class="ind-cartao-desc">Parcela da receita que sobra como lucro operacional, já descontada a depreciação.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="margem líquida margem líquida quanto de cada real vendido chega ao lucro final dos acionistas."><a class="ind-cartao" href="indicador-margem-liquida.html" data-indicador="margem-liquida"><span class="ind-cartao-formula">2.7</span><span class="ind-cartao-nome">Margem líquida</span><span class="ind-cartao-desc">Quanto de cada real vendido chega ao lucro final dos acionistas.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+    </ul>
+  </section>
+  <section class="cat" id="endividamento" data-cat="endividamento">
+    <div class="cat-cab">
+      <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><path class="i-ac i-tr" d="M80 12 a36 40 0 0 1 0 80 a36 40 0 0 1 0 -80 Z"/><polygon class="i-ac i-tr" points="74,92 86,92 80,100"/><path class="i-ln-f" d="M80 100 q-10 12 0 22 q8 8 0 14"/><circle class="i-ink" cx="80" cy="140" r="16"/><path class="i-ln-bg" d="M72 138 h16"/><path class="i-ln-f" d="M62 34 q-8 18 2 34"/><ellipse class="i-som" cx="80" cy="157" rx="34" ry="3"/></svg></figure>
+      <span class="cat-num">Categoria 3 · Aguenta um ano ruim?</span>
+      <h2>Endividamento e saúde financeira</h2>
+      <p>Avaliam o tamanho e o custo da dívida, a folga de curto prazo e o caixa que sobra. Mostram a resistência da empresa a um período difícil.</p>
+    </div>
+    <ul class="ind-lista">
+      <li data-busca="dívida líquida/ebitda dív. líq./ebitda quantos anos de ebitda seriam necessários para quitar a dívida líquida."><a class="ind-cartao" href="indicador-divida-liquida-ebitda.html" data-indicador="divida-liquida-ebitda"><span class="ind-cartao-formula">3.1</span><span class="ind-cartao-nome">Dívida Líquida/EBITDA</span><span class="ind-cartao-desc">Quantos anos de EBITDA seriam necessários para quitar a dívida líquida.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="dívida bruta/patrimônio líquido dív. bruta/pl quanto a empresa deve a credores financeiros para cada real de capital dos sócios."><a class="ind-cartao" href="indicador-divida-bruta-pl.html" data-indicador="divida-bruta-pl"><span class="ind-cartao-formula">3.2</span><span class="ind-cartao-nome">Dívida Bruta/Patrimônio Líquido</span><span class="ind-cartao-desc">Quanto a empresa deve a credores financeiros para cada real de capital dos sócios.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="índice de cobertura de juros cobertura de juros quantas vezes o lucro operacional paga a despesa com juros da dívida."><a class="ind-cartao" href="indicador-cobertura-de-juros.html" data-indicador="cobertura-de-juros"><span class="ind-cartao-formula">3.3</span><span class="ind-cartao-nome">Índice de cobertura de juros</span><span class="ind-cartao-desc">Quantas vezes o lucro operacional paga a despesa com juros da dívida.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="liquidez corrente liquidez corrente ativos que viram dinheiro em até um ano, divididos pelas obrigações que vencem em até um ano."><a class="ind-cartao" href="indicador-liquidez-corrente.html" data-indicador="liquidez-corrente"><span class="ind-cartao-formula">3.4</span><span class="ind-cartao-nome">Liquidez corrente</span><span class="ind-cartao-desc">Ativos que viram dinheiro em até um ano, divididos pelas obrigações que vencem em até um ano.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="liquidez seca liquidez seca a liquidez corrente sem contar os estoques."><a class="ind-cartao" href="indicador-liquidez-seca.html" data-indicador="liquidez-seca"><span class="ind-cartao-formula">3.5</span><span class="ind-cartao-nome">Liquidez seca</span><span class="ind-cartao-desc">A liquidez corrente sem contar os estoques.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="fluxo de caixa livre (fcf) fcf o caixa que sobra depois de pagar a operação e os investimentos."><a class="ind-cartao" href="indicador-fluxo-de-caixa-livre.html" data-indicador="fluxo-de-caixa-livre"><span class="ind-cartao-formula">3.6</span><span class="ind-cartao-nome">Fluxo de Caixa Livre (FCF)</span><span class="ind-cartao-desc">O caixa que sobra depois de pagar a operação e os investimentos.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+    </ul>
+  </section>
+  <section class="cat" id="crescimento" data-cat="crescimento">
+    <div class="cat-cab">
+      <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><circle class="i-lil i-tr" cx="112" cy="50" r="38"/><path class="i-bg i-tr" d="M18 146 v-20 h22 v-20 h22 v-20 h22 v-20 h22 v-20 h22 V146 Z"/><path class="i-ln-ac" d="M22 108 L128 26 M128 26 h-26 M128 26 v26"/><path class="i-bg i-tr" transform="translate(4 20) scale(0.56)" d="M12 44 Q-4 44 -2 30 Q0 18 14 18 Q18 2 36 4 Q52 -6 64 10 Q84 6 88 24 Q102 26 100 38 Q98 44 88 44 Z"/></svg></figure>
+      <span class="cat-num">Categoria 4 · Está crescendo de verdade?</span>
+      <h2>Crescimento</h2>
+      <p>Medem o ritmo de expansão de receita, resultado e caixa. Descrevem o passado, e por isso pedem cuidado redobrado antes de qualquer projeção.</p>
+    </div>
+    <ul class="ind-lista">
+      <li data-busca="cagr da receita cagr receita a taxa anual constante que levaria a receita do valor inicial ao valor final."><a class="ind-cartao" href="indicador-cagr-receita.html" data-indicador="cagr-receita"><span class="ind-cartao-formula">4.1</span><span class="ind-cartao-nome">CAGR da receita</span><span class="ind-cartao-desc">A taxa anual constante que levaria a receita do valor inicial ao valor final.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="cagr do lucro cagr lucro a taxa anual composta de crescimento do lucro líquido em um período."><a class="ind-cartao" href="indicador-cagr-lucro.html" data-indicador="cagr-lucro"><span class="ind-cartao-formula">4.2</span><span class="ind-cartao-nome">CAGR do lucro</span><span class="ind-cartao-desc">A taxa anual composta de crescimento do lucro líquido em um período.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="crescimento do ebitda cresc. ebitda variação percentual do ebitda entre dois períodos equivalentes."><a class="ind-cartao" href="indicador-crescimento-ebitda.html" data-indicador="crescimento-ebitda"><span class="ind-cartao-formula">4.3</span><span class="ind-cartao-nome">Crescimento do EBITDA</span><span class="ind-cartao-desc">Variação percentual do EBITDA entre dois períodos equivalentes.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="crescimento do fluxo de caixa livre cresc. fcf variação percentual do caixa livre gerado entre dois períodos."><a class="ind-cartao" href="indicador-crescimento-fcf.html" data-indicador="crescimento-fcf"><span class="ind-cartao-formula">4.4</span><span class="ind-cartao-nome">Crescimento do fluxo de caixa livre</span><span class="ind-cartao-desc">Variação percentual do caixa livre gerado entre dois períodos.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="crescimento do lucro por ação (eps growth) cresc. lpa variação percentual do lucro que cabe a cada ação."><a class="ind-cartao" href="indicador-crescimento-lpa.html" data-indicador="crescimento-lpa"><span class="ind-cartao-formula">4.5</span><span class="ind-cartao-nome">Crescimento do lucro por ação (EPS Growth)</span><span class="ind-cartao-desc">Variação percentual do lucro que cabe a cada ação.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+    </ul>
+  </section>
+  <section class="cat" id="mercado" data-cat="mercado">
+    <div class="cat-cab">
+      <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><circle class="i-ceu i-tr" cx="74" cy="88" r="56"/><path class="i-ac i-tr" d="M86 70 V14 a56 56 0 0 1 48.5 28 Z"/><path class="i-ln-f" d="M74 88 V32 M74 88 L122.5 116 M74 88 L25.5 116"/><circle class="i-bg i-tr" cx="74" cy="88" r="14"/><circle class="i-ink" cx="74" cy="88" r="5"/></svg></figure>
+      <span class="cat-num">Categoria 5 · Como é este papel?</span>
+      <h2>Indicadores de mercado e ações</h2>
+      <p>Descrevem a ação e a sua negociação: tamanho, lucro por ação, distribuição, sensibilidade ao mercado, liquidez e dispersão do capital.</p>
+    </div>
+    <ul class="ind-lista">
+      <li data-busca="eps (lucro por ação) lpa a parte do lucro líquido que corresponde a cada ação."><a class="ind-cartao" href="indicador-lpa.html" data-indicador="lpa"><span class="ind-cartao-formula">5.1</span><span class="ind-cartao-nome">EPS (Lucro por Ação)</span><span class="ind-cartao-desc">A parte do lucro líquido que corresponde a cada ação.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="payout ratio payout a parcela do lucro líquido distribuída aos acionistas como proventos."><a class="ind-cartao" href="indicador-payout.html" data-indicador="payout"><span class="ind-cartao-formula">5.2</span><span class="ind-cartao-nome">Payout Ratio</span><span class="ind-cartao-desc">A parcela do lucro líquido distribuída aos acionistas como proventos.</span><span class="ind-cartao-pe"><span class="tag tag-contabil">Métrica contábil</span></span></a></li>
+      <li data-busca="beta beta sensibilidade histórica do retorno de uma ação aos movimentos do mercado."><a class="ind-cartao" href="indicador-beta.html" data-indicador="beta"><span class="ind-cartao-formula">5.3</span><span class="ind-cartao-nome">Beta</span><span class="ind-cartao-desc">Sensibilidade histórica do retorno de uma ação aos movimentos do mercado.</span><span class="ind-cartao-pe"><span class="tag">Métrica de mercado</span></span></a></li>
+      <li data-busca="market cap (valor de mercado) market cap o preço de todas as ações da empresa somadas."><a class="ind-cartao" href="indicador-valor-de-mercado.html" data-indicador="valor-de-mercado"><span class="ind-cartao-formula">5.4</span><span class="ind-cartao-nome">Market Cap (Valor de mercado)</span><span class="ind-cartao-desc">O preço de todas as ações da empresa somadas.</span><span class="ind-cartao-pe"><span class="tag">Métrica de mercado</span></span></a></li>
+      <li data-busca="enterprise value (ev) ev o valor do negócio inteiro: o que vale para os acionistas mais o que se deve aos credores, menos o caixa."><a class="ind-cartao" href="indicador-enterprise-value.html" data-indicador="enterprise-value"><span class="ind-cartao-formula">5.5</span><span class="ind-cartao-nome">Enterprise Value (EV)</span><span class="ind-cartao-desc">O valor do negócio inteiro: o que vale para os acionistas mais o que se deve aos credores, menos o caixa.</span><span class="ind-cartao-pe"><span class="tag tag-mista">Mercado + contábil</span></span></a></li>
+      <li data-busca="volume médio negociado volume médio quanto dinheiro, em média, troca de mãos por dia naquela ação."><a class="ind-cartao" href="indicador-volume-medio.html" data-indicador="volume-medio"><span class="ind-cartao-formula">5.6</span><span class="ind-cartao-nome">Volume médio negociado</span><span class="ind-cartao-desc">Quanto dinheiro, em média, troca de mãos por dia naquela ação.</span><span class="ind-cartao-pe"><span class="tag">Métrica de mercado</span></span></a></li>
+      <li data-busca="free float free float a parcela das ações que está disponível para negociação no mercado."><a class="ind-cartao" href="indicador-free-float.html" data-indicador="free-float"><span class="ind-cartao-formula">5.7</span><span class="ind-cartao-nome">Free Float</span><span class="ind-cartao-desc">A parcela das ações que está disponível para negociação no mercado.</span><span class="ind-cartao-pe"><span class="tag">Métrica de mercado</span></span></a></li>
+    </ul>
+  </section>
+</div></section>
+
+<section class="secao secao-areia"><div class="dentro">
+  <div class="cabeca"><p class="olho">Para continuar</p><h2 class="titulo-2">Depois de conhecer cada um, <em>junte as peças.</em></h2></div>
+  <ul class="mapa">
+    <li><h3>Indicadores em conjunto</h3><p>Cinco casos em que um número isolado engana, e uma decomposição interativa do ROE.</p><p><a class="btn btn-primario btn-pequeno" href="indicadores-em-conjunto.html">Ver os casos</a></p></li>
+    <li><h3>Glossário</h3><p>91 termos usados nas explicações, de ágio a WACC, em linguagem direta.</p><p><a class="btn btn-secundario btn-pequeno" href="glossario.html">Abrir o glossário</a></p></li>
+    <li><h3>Método de estudo</h3><p>Oito etapas para estudar uma empresa. Os indicadores entram na quinta, depois de entender o negócio.</p><p><a class="btn btn-secundario btn-pequeno" href="metodo.html">Abrir o método</a></p></li>
+  </ul>
+  <div class="estreito" style="margin-top:2rem"><p class="aviso"><b>Conteúdo educacional</b>Não é recomendação de investimento individualizada e não substitui um profissional habilitado. Não há garantia de retorno. A decisão é de quem investe.</p></div>
+</div></section>
+</main>
+<aside class="decida" aria-label="Orientação ao leitor"><div class="dentro">
+  <p class="decida-titulo">Estude. Compare.<br><em>Decida por você.</em></p>
+  <p class="decida-texto">A Cerne explica e oferece ferramentas. Não diz o que comprar nem o que vender. Leia as fontes, forme a sua própria opinião e tome as suas decisões. Elas, e a responsabilidade por elas, são suas.</p>
+  <div class="decida-cena"><svg viewBox="0 0 176 210" aria-hidden="true" focusable="false">
+  <path class="i-sol" d="M120 22 a22 22 0 1 0 22 36 a18 18 0 0 1 -22 -36 Z"/>
+  <circle class="i-lua" cx="34" cy="40" r="2"/><circle class="i-lua" cx="70" cy="18" r="1.6"/><circle class="i-lua" cx="150" cy="96" r="1.8"/><circle class="i-lua" cx="20" cy="110" r="1.4"/>
+  <path class="i-ln-lua" d="M52 210 V124 a36 36 0 0 1 72 0 V210"/>
+  <path class="i-sol" d="M58 210 V125 a30 30 0 0 1 60 0 V210 Z"/>
+  <polygon class="i-ac" points="58,210 58,112 92,128 92,210"/>
+  <circle class="i-lua" cx="86" cy="172" r="2.6"/>
+  <polygon class="i-sol" opacity=".28" points="92,210 118,210 176,236 110,236"/></svg></div>
+</div></aside>
+<footer class="rodape">
+  <div class="dentro">
+    <div class="rodape-grade">
+      <div>
+        <p class="rodape-marca"><svg class="logo" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span>Cerne</span></p>
+        <p>Valor real antes do preço. Educação financeira de base fundamentalista, para quem busca liberdade e tranquilidade com o próprio dinheiro.</p>
+      </div>
+      <div>
+        <h2>Ferramentas</h2>
+        <ul><li><a href="carteira/">Monte sua carteira</a></li><li><a href="juros.html">Juros compostos</a></li><li><a href="liberdade.html">Liberdade financeira</a></li><li><a href="roteiro.html">Checagem do estudo</a></li></ul>
+      </div>
+      <div>
+        <h2>Aprender</h2>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+      </div>
+      <div>
+        <h2>Cerne</h2>
+        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
+      </div>
+    </div>
+    <p class="rodape-legal">Cerne é um projeto educacional. Não é corretora, gestora, consultoria nem analista de valores mobiliários, não tem registro na CVM e não vende produtos financeiros. Nada aqui é recomendação de investimento individualizada nem promessa de retorno. As decisões e os riscos são de quem investe.</p>
+  </div>
+</footer>
+<script src="site/site.js"></script>
+<script src="site/indicadores.js"></script>
+</body>
+</html>

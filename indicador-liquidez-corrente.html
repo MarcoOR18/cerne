@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Liquidez corrente — Indicadores — Cerne</title>
+<meta name="description" content="Liquidez corrente: Ativos que viram dinheiro em até um ano, divididos pelas obrigações que vencem em até um ano. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cerne">
+<meta property="og:title" content="Liquidez corrente — Indicadores — Cerne">
+<meta property="og:description" content="Liquidez corrente: Ativos que viram dinheiro em até um ano, divididos pelas obrigações que vencem em até um ano. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta property="og:image" content="https://marcoor18.github.io/cerne/site/og-cerne.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site/site.css">
+<link rel="stylesheet" href="site/vetor.css">
+<script src="carteira/js/tema.js"></script>
+</head>
+<body data-pagina="aprender">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="dentro">
+    <a class="marca" href="index.html" aria-label="Cerne, página inicial"><svg class="logo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span class="marca-nome">Cerne</span></a>
+    <nav class="nav" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+    <div class="topo-acoes">
+      <button type="button" class="btn-topo" id="btn-tema" aria-pressed="false" aria-label="Modo escuro"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="btn-topo" id="btn-nav" aria-expanded="false" aria-controls="nav-movel" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <nav class="nav-movel" id="nav-movel" aria-label="Principal, celular" hidden><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+</header>
+<main id="conteudo">
+<article class="secao" data-indicador="liquidez-corrente"><div class="dentro">
+  <div class="ind-cab">
+    <div>
+      <p class="olho"><a href="aprender.html">Aprender</a> · <a href="indicadores.html">Indicadores</a> · <a href="indicadores.html#endividamento">Endividamento e saúde financeira</a> · 3.4</p>
+      <h1 class="titulo">Liquidez corrente</h1>
+      <p class="lead">Ativos que viram dinheiro em até um ano, divididos pelas obrigações que vencem em até um ano.</p>
+      <p class="ind-tags"><span class="tag tag-contabil" title="Calculada com dados das demonstrações financeiras. Só muda a cada balanço.">Métrica contábil</span><span class="tag tag-lida" id="selo-lido" hidden>Estudado</span></p>
+    </div>
+    <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><path class="i-ac i-tr" d="M80 12 a36 40 0 0 1 0 80 a36 40 0 0 1 0 -80 Z"/><polygon class="i-ac i-tr" points="74,92 86,92 80,100"/><path class="i-ln-f" d="M80 100 q-10 12 0 22 q8 8 0 14"/><circle class="i-ink" cx="80" cy="140" r="16"/><path class="i-ln-bg" d="M72 138 h16"/><path class="i-ln-f" d="M62 34 q-8 18 2 34"/><ellipse class="i-som" cx="80" cy="157" rx="34" ry="3"/></svg></figure>
+  </div>
+  <div class="aula-grade">
+  <nav class="aula-indice" aria-label="Nesta página">
+    <p>Nesta página</p>
+    <ol><li><a href="#o-que-e">O que é</a></li><li><a href="#o-que-mede">O que mede</a></li><li><a href="#como-calcular">Como calcular</a></li><li><a href="#exemplo">Exemplo prático</a></li><li><a href="#interpretar">Como interpretar</a></li><li><a href="#bom-resultado">O que é um bom resultado</a></li><li><a href="#aplicacao">Aplicação prática</a></li><li><a href="#limitacoes">Limitações e ressalvas</a></li><li><a href="#complementares">Indicadores complementares</a></li></ol>
+  </nav>
+  <div class="ind-corpo">
+    <section class="num" id="o-que-e"><h2>O que é</h2><p>A liquidez corrente é o ativo circulante dividido pelo passivo circulante. "Circulante" é o que se realiza ou vence em até 12 meses.</p></section>
+    <section class="num" id="o-que-mede"><h2>O que mede</h2><p>Mede a capacidade de honrar os compromissos de curto prazo com os recursos de curto prazo. É uma visão estática: supõe que os ativos serão convertidos em dinheiro pelo valor registrado, e a tempo.</p>
+      <div class="destaque destaque-ressalva"><b>Métrica contábil</b><p>Calculada com dados das demonstrações financeiras. Só muda a cada balanço. O número depende das escolhas contábeis da empresa e fica parado entre uma divulgação e outra.</p></div>
+    </section>
+    <section class="num" id="como-calcular"><h2>Como calcular</h2>
+      <div class="quadro-formula"><p>Liquidez corrente = <i>Ativo circulante</i> ÷ <i>Passivo circulante</i></p></div>
+      <dl class="variaveis"><div><dt>Ativo circulante</dt><dd>Caixa e aplicações, contas a receber de clientes, estoques, impostos a recuperar e outros direitos realizáveis em até 12 meses.</dd></div><div><dt>Passivo circulante</dt><dd>Fornecedores, salários e impostos a pagar, parcelas de dívida que vencem em até 12 meses, dividendos a pagar e outras obrigações de curto prazo.</dd></div></dl>
+    </section>
+    <section class="num" id="exemplo"><h2>Exemplo prático</h2>
+      <p>A <b>Companhia Alfa</b> é uma empresa fictícia, com números realistas, usada em todas as páginas desta área. A conta, passo a passo:</p>
+      <ol class="passos-ex"><li>Ativo circulante (caixa, contas a receber, estoques e outros bens que viram dinheiro em até 12 meses): R$ 6.000 mi.</li><li>Passivo circulante (obrigações que vencem em até 12 meses): R$ 4.000 mi.</li><li>Liquidez corrente = 6.000 ÷ 4.000 = 1,50.</li><li>Leitura: para cada R$ 1,00 que vence em um ano, há R$ 1,50 em ativos de curto prazo.</li></ol>
+      <div class="lab" id="laboratorio" data-lab="liquidez-corrente" data-presets="{&quot;padrao&quot;:{&quot;ac&quot;:6000,&quot;pc&quot;:4000},&quot;a&quot;:{&quot;ac&quot;:3600,&quot;pc&quot;:4500},&quot;b&quot;:{&quot;ac&quot;:5000,&quot;pc&quot;:2000}}">
+      <div class="lab-topo"><b>Experimente: mude os valores</b>
+        <ul class="chips" aria-label="Carregar valores de exemplo"><li><button type="button" class="chip" data-preset="padrao" aria-pressed="true">Companhia Alfa</button></li><li><button type="button" class="chip" data-preset="a" aria-pressed="false">Mercado Central</button></li><li><button type="button" class="chip" data-preset="b" aria-pressed="false">Construtora Horizonte</button></li></ul>
+      </div>
+      <div class="lab-grade">
+        <form class="lab-entradas" novalidate>
+        <div class="campo"><label for="lab-ac">Ativo circulante</label><div class="entrada"><span>R$</span><input id="lab-ac" data-id="ac" type="text" inputmode="decimal" autocomplete="off" value="6.000"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-pc">Passivo circulante</label><div class="entrada"><span>R$</span><input id="lab-pc" data-id="pc" type="text" inputmode="decimal" autocomplete="off" value="4.000"><span>milhões</span></div></div>
+        </form>
+        <div class="lab-saida" aria-live="polite">
+          <p class="lab-rotulo">Liquidez corrente</p>
+          <p class="lab-valor" data-lab-valor>1,50</p>
+          <div data-lab-medidor><div class="medidor" aria-hidden="true"><i style="left:37.5%"></i></div><div class="medidor-escala" aria-hidden="true"><span>0</span><span>4 ou mais</span></div></div>
+          <p class="lab-leitura" data-lab-leitura>Faixa intermediária. A qualidade importa: estoque encalhado e contas a receber duvidosas também entram na conta.</p>
+          <ol class="lab-passos" data-lab-passos><li>Ativo circulante (caixa, contas a receber, estoques e outros bens que viram dinheiro em até 12 meses): R$ 6.000 mi.</li><li>Passivo circulante (obrigações que vencem em até 12 meses): R$ 4.000 mi.</li><li>Liquidez corrente = 6.000 ÷ 4.000 = 1,50.</li><li>Leitura: para cada R$ 1,00 que vence em um ano, há R$ 1,50 em ativos de curto prazo.</li></ol>
+        </div>
+      </div>
+      <p class="lab-nota">Empresas e números fictícios. A leitura automática é uma pista para estudo, baseada em faixas genéricas; ela não conhece o setor, o ciclo nem a qualidade dos dados. Não é recomendação.</p>
+    </div>
+    </section>
+    <section class="num" id="interpretar"><h2>Como interpretar</h2>
+      <dl class="faixas"><div><dt>Abaixo de 1</dt><dd>Capital de giro líquido negativo. Problema para a maioria; modelo de negócio para quem recebe antes de pagar.</dd></div><div><dt>Entre 1 e 2</dt><dd>Faixa mais comum. Olhe a composição do ativo circulante.</dd></div><div><dt>Acima de 2</dt><dd>Folga ampla. Pode também indicar estoques altos demais ou caixa ocioso.</dd></div></dl>
+      <div class="destaque"><b>Conceito importante</b><p>Capital de giro líquido é a diferença entre ativo circulante e passivo circulante. O que importa é a velocidade com que estoques e recebíveis viram dinheiro, comparada à velocidade com que as contas vencem: o ciclo de caixa.</p></div>
+    </section>
+    <section class="num" id="bom-resultado"><h2>O que é considerado um bom resultado</h2><p>A regra de livro-texto "acima de 1 é bom" é só um começo. Um supermercado que vende à vista e paga fornecedores em 60 dias opera com liquidez abaixo de 1 por décadas, com saúde. Uma construtora com liquidez de 2,5 pode estar em apuros se o ativo circulante for composto de imóveis que não vendem.</p></section>
+    <section class="num" id="aplicacao"><h2>Aplicação prática</h2><p>Abra o ativo circulante: quanto é caixa, quanto é recebível, quanto é estoque? Abra o passivo circulante: quanto é dívida financeira vencendo? Uma dívida grande migrando do longo para o curto prazo derruba a liquidez e é um dos sinais mais claros de risco de refinanciamento.</p>
+      <h3>Duas empresas fictícias, lado a lado</h3>
+      <div class="duelo"><div class="duelo-lado"><h3>Mercado Central</h3><p>Vende à vista, paga em 60 dias</p><dl><div><dt>Ativo circulante</dt><dd>R$ 3.600 mi</dd></div><div><dt>Passivo circulante</dt><dd>R$ 4.500 mi</dd></div></dl><p class="duelo-res"><span>Liquidez corrente</span><b>0,80</b></p></div><div class="duelo-lado"><h3>Construtora Horizonte</h3><p>Estoque de imóveis: 70% do ativo circulante</p><dl><div><dt>Ativo circulante</dt><dd>R$ 5.000 mi</dd></div><div><dt>Passivo circulante</dt><dd>R$ 2.000 mi</dd></div></dl><p class="duelo-res"><span>Liquidez corrente</span><b>2,50</b></p></div></div><p>Pelo índice, a construtora está muito mais segura. Mas o supermercado transforma estoque em dinheiro em poucas semanas, todos os dias, e seus fornecedores financiam a operação. Na construtora, R$ 3.500 milhões do ativo circulante são imóveis que dependem de compradores e de crédito imobiliário; sem eles, sobram R$ 1.500 milhões para R$ 2.000 milhões de obrigações. A liquidez corrente conta os ativos. Não diz quando, nem por quanto, eles viram caixa.</p>
+      <h3>O mesmo indicador em setores diferentes</h3>
+      <ul class="setores"><li><b>Varejo alimentar</b><span>Abaixo de 1 é comum e saudável, pelo prazo de fornecedores.</span></li><li><b>Indústria</b><span>Entre 1,2 e 2 é habitual; estoques pesam.</span></li><li><b>Construção civil</b><span>Índices altos por causa de estoques de imóveis e terrenos; exigem análise de qualidade.</span></li><li><b>Tecnologia</b><span>Altos, pelo caixa; receitas diferidas (recebidas adiantado) aparecem como passivo circulante sem exigir pagamento em dinheiro.</span></li></ul>
+    </section>
+    <section class="num" id="limitacoes"><h2>Limitações e ressalvas</h2>
+      <div class="destaque destaque-erro"><b>Erro comum</b><p>Tratar todo ativo circulante como dinheiro. Estoque obsoleto e clientes inadimplentes contam como ativo até serem baixados.</p></div>
+      <ul class="ressalvas"><li><b>Qualidade dos ativos.</b> Não diferencia caixa de estoque encalhado.</li><li><b>Fotografia de um dia.</b> Empresas sazonais têm liquidez muito diferente conforme o mês de fechamento.</li><li><b>Pode ser "arrumada".</b> Pagar fornecedores logo antes do fechamento, ou alongar uma dívida por poucos meses, melhora o índice momentaneamente.</li><li><b>Ignora linhas de crédito disponíveis</b> e a capacidade de gerar caixa.</li><li><b>Não se aplica a bancos</b>, que têm regras próprias de liquidez.</li></ul>
+      <p class="nota">Todo indicador calculado com dados passados descreve o que já aconteceu. Usá-lo para projetar o futuro supõe que as condições vão se repetir, o que nem sempre ocorre.</p>
+    </section>
+    <section class="num" id="complementares"><h2>Indicadores complementares</h2>
+      <p>Nenhum indicador responde sozinho. Para uma leitura mais confiável, analise junto:</p>
+      <ul class="junto"><li><a href="indicador-liquidez-seca.html"><b>Liquidez seca</b><span>Retira os estoques da conta.</span></a></li><li><a href="indicador-fluxo-de-caixa-livre.html"><b>Fluxo de Caixa Livre</b><span>Mostra a geração de caixa, que a visão estática ignora.</span></a></li><li><a href="indicador-divida-liquida-ebitda.html"><b>Dívida Líquida/EBITDA</b><span>Coloca a dívida de curto prazo no contexto da dívida total.</span></a></li><li><a href="indicador-cobertura-de-juros.html"><b>Índice de cobertura de juros</b><span>Completa a análise de solvência.</span></a></li></ul>
+      <p>Veja casos em que um indicador isolado engana em <a href="indicadores-em-conjunto.html">Indicadores em conjunto</a>.</p>
+      <h3>Termos usados nesta página</h3>
+      <ul class="termos"><li><a class="chip" href="glossario.html#ativo-circulante">Ativo circulante</a></li><li><a class="chip" href="glossario.html#passivo-circulante">Passivo circulante</a></li><li><a class="chip" href="glossario.html#capital-de-giro">Capital de giro</a></li><li><a class="chip" href="glossario.html#ciclo-de-caixa">Ciclo de caixa</a></li><li><a class="chip" href="glossario.html#sazonalidade">Sazonalidade</a></li></ul>
+    </section>
+    <div class="marcar"><p><b>Terminou de estudar este indicador?</b> A marcação fica guardada só neste navegador.</p><button type="button" class="btn btn-secundario btn-pequeno" id="marcar-lido" aria-pressed="false">Marcar como estudado</button></div>
+    <nav class="aula-passos" aria-label="Indicadores vizinhos">
+      <a href="indicador-cobertura-de-juros.html"><span>Anterior · 3.3</span><b>Cobertura de juros</b></a>
+      <a href="indicador-liquidez-seca.html"><span>Próximo · 3.5</span><b>Liquidez seca</b></a>
+    </nav>
+    <div style="margin-top:2rem"><p class="aviso"><b>Conteúdo educacional</b>Não é recomendação de investimento individualizada e não substitui um profissional habilitado. Não há garantia de retorno. A decisão é de quem investe.</p></div>
+  </div>
+  </div>
+</div></article>
+</main>
+<aside class="decida" aria-label="Orientação ao leitor"><div class="dentro">
+  <p class="decida-titulo">Estude. Compare.<br><em>Decida por você.</em></p>
+  <p class="decida-texto">A Cerne explica e oferece ferramentas. Não diz o que comprar nem o que vender. Leia as fontes, forme a sua própria opinião e tome as suas decisões. Elas, e a responsabilidade por elas, são suas.</p>
+  <div class="decida-cena"><svg viewBox="0 0 176 210" aria-hidden="true" focusable="false">
+  <path class="i-sol" d="M120 22 a22 22 0 1 0 22 36 a18 18 0 0 1 -22 -36 Z"/>
+  <circle class="i-lua" cx="34" cy="40" r="2"/><circle class="i-lua" cx="70" cy="18" r="1.6"/><circle class="i-lua" cx="150" cy="96" r="1.8"/><circle class="i-lua" cx="20" cy="110" r="1.4"/>
+  <path class="i-ln-lua" d="M52 210 V124 a36 36 0 0 1 72 0 V210"/>
+  <path class="i-sol" d="M58 210 V125 a30 30 0 0 1 60 0 V210 Z"/>
+  <polygon class="i-ac" points="58,210 58,112 92,128 92,210"/>
+  <circle class="i-lua" cx="86" cy="172" r="2.6"/>
+  <polygon class="i-sol" opacity=".28" points="92,210 118,210 176,236 110,236"/></svg></div>
+</div></aside>
+<footer class="rodape">
+  <div class="dentro">
+    <div class="rodape-grade">
+      <div>
+        <p class="rodape-marca"><svg class="logo" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span>Cerne</span></p>
+        <p>Valor real antes do preço. Educação financeira de base fundamentalista, para quem busca liberdade e tranquilidade com o próprio dinheiro.</p>
+      </div>
+      <div>
+        <h2>Ferramentas</h2>
+        <ul><li><a href="carteira/">Monte sua carteira</a></li><li><a href="juros.html">Juros compostos</a></li><li><a href="liberdade.html">Liberdade financeira</a></li><li><a href="roteiro.html">Checagem do estudo</a></li></ul>
+      </div>
+      <div>
+        <h2>Aprender</h2>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+      </div>
+      <div>
+        <h2>Cerne</h2>
+        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
+      </div>
+    </div>
+    <p class="rodape-legal">Cerne é um projeto educacional. Não é corretora, gestora, consultoria nem analista de valores mobiliários, não tem registro na CVM e não vende produtos financeiros. Nada aqui é recomendação de investimento individualizada nem promessa de retorno. As decisões e os riscos são de quem investe.</p>
+  </div>
+</footer>
+<script src="site/site.js"></script>
+<script src="site/indicadores-calc.js"></script>
+<script src="site/indicadores.js"></script>
+</body>
+</html>

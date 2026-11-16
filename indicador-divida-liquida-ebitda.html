@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dívida Líquida/EBITDA — Indicadores — Cerne</title>
+<meta name="description" content="Dívida Líquida/EBITDA: Quantos anos de EBITDA seriam necessários para quitar a dívida líquida. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cerne">
+<meta property="og:title" content="Dívida Líquida/EBITDA — Indicadores — Cerne">
+<meta property="og:description" content="Dívida Líquida/EBITDA: Quantos anos de EBITDA seriam necessários para quitar a dívida líquida. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta property="og:image" content="https://marcoor18.github.io/cerne/site/og-cerne.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site/site.css">
+<link rel="stylesheet" href="site/vetor.css">
+<script src="carteira/js/tema.js"></script>
+</head>
+<body data-pagina="aprender">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="dentro">
+    <a class="marca" href="index.html" aria-label="Cerne, página inicial"><svg class="logo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span class="marca-nome">Cerne</span></a>
+    <nav class="nav" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+    <div class="topo-acoes">
+      <button type="button" class="btn-topo" id="btn-tema" aria-pressed="false" aria-label="Modo escuro"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="btn-topo" id="btn-nav" aria-expanded="false" aria-controls="nav-movel" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <nav class="nav-movel" id="nav-movel" aria-label="Principal, celular" hidden><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+</header>
+<main id="conteudo">
+<article class="secao" data-indicador="divida-liquida-ebitda"><div class="dentro">
+  <div class="ind-cab">
+    <div>
+      <p class="olho"><a href="aprender.html">Aprender</a> · <a href="indicadores.html">Indicadores</a> · <a href="indicadores.html#endividamento">Endividamento e saúde financeira</a> · 3.1</p>
+      <h1 class="titulo">Dívida Líquida/EBITDA</h1>
+      <p class="lead">Quantos anos de EBITDA seriam necessários para quitar a dívida líquida.</p>
+      <p class="ind-tags"><span class="tag tag-contabil" title="Calculada com dados das demonstrações financeiras. Só muda a cada balanço.">Métrica contábil</span><span class="tag tag-lida" id="selo-lido" hidden>Estudado</span></p>
+    </div>
+    <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><path class="i-ac i-tr" d="M80 12 a36 40 0 0 1 0 80 a36 40 0 0 1 0 -80 Z"/><polygon class="i-ac i-tr" points="74,92 86,92 80,100"/><path class="i-ln-f" d="M80 100 q-10 12 0 22 q8 8 0 14"/><circle class="i-ink" cx="80" cy="140" r="16"/><path class="i-ln-bg" d="M72 138 h16"/><path class="i-ln-f" d="M62 34 q-8 18 2 34"/><ellipse class="i-som" cx="80" cy="157" rx="34" ry="3"/></svg></figure>
+  </div>
+  <div class="aula-grade">
+  <nav class="aula-indice" aria-label="Nesta página">
+    <p>Nesta página</p>
+    <ol><li><a href="#o-que-e">O que é</a></li><li><a href="#o-que-mede">O que mede</a></li><li><a href="#como-calcular">Como calcular</a></li><li><a href="#exemplo">Exemplo prático</a></li><li><a href="#interpretar">Como interpretar</a></li><li><a href="#bom-resultado">O que é um bom resultado</a></li><li><a href="#aplicacao">Aplicação prática</a></li><li><a href="#limitacoes">Limitações e ressalvas</a></li><li><a href="#complementares">Indicadores complementares</a></li></ol>
+  </nav>
+  <div class="ind-corpo">
+    <section class="num" id="o-que-e"><h2>O que é</h2><p>É a dívida líquida (dívida bruta menos caixa e aplicações financeiras) dividida pelo EBITDA dos últimos 12 meses. É o indicador de alavancagem financeira mais usado por empresas, credores e agências de classificação de risco.</p></section>
+    <section class="num" id="o-que-mede"><h2>O que mede</h2><p>Mede o tamanho da dívida em relação à capacidade operacional de gerar resultado. Compara um estoque (a dívida, em um dia específico) com um fluxo (o EBITDA de um ano inteiro).</p>
+      <div class="destaque destaque-ressalva"><b>Métrica contábil</b><p>Calculada com dados das demonstrações financeiras. Só muda a cada balanço. O número depende das escolhas contábeis da empresa e fica parado entre uma divulgação e outra.</p></div>
+    </section>
+    <section class="num" id="como-calcular"><h2>Como calcular</h2>
+      <div class="quadro-formula"><p>Dívida Líquida/EBITDA = <i>(Dívida bruta − Caixa)</i> ÷ <i>EBITDA de 12 meses</i></p></div>
+      <dl class="variaveis"><div><dt>Dívida bruta</dt><dd>Empréstimos, financiamentos, debêntures e outros títulos de dívida, de curto e longo prazo. Algumas definições incluem arrendamentos e derivativos.</dd></div><div><dt>Caixa</dt><dd>Caixa, equivalentes e aplicações financeiras de liquidez. Caixa restrito ou preso em subsidiárias no exterior pode não estar disponível.</dd></div><div><dt>EBITDA</dt><dd>Resultado antes de juros, impostos, depreciação e amortização, dos últimos 12 meses.</dd></div></dl>
+    </section>
+    <section class="num" id="exemplo"><h2>Exemplo prático</h2>
+      <p>A <b>Companhia Alfa</b> é uma empresa fictícia, com números realistas, usada em todas as páginas desta área. A conta, passo a passo:</p>
+      <ol class="passos-ex"><li>Dívida líquida = dívida bruta − caixa = 5.000 − 2.000 = R$ 3.000 mi.</li><li>EBITDA dos últimos 12 meses: R$ 3.000 mi.</li><li>Dívida líquida/EBITDA = 3.000 ÷ 3.000 = 1,0×.</li><li>Leitura: mantido o EBITDA atual, e se todo ele fosse usado para pagar dívida, seriam 1,0 anos. Na prática o EBITDA também paga juros, impostos e investimentos.</li></ol>
+      <div class="lab" id="laboratorio" data-lab="divida-liquida-ebitda" data-presets="{&quot;padrao&quot;:{&quot;divida&quot;:5000,&quot;caixa&quot;:2000,&quot;ebitda&quot;:3000},&quot;a&quot;:{&quot;divida&quot;:7000,&quot;caixa&quot;:600,&quot;ebitda&quot;:1850},&quot;b&quot;:{&quot;divida&quot;:5200,&quot;caixa&quot;:1200,&quot;ebitda&quot;:2000}}">
+      <div class="lab-topo"><b>Experimente: mude os valores</b>
+        <ul class="chips" aria-label="Carregar valores de exemplo"><li><button type="button" class="chip" data-preset="padrao" aria-pressed="true">Companhia Alfa</button></li><li><button type="button" class="chip" data-preset="a" aria-pressed="false">Transmissora Vale Verde</button></li><li><button type="button" class="chip" data-preset="b" aria-pressed="false">Siderúrgica Alto Forno</button></li></ul>
+      </div>
+      <div class="lab-grade">
+        <form class="lab-entradas" novalidate>
+        <div class="campo"><label for="lab-divida">Dívida bruta</label><div class="entrada"><span>R$</span><input id="lab-divida" data-id="divida" type="text" inputmode="decimal" autocomplete="off" value="5.000"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-caixa">Caixa e aplicações</label><div class="entrada"><span>R$</span><input id="lab-caixa" data-id="caixa" type="text" inputmode="decimal" autocomplete="off" value="2.000"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-ebitda">EBITDA (12 meses)</label><div class="entrada"><span>R$</span><input id="lab-ebitda" data-id="ebitda" type="text" inputmode="decimal" autocomplete="off" value="3.000"><span>milhões</span></div></div>
+        </form>
+        <div class="lab-saida" aria-live="polite">
+          <p class="lab-rotulo">Dív. Líq./EBITDA</p>
+          <p class="lab-valor" data-lab-valor>1,00×</p>
+          <div data-lab-medidor><div class="medidor" aria-hidden="true"><i style="left:28.6%"></i></div><div class="medidor-escala" aria-hidden="true"><span>-1×</span><span>6× ou mais</span></div></div>
+          <p class="lab-leitura" data-lab-leitura>Alavancagem baixa a moderada para a maioria dos setores.</p>
+          <ol class="lab-passos" data-lab-passos><li>Dívida líquida = dívida bruta − caixa = 5.000 − 2.000 = R$ 3.000 mi.</li><li>EBITDA dos últimos 12 meses: R$ 3.000 mi.</li><li>Dívida líquida/EBITDA = 3.000 ÷ 3.000 = 1,0×.</li><li>Leitura: mantido o EBITDA atual, e se todo ele fosse usado para pagar dívida, seriam 1,0 anos. Na prática o EBITDA também paga juros, impostos e investimentos.</li></ol>
+        </div>
+      </div>
+      <p class="lab-nota">Empresas e números fictícios. A leitura automática é uma pista para estudo, baseada em faixas genéricas; ela não conhece o setor, o ciclo nem a qualidade dos dados. Não é recomendação.</p>
+    </div>
+    </section>
+    <section class="num" id="interpretar"><h2>Como interpretar</h2>
+      <dl class="faixas"><div><dt>Negativo ou perto de zero</dt><dd>Caixa líquido ou dívida mínima. Risco financeiro baixo.</dd></div><div><dt>Entre 1 e 3</dt><dd>Faixa habitual de empresas com acesso a crédito. O conforto depende da estabilidade do EBITDA.</dd></div><div><dt>Acima de 3,5</dt><dd>Alavancagem alta para a maioria dos setores. A empresa fica dependente de refinanciamento e exposta à alta de juros.</dd></div></dl>
+      <div class="destaque"><b>Conceito importante</b><p>O indicador piora de duas maneiras: quando a dívida sobe e quando o EBITDA cai. Em empresas cíclicas, a alavancagem dispara nas crises sem que um real novo tenha sido tomado.</p></div>
+    </section>
+    <section class="num" id="bom-resultado"><h2>O que é considerado um bom resultado</h2><p>O nível tolerável depende de quão previsível é o resultado. Uma transmissora de energia, com receita contratada por décadas, convive com 3 a 4 vezes. Uma companhia de commodities ou de varejo, cujo EBITDA pode cair pela metade em um ano ruim, fica frágil com 2,5 vezes. No Brasil, o juro alto torna cada "vez" de alavancagem mais cara do que em países de juro baixo.</p></section>
+    <section class="num" id="aplicacao"><h2>Aplicação prática</h2><p>Leia as notas explicativas de empréstimos: prazo médio, indexadores (CDI, IPCA, dólar), cronograma de vencimentos e <b>covenants</b>, as cláusulas que obrigam a empresa a manter o indicador abaixo de certo limite. Uma empresa a 3,3 vezes com covenant de 3,5 tem pouca margem de manobra.</p>
+      <h3>Duas empresas fictícias, lado a lado</h3>
+      <div class="duelo"><div class="duelo-lado"><h3>Transmissora Vale Verde</h3><p>Receita contratada por 30 anos</p><dl><div><dt>Dívida bruta</dt><dd>R$ 7.000 mi</dd></div><div><dt>Caixa e aplicações</dt><dd>R$ 600 mi</dd></div><div><dt>EBITDA (12 meses)</dt><dd>R$ 1.850 mi</dd></div></dl><p class="duelo-res"><span>Dív. Líq./EBITDA</span><b>3,46×</b></p></div><div class="duelo-lado"><h3>Siderúrgica Alto Forno</h3><p>EBITDA caiu 60% na última crise</p><dl><div><dt>Dívida bruta</dt><dd>R$ 5.200 mi</dd></div><div><dt>Caixa e aplicações</dt><dd>R$ 1.200 mi</dd></div><div><dt>EBITDA (12 meses)</dt><dd>R$ 2.000 mi</dd></div></dl><p class="duelo-res"><span>Dív. Líq./EBITDA</span><b>2,00×</b></p></div></div><p>A transmissora parece mais arriscada: 3,5 vezes contra 2,0. Refaça a conta com um ano ruim. A receita da transmissora é contratada e quase não varia. O EBITDA da siderúrgica já caiu 60% uma vez; se repetir, vai a R$ 800 milhões e a alavancagem salta para 5,0 vezes, sem dívida nova. O número de hoje é só o ponto de partida: a pergunta é quanto o denominador pode encolher.</p>
+      <h3>O mesmo indicador em setores diferentes</h3>
+      <ul class="setores"><li><b>Energia e concessões</b><span>Convivem com alavancagem maior, apoiadas em receita previsível e dívida longa.</span></li><li><b>Indústria e commodities</b><span>O EBITDA cíclico pede dívida menor; avalie pelo EBITDA de um ano ruim.</span></li><li><b>Varejo</b><span>Inclua na análise os arrendamentos e as operações de antecipação de recebíveis.</span></li><li><b>Bancos</b><span>Não se aplica; usam-se índices de capital (Basileia).</span></li></ul>
+    </section>
+    <section class="num" id="limitacoes"><h2>Limitações e ressalvas</h2>
+      <div class="destaque destaque-erro"><b>Erro comum</b><p>Entender o indicador como "anos para pagar a dívida". O EBITDA não está livre: antes de amortizar dívida, ele paga juros, impostos e investimentos.</p></div>
+      <ul class="ressalvas"><li><b>O EBITDA não é caixa disponível.</b> Capex, impostos e juros vêm antes da amortização.</li><li><b>Fotografia de um dia.</b> A dívida e o caixa do balanço são de fechamento; empresas podem reduzir a dívida no fim do trimestre e retomá-la depois.</li><li><b>Ignora o custo e o prazo.</b> Dívida de 2 vezes vencendo em um ano a CDI + 5% é mais perigosa do que 3 vezes vencendo em dez anos a taxa baixa.</li><li><b>Dívida em moeda estrangeira.</b> Uma desvalorização do real aumenta a dívida de um dia para o outro.</li><li><b>Passivos que não entram.</b> Arrendamentos, antecipação de recebíveis, risco sacado com fornecedores, contingências e obrigações de pensão podem ficar fora da definição usada.</li><li><b>EBITDA ajustado.</b> Os covenants costumam usar definições contratuais próprias.</li><li><b>Não se aplica a bancos.</b></li></ul>
+      <p class="nota">Todo indicador calculado com dados passados descreve o que já aconteceu. Usá-lo para projetar o futuro supõe que as condições vão se repetir, o que nem sempre ocorre.</p>
+    </section>
+    <section class="num" id="complementares"><h2>Indicadores complementares</h2>
+      <p>Nenhum indicador responde sozinho. Para uma leitura mais confiável, analise junto:</p>
+      <ul class="junto"><li><a href="indicador-cobertura-de-juros.html"><b>Índice de cobertura de juros</b><span>Mostra se o resultado paga o custo da dívida.</span></a></li><li><a href="indicador-divida-bruta-pl.html"><b>Dívida Bruta/Patrimônio Líquido</b><span>Dá a visão pelo lado do balanço.</span></a></li><li><a href="indicador-fluxo-de-caixa-livre.html"><b>Fluxo de Caixa Livre</b><span>É o que de fato amortiza dívida.</span></a></li><li><a href="indicador-liquidez-corrente.html"><b>Liquidez corrente</b><span>Avalia os vencimentos de curto prazo.</span></a></li><li><a href="indicador-margem-ebitda.html"><b>Margem EBITDA</b><span>Indica a estabilidade do denominador.</span></a></li></ul>
+      <p>Veja casos em que um indicador isolado engana em <a href="indicadores-em-conjunto.html">Indicadores em conjunto</a>.</p>
+      <h3>Termos usados nesta página</h3>
+      <ul class="termos"><li><a class="chip" href="glossario.html#divida-liquida">Dívida líquida</a></li><li><a class="chip" href="glossario.html#ebitda">EBITDA (LAJIDA)</a></li><li><a class="chip" href="glossario.html#covenant">Covenant</a></li><li><a class="chip" href="glossario.html#alavancagem">Alavancagem financeira</a></li><li><a class="chip" href="glossario.html#ciclo">Ciclo (setores cíclicos)</a></li><li><a class="chip" href="glossario.html#indexador">Indexador</a></li></ul>
+    </section>
+    <div class="marcar"><p><b>Terminou de estudar este indicador?</b> A marcação fica guardada só neste navegador.</p><button type="button" class="btn btn-secundario btn-pequeno" id="marcar-lido" aria-pressed="false">Marcar como estudado</button></div>
+    <nav class="aula-passos" aria-label="Indicadores vizinhos">
+      <a href="indicador-margem-liquida.html"><span>Anterior · 2.7</span><b>Margem líquida</b></a>
+      <a href="indicador-divida-bruta-pl.html"><span>Próximo · 3.2</span><b>Dív. Bruta/PL</b></a>
+    </nav>
+    <div style="margin-top:2rem"><p class="aviso"><b>Conteúdo educacional</b>Não é recomendação de investimento individualizada e não substitui um profissional habilitado. Não há garantia de retorno. A decisão é de quem investe.</p></div>
+  </div>
+  </div>
+</div></article>
+</main>
+<aside class="decida" aria-label="Orientação ao leitor"><div class="dentro">
+  <p class="decida-titulo">Estude. Compare.<br><em>Decida por você.</em></p>
+  <p class="decida-texto">A Cerne explica e oferece ferramentas. Não diz o que comprar nem o que vender. Leia as fontes, forme a sua própria opinião e tome as suas decisões. Elas, e a responsabilidade por elas, são suas.</p>
+  <div class="decida-cena"><svg viewBox="0 0 176 210" aria-hidden="true" focusable="false">
+  <path class="i-sol" d="M120 22 a22 22 0 1 0 22 36 a18 18 0 0 1 -22 -36 Z"/>
+  <circle class="i-lua" cx="34" cy="40" r="2"/><circle class="i-lua" cx="70" cy="18" r="1.6"/><circle class="i-lua" cx="150" cy="96" r="1.8"/><circle class="i-lua" cx="20" cy="110" r="1.4"/>
+  <path class="i-ln-lua" d="M52 210 V124 a36 36 0 0 1 72 0 V210"/>
+  <path class="i-sol" d="M58 210 V125 a30 30 0 0 1 60 0 V210 Z"/>
+  <polygon class="i-ac" points="58,210 58,112 92,128 92,210"/>
+  <circle class="i-lua" cx="86" cy="172" r="2.6"/>
+  <polygon class="i-sol" opacity=".28" points="92,210 118,210 176,236 110,236"/></svg></div>
+</div></aside>
+<footer class="rodape">
+  <div class="dentro">
+    <div class="rodape-grade">
+      <div>
+        <p class="rodape-marca"><svg class="logo" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span>Cerne</span></p>
+        <p>Valor real antes do preço. Educação financeira de base fundamentalista, para quem busca liberdade e tranquilidade com o próprio dinheiro.</p>
+      </div>
+      <div>
+        <h2>Ferramentas</h2>
+        <ul><li><a href="carteira/">Monte sua carteira</a></li><li><a href="juros.html">Juros compostos</a></li><li><a href="liberdade.html">Liberdade financeira</a></li><li><a href="roteiro.html">Checagem do estudo</a></li></ul>
+      </div>
+      <div>
+        <h2>Aprender</h2>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+      </div>
+      <div>
+        <h2>Cerne</h2>
+        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
+      </div>
+    </div>
+    <p class="rodape-legal">Cerne é um projeto educacional. Não é corretora, gestora, consultoria nem analista de valores mobiliários, não tem registro na CVM e não vende produtos financeiros. Nada aqui é recomendação de investimento individualizada nem promessa de retorno. As decisões e os riscos são de quem investe.</p>
+  </div>
+</footer>
+<script src="site/site.js"></script>
+<script src="site/indicadores-calc.js"></script>
+<script src="site/indicadores.js"></script>
+</body>
+</html>

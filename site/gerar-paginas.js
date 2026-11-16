@@ -7,9 +7,11 @@ const path = require('path');
 const RAIZ = path.join(__dirname, '..');
 const MARCA = 'Cerne';
 const LEMA = 'Valor real antes do preço';
-const URL_SITE = 'https://replyfoxx.github.io/lastro';
+const URL_SITE = 'https://marcoor18.github.io/cerne';
 const EDICAO = '12/11/2026';
 const { TRILHAS, MODULOS, REFS } = require('./aulas.js');
+const { CENAS } = require('./ilustracoes.js');
+const cena = (nome, legenda) => `<figure class="cena">${CENAS[nome]}${legenda ? `<figcaption>${legenda}</figcaption>` : ''}</figure>`;
 
 const NAV = [['index.html', 'Início', 'inicio'], ['ferramentas.html', 'Ferramentas', 'ferramentas'], ['aprender.html', 'Aprender', 'aprender'], ['metodo.html', 'Método', 'metodo'], ['mercado.html', 'Mercado', 'mercado'], ['empresa.html', 'A empresa', 'empresa']];
 
@@ -26,8 +28,8 @@ function pagina(o) {
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${o.titulo}</title>
 <meta name="description" content="${o.descricao}">
-<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#172554" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
 <meta name="color-scheme" content="light dark">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
@@ -40,6 +42,7 @@ function pagina(o) {
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="site/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="site/site.css">
+<link rel="stylesheet" href="site/vetor.css">
 <script src="carteira/js/tema.js"></script>
 </head>
 <body data-pagina="${o.id}">
@@ -61,6 +64,7 @@ ${o.corpo}
 <aside class="decida" aria-label="Orientação ao leitor"><div class="dentro">
   <p class="decida-titulo">Estude. Compare.<br><em>Decida por você.</em></p>
   <p class="decida-texto">A ${MARCA} explica e oferece ferramentas. Não diz o que comprar nem o que vender. Leia as fontes, forme a sua própria opinião e tome as suas decisões. Elas, e a responsabilidade por elas, são suas.</p>
+  <div class="decida-cena">${CENAS.decida}</div>
 </div></aside>
 <footer class="rodape">
   <div class="dentro">
@@ -74,8 +78,12 @@ ${o.corpo}
         <ul><li><a href="carteira/">Monte sua carteira</a></li><li><a href="juros.html">Juros compostos</a></li><li><a href="liberdade.html">Liberdade financeira</a></li><li><a href="roteiro.html">Checagem do estudo</a></li></ul>
       </div>
       <div>
+        <h2>Aprender</h2>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+      </div>
+      <div>
         <h2>${MARCA}</h2>
-        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="aprender.html">Área de aprendizagem</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
+        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
       </div>
     </div>
     <p class="rodape-legal">${MARCA} é um projeto educacional. Não é corretora, gestora, consultoria nem analista de valores mobiliários, não tem registro na CVM e não vende produtos financeiros. Nada aqui é recomendação de investimento individualizada nem promessa de retorno. As decisões e os riscos são de quem investe.</p>
@@ -116,6 +124,9 @@ const FERRAMENTAS = `<ol class="indice">${FERR.map(([h, n, d, a]) => `
 
 const AVISO = `<p class="aviso"><b>Conteúdo educacional</b>Não é recomendação de investimento individualizada e não substitui um profissional habilitado. Não há garantia de retorno. A decisão é de quem investe.</p>`;
 const AVISO_MERCADO = `<p class="aviso"><b>Leia antes</b>As informações deste painel têm caráter informativo. Cada dado traz a data e a fonte para que você possa conferir. Avalie o cenário com os seus próprios critérios e tome as suas próprias decisões.</p>`;
+
+/* ------------------------------------------------------------ indicadores -- */
+const { INDICADORES, PAGINAS_INDICADORES, PORTAL } = require('./gerar-indicadores.js')({ MARCA, CENAS, cena, AVISO });
 
 /* --------------------------------------------------------------- aprender -- */
 MODULOS.forEach((m) => { const ordem = MODULOS.filter((x) => x.trilha === m.trilha).indexOf(m) + 1; m.num = `${m.trilha}.${ordem}`; m.arquivo = `aula-${m.slug}.html`; });
@@ -290,6 +301,15 @@ const paginas = [
     <p class="voce-decide">Aqui ninguém diz o que você deve comprar. Você aprende a estudar e decide por conta própria.</p>
     <div class="heroi-acoes"><a class="btn btn-primario" href="aprender.html">Começar a aprender</a><a class="btn btn-secundario" href="carteira/">Montar minha carteira</a></div>
   </div>
+  ${cena('inicio')}
+</div></section>
+
+<section class="secao secao-areia"><div class="dentro metodo-chamada">
+  <div>
+    <p class="olho">A tese</p>
+    <h2 class="titulo-2">O preço oscila.<br><em>O valor amadurece.</em></h2>
+    <p class="lead">A cotação muda todo dia com o humor do mercado. O valor de uma empresa vem do que ela produz, e muda devagar. Quem estuda o negócio tem uma referência para os dias em que os dois se afastam.</p>
+  </div>
   ${TESE}
 </div></section>
 
@@ -301,9 +321,9 @@ const paginas = [
 <section class="secao"><div class="dentro aprender-chamada">
   <div>
     <p class="olho">Área de aprendizagem</p>
-    <h2 class="titulo-2">${TRILHAS.length} trilhas, ${MODULOS.length} módulos, do zero</h2>
+    <h2 class="titulo-2">${TRILHAS.length} trilhas, ${MODULOS.length} módulos e <em>${INDICADORES.length} indicadores</em></h2>
     <p class="lead">Economia, mercado financeiro, a cabeça do investidor, como investir sem perder o sono e planejamento. Linguagem do dia a dia, exemplos com a conta feita e a fonte de cada dado.</p>
-    <p style="margin-top:1.4rem"><a class="btn btn-primario" href="aprender.html">Ver as trilhas</a></p>
+    <div class="heroi-acoes"><a class="btn btn-primario" href="aprender.html">Ver as trilhas</a><a class="btn btn-secundario" href="indicadores.html">Entender os indicadores</a></div>
   </div>
   <ol class="trilha">${TRILHAS.map((tr, i) => `<li><a href="aprender.html#trilha-${i + 1}"><span>${i + 1}</span>${tr.nome}</a></li>`).join('')}</ol>
 </div></section>
@@ -314,7 +334,7 @@ const paginas = [
     <div class="principio"><h3 class="titulo-3">Liberdade é o objetivo</h3><p>Dinheiro é meio. O fim é escolher como usar o próprio tempo, sem depender do próximo salário nem do humor do mercado.</p></div>
     <div class="principio"><h3 class="titulo-3">Valor vem do negócio</h3><p>Uma ação é um pedaço de uma empresa. Ela vale pelo que a empresa vende, por quem a administra e pelo caixa que gera ao longo dos anos.</p></div>
     <div class="principio"><h3 class="titulo-3">Quem decide é você</h3><p>Nenhum site conhece a sua vida. O nosso papel é explicar. O seu é estudar, comparar fontes e escolher.</p></div>
-    <div class="principio"><h3 class="titulo-3">Indicador é pista</h3><p>Múltiplos ajudam a fazer perguntas. Sozinhos, não dizem por que o número é aquele nem se ele vai durar.</p></div>
+    <div class="principio"><h3 class="titulo-3">Indicador é pista</h3><p>Múltiplos ajudam a fazer perguntas. Sozinhos, não dizem por que o número é aquele nem se ele vai durar. <a href="indicadores.html">Veja os ${INDICADORES.length} indicadores</a>.</p></div>
   </div>
 </div></section>
 
@@ -333,9 +353,9 @@ const paginas = [
   { arquivo: 'ferramentas.html', id: 'ferramentas', titulo: `Ferramentas — ${MARCA}`,
     descricao: `Ferramentas gratuitas da ${MARCA}: montagem de carteira, juros compostos, liberdade financeira, checagem do estudo de empresas e panorama de mercado.`,
     corpo: `<section class="secao"><div class="dentro">
-  <div class="cabeca"><p class="olho">Plataforma</p>
-  <h1 class="titulo">Ferramentas</h1>
-  <p class="lead">Como dividir, quanto rende, quanto falta, o que conferir e como está o cenário. Gratuitas, sem cadastro, calculadas no seu navegador.</p></div>
+  <div class="cabeca-cena"><div class="cabeca"><p class="olho">Plataforma</p>
+  <h1 class="manchete">Ferramentas<br><em>para fazer a conta.</em></h1>
+  <p class="lead">Como dividir, quanto rende, quanto falta, o que conferir e como está o cenário. Gratuitas, sem cadastro, calculadas no seu navegador.</p></div>${cena('ferramentas')}</div>
   ${FERRAMENTAS}
   <div style="margin-top:2.5rem" class="estreito">${AVISO}</div>
 </div></section>` },
@@ -343,11 +363,11 @@ const paginas = [
   { arquivo: 'metodo.html', id: 'metodo', titulo: `Como estudar uma empresa — ${MARCA}`,
     descricao: `Método opcional da ${MARCA} para estudar uma empresa, em oito etapas na ordem de execução: o que fazer, por onde começar, quais fontes consultar e o entregável de cada uma.`,
     corpo: `<section class="secao"><div class="dentro">
-  <div class="cabeca">
+  <div class="cabeca-cena"><div class="cabeca">
     <p class="olho">Método ${MARCA}</p>
-    <h1 class="manchete">Como estudar<br>uma empresa</h1>
+    <h1 class="manchete">Como estudar<br><em>uma empresa.</em></h1>
     <p class="lead">Um caminho em oito etapas, na ordem de execução, para quem quiser seguir. Cada etapa diz o que fazer, por onde começar, onde pesquisar e o que você terá escrito ao terminar.</p>
-  </div>
+  </div>${cena('metodo')}</div>
   <div class="orientacao">
     <div><h2><span class="marca-ponto" aria-hidden="true"></span>É uma opção</h2><p>Ninguém precisa seguir este método. Use inteiro, só algumas etapas, ou como comparação para o seu próprio jeito de estudar.</p></div>
     <div><h2><span class="marca-ponto" aria-hidden="true"></span>Recomendamos as pesquisas</h2><p>Ler os documentos indicados em cada etapa dá trabalho, e é o que mais aumenta a qualidade da análise. Se for encurtar, encurte o resto.</p></div>
@@ -377,7 +397,7 @@ const paginas = [
       <tr><th scope="row">Lucro crescendo no ano</th><td>Venda de um ativo, e não da operação</td><td>Etapa 5, fluxo de caixa</td></tr>
     </tbody>
   </table></div>
-  <p class="lead" style="margin-top:2rem">Quem terminar as etapas pode passar o estudo pela checagem de vinte pontos.</p>
+  <p class="lead" style="margin-top:2rem">Cada indicador tem uma página própria, com fórmula, exemplo interativo e ressalvas, na <a href="indicadores.html">área de indicadores</a>. Quem terminar as etapas pode passar o estudo pela checagem de vinte pontos.</p>
   <p style="margin-top:1rem"><a class="btn btn-primario" href="roteiro.html">Conferir meu estudo</a></p>
   <div class="estreito" style="margin-top:2rem">${AVISO}</div>
 </div></section>` },
@@ -386,11 +406,12 @@ const paginas = [
     descricao: `Área de aprendizagem da ${MARCA}: ${TRILHAS.length} trilhas e ${MODULOS.length} módulos de finanças pessoais e investimentos, do básico ao intermediário, com exemplos, mini-testes e fontes oficiais.`,
     scripts: ['site/quiz.js'],
     corpo: `<section class="secao"><div class="dentro">
-  <div class="cabeca">
+  <div class="cabeca-cena"><div class="cabeca">
     <p class="olho">Área de aprendizagem</p>
     <h1 class="manchete">Do primeiro orçamento<br><em>à primeira carteira.</em></h1>
     <p class="lead">${TRILHAS.length} trilhas e ${MODULOS.length} módulos, na ordem em que devem ser estudados. Não é preciso saber nada antes. Cada módulo começa com a ideia em uma frase e uma comparação do dia a dia, e só depois entra nos detalhes. O objetivo é que você consiga estudar e decidir por conta própria.</p>
-  </div>
+  </div>${cena('aprender')}</div>
+  ${PORTAL}
   <div class="progresso" id="progresso" data-total="${MODULOS.length}">
     <p class="progresso-num"><span id="progresso-feitos">0</span><small>de ${MODULOS.length} módulos concluídos</small></p>
     <div class="trilho" aria-hidden="true"><i id="progresso-barra"></i></div>
@@ -408,9 +429,9 @@ const paginas = [
   { arquivo: 'empresa.html', id: 'empresa', titulo: `A empresa — ${MARCA}`,
     descricao: `Visão, missão e princípios da ${MARCA}: liberdade e tranquilidade financeira por meio de educação fundamentalista, focada no valor real das empresas.`,
     corpo: `<section class="secao"><div class="dentro">
-  <div class="cabeca"><p class="olho">A empresa</p>
+  <div class="cabeca-cena"><div class="cabeca"><p class="olho">A empresa</p>
   <h1 class="manchete">Liberdade financeira,<br><em>com os pés no chão.</em></h1>
-  <p class="lead">A ${MARCA} nasceu de uma convicção simples: investir bem depende mais de entender o que se tem do que de adivinhar o que vai subir.</p></div>
+  <p class="lead">A ${MARCA} nasceu de uma convicção simples: investir bem depende mais de entender o que se tem do que de adivinhar o que vai subir.</p></div>${cena('empresa')}</div>
 
   <div class="nome-grade">
     <div class="nome-marca" aria-hidden="true">${aneis(220)}</div>
@@ -533,10 +554,10 @@ const paginas = [
     descricao: `Panorama de mercado da ${MARCA}: visão geral, tendências com dados do Banco Central ao vivo, indicadores macroeconômicos e leitura por setor, com fonte e data.`,
     scripts: ['carteira/js/config.js', 'carteira/js/macro.js', 'site/mercado.js'],
     corpo: `<section class="secao"><div class="dentro">
-  <div class="cabeca">
+  <div class="cabeca-cena"><div class="cabeca">
     <p class="olho">Panorama de mercado · edição de ${EDICAO}</p>
     <h1 class="manchete">O juro parou de cair.<br><em>O resto ainda se ajusta.</em></h1>
-  </div>
+  </div>${cena('mercado')}</div>
   <div style="margin:0 0 2.4rem">${AVISO_MERCADO}</div>
   <div class="visao">
     <p class="visao-texto">Em 04/11 o Banco Central manteve a Selic em 13,75% ao ano e interrompeu uma sequência de cinco cortes, citando piora do cenário interno e externo. A bolsa vinha da pior semana em seis anos, na última de outubro, com a reavaliação de preços depois das eleições e a dúvida sobre as contas públicas; a semana seguinte foi de estabilidade. A indústria encolheu 0,8% em setembro, quarta queda em cinco meses, enquanto o desemprego ficou em 5,2%, o menor para o período desde 2012.</p>
@@ -605,6 +626,7 @@ const paginas = [
 ];
 
 MODULOS.forEach((m, i) => paginas.push(paginaAula(m, i)));
+PAGINAS_INDICADORES.forEach((p) => paginas.push(p));
 paginas.forEach((p) => fs.writeFileSync(path.join(RAIZ, p.arquivo), pagina(p)));
-fs.writeFileSync(path.join(__dirname, 'favicon.svg'), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><style>.f{fill:#FFFFFF}.a{stroke:#172554}@media (prefers-color-scheme:dark){.f{fill:#172554}.a{stroke:#8EDBC0}}</style><rect class="f" width="32" height="32" rx="7"/><circle class="a" cx="16" cy="16" r="11.5" fill="none" stroke-width="2.8"/><circle class="a" cx="14.6" cy="17" r="6.3" fill="none" stroke-width="2.8"/><circle fill="#FFB38A" cx="13.6" cy="17.9" r="2.6"/></svg>\n`);
+fs.writeFileSync(path.join(__dirname, 'favicon.svg'), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><style>.f{fill:#F5EEDF}.a{stroke:#1B1633}@media (prefers-color-scheme:dark){.f{fill:#15112B}.a{stroke:#F5EEDF}}</style><rect class="f" width="32" height="32" rx="7"/><circle class="a" cx="16" cy="16" r="11.5" fill="none" stroke-width="2.8"/><circle class="a" cx="14.6" cy="17" r="6.3" fill="none" stroke-width="2.8"/><circle fill="#E4572E" cx="13.6" cy="17.9" r="2.6"/></svg>\n`);
 console.log(paginas.length + ' páginas geradas.');

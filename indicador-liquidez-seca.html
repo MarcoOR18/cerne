@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Liquidez seca — Indicadores — Cerne</title>
+<meta name="description" content="Liquidez seca: A liquidez corrente sem contar os estoques. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cerne">
+<meta property="og:title" content="Liquidez seca — Indicadores — Cerne">
+<meta property="og:description" content="Liquidez seca: A liquidez corrente sem contar os estoques. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta property="og:image" content="https://marcoor18.github.io/cerne/site/og-cerne.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site/site.css">
+<link rel="stylesheet" href="site/vetor.css">
+<script src="carteira/js/tema.js"></script>
+</head>
+<body data-pagina="aprender">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="dentro">
+    <a class="marca" href="index.html" aria-label="Cerne, página inicial"><svg class="logo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span class="marca-nome">Cerne</span></a>
+    <nav class="nav" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+    <div class="topo-acoes">
+      <button type="button" class="btn-topo" id="btn-tema" aria-pressed="false" aria-label="Modo escuro"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="btn-topo" id="btn-nav" aria-expanded="false" aria-controls="nav-movel" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <nav class="nav-movel" id="nav-movel" aria-label="Principal, celular" hidden><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+</header>
+<main id="conteudo">
+<article class="secao" data-indicador="liquidez-seca"><div class="dentro">
+  <div class="ind-cab">
+    <div>
+      <p class="olho"><a href="aprender.html">Aprender</a> · <a href="indicadores.html">Indicadores</a> · <a href="indicadores.html#endividamento">Endividamento e saúde financeira</a> · 3.5</p>
+      <h1 class="titulo">Liquidez seca</h1>
+      <p class="lead">A liquidez corrente sem contar os estoques.</p>
+      <p class="ind-tags"><span class="tag tag-contabil" title="Calculada com dados das demonstrações financeiras. Só muda a cada balanço.">Métrica contábil</span><span class="tag tag-lida" id="selo-lido" hidden>Estudado</span></p>
+    </div>
+    <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><path class="i-ac i-tr" d="M80 12 a36 40 0 0 1 0 80 a36 40 0 0 1 0 -80 Z"/><polygon class="i-ac i-tr" points="74,92 86,92 80,100"/><path class="i-ln-f" d="M80 100 q-10 12 0 22 q8 8 0 14"/><circle class="i-ink" cx="80" cy="140" r="16"/><path class="i-ln-bg" d="M72 138 h16"/><path class="i-ln-f" d="M62 34 q-8 18 2 34"/><ellipse class="i-som" cx="80" cy="157" rx="34" ry="3"/></svg></figure>
+  </div>
+  <div class="aula-grade">
+  <nav class="aula-indice" aria-label="Nesta página">
+    <p>Nesta página</p>
+    <ol><li><a href="#o-que-e">O que é</a></li><li><a href="#o-que-mede">O que mede</a></li><li><a href="#como-calcular">Como calcular</a></li><li><a href="#exemplo">Exemplo prático</a></li><li><a href="#interpretar">Como interpretar</a></li><li><a href="#bom-resultado">O que é um bom resultado</a></li><li><a href="#aplicacao">Aplicação prática</a></li><li><a href="#limitacoes">Limitações e ressalvas</a></li><li><a href="#complementares">Indicadores complementares</a></li></ol>
+  </nav>
+  <div class="ind-corpo">
+    <section class="num" id="o-que-e"><h2>O que é</h2><p>A liquidez seca é o ativo circulante menos os estoques, dividido pelo passivo circulante. É conhecida em inglês como quick ratio ou acid test.</p></section>
+    <section class="num" id="o-que-mede"><h2>O que mede</h2><p>Mede a capacidade de pagar as obrigações de curto prazo sem depender da venda de estoques, que são normalmente a parte menos líquida e de valor mais incerto do ativo circulante.</p>
+      <div class="destaque destaque-ressalva"><b>Métrica contábil</b><p>Calculada com dados das demonstrações financeiras. Só muda a cada balanço. O número depende das escolhas contábeis da empresa e fica parado entre uma divulgação e outra.</p></div>
+    </section>
+    <section class="num" id="como-calcular"><h2>Como calcular</h2>
+      <div class="quadro-formula"><p>Liquidez seca = <i>(Ativo circulante − Estoques)</i> ÷ <i>Passivo circulante</i></p></div>
+      <dl class="variaveis"><div><dt>Ativo circulante</dt><dd>Bens e direitos realizáveis em até 12 meses.</dd></div><div><dt>Estoques</dt><dd>Matérias-primas, produtos em elaboração, produtos acabados e mercadorias para revenda. Versões mais rigorosas retiram também despesas antecipadas e impostos a recuperar.</dd></div><div><dt>Passivo circulante</dt><dd>Obrigações que vencem em até 12 meses.</dd></div></dl>
+    </section>
+    <section class="num" id="exemplo"><h2>Exemplo prático</h2>
+      <p>A <b>Companhia Alfa</b> é uma empresa fictícia, com números realistas, usada em todas as páginas desta área. A conta, passo a passo:</p>
+      <ol class="passos-ex"><li>Ativo circulante sem os estoques = 6.000 − 2.200 = R$ 3.800 mi.</li><li>Passivo circulante: R$ 4.000 mi.</li><li>Liquidez seca = 3.800 ÷ 4.000 = 0,95.</li><li>Para comparar: a liquidez corrente, com os estoques, seria 1,50. A diferença mostra o quanto a folga depende de vender o estoque.</li></ol>
+      <div class="lab" id="laboratorio" data-lab="liquidez-seca" data-presets="{&quot;padrao&quot;:{&quot;ac&quot;:6000,&quot;est&quot;:2200,&quot;pc&quot;:4000},&quot;a&quot;:{&quot;ac&quot;:4000,&quot;est&quot;:2400,&quot;pc&quot;:2000},&quot;b&quot;:{&quot;ac&quot;:4000,&quot;est&quot;:0,&quot;pc&quot;:2000}}">
+      <div class="lab-topo"><b>Experimente: mude os valores</b>
+        <ul class="chips" aria-label="Carregar valores de exemplo"><li><button type="button" class="chip" data-preset="padrao" aria-pressed="true">Companhia Alfa</button></li><li><button type="button" class="chip" data-preset="a" aria-pressed="false">Moda Vitral</button></li><li><button type="button" class="chip" data-preset="b" aria-pressed="false">Clave Software</button></li></ul>
+      </div>
+      <div class="lab-grade">
+        <form class="lab-entradas" novalidate>
+        <div class="campo"><label for="lab-ac">Ativo circulante</label><div class="entrada"><span>R$</span><input id="lab-ac" data-id="ac" type="text" inputmode="decimal" autocomplete="off" value="6.000"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-est">Estoques</label><div class="entrada"><span>R$</span><input id="lab-est" data-id="est" type="text" inputmode="decimal" autocomplete="off" value="2.200"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-pc">Passivo circulante</label><div class="entrada"><span>R$</span><input id="lab-pc" data-id="pc" type="text" inputmode="decimal" autocomplete="off" value="4.000"><span>milhões</span></div></div>
+        </form>
+        <div class="lab-saida" aria-live="polite">
+          <p class="lab-rotulo">Liquidez seca</p>
+          <p class="lab-valor" data-lab-valor>0,95</p>
+          <div data-lab-medidor><div class="medidor" aria-hidden="true"><i style="left:31.7%"></i></div><div class="medidor-escala" aria-hidden="true"><span>0</span><span>3 ou mais</span></div></div>
+          <p class="lab-leitura" data-lab-leitura>Faixa intermediária: perto de 1, os ativos mais líquidos cobrem as obrigações de curto prazo.</p>
+          <ol class="lab-passos" data-lab-passos><li>Ativo circulante sem os estoques = 6.000 − 2.200 = R$ 3.800 mi.</li><li>Passivo circulante: R$ 4.000 mi.</li><li>Liquidez seca = 3.800 ÷ 4.000 = 0,95.</li><li>Para comparar: a liquidez corrente, com os estoques, seria 1,50. A diferença mostra o quanto a folga depende de vender o estoque.</li></ol>
+        </div>
+      </div>
+      <p class="lab-nota">Empresas e números fictícios. A leitura automática é uma pista para estudo, baseada em faixas genéricas; ela não conhece o setor, o ciclo nem a qualidade dos dados. Não é recomendação.</p>
+    </div>
+    </section>
+    <section class="num" id="interpretar"><h2>Como interpretar</h2>
+      <dl class="faixas"><div><dt>Bem abaixo de 1</dt><dd>A empresa precisa vender estoque para pagar as contas. Normal em varejo; alerta em outros setores.</dd></div><div><dt>Perto de 1</dt><dd>Ativos líquidos cobrem as obrigações de curto prazo.</dd></div><div><dt>Bem acima de 1</dt><dd>Folga, mesmo em um cenário de vendas paradas.</dd></div></dl>
+      <div class="destaque"><b>Conceito importante</b><p>Estoque parado tem custo: capital imobilizado, armazenagem, risco de obsolescência. Um aumento de estoques mais rápido do que o das vendas é um sinal de alerta clássico.</p></div>
+    </section>
+    <section class="num" id="bom-resultado"><h2>O que é considerado um bom resultado</h2><p>Como na liquidez corrente, depende do modelo de negócio. O valor do indicador está sobretudo na <b>comparação com a liquidez corrente</b>: se a diferença entre as duas é grande, a saúde de curto prazo depende do estoque, e vale estudar a idade e o giro desse estoque.</p></section>
+    <section class="num" id="aplicacao"><h2>Aplicação prática</h2><p>Use nos setores em que o estoque é relevante e pode perder valor: moda, eletrônicos, construção, agronegócio. Acompanhe junto o prazo médio de estocagem, que indica quantos dias de venda estão parados no depósito.</p>
+      <h3>Duas empresas fictícias, lado a lado</h3>
+      <div class="duelo"><div class="duelo-lado"><h3>Moda Vitral</h3><p>Estoque de 2.400 em coleções</p><dl><div><dt>Ativo circulante</dt><dd>R$ 4.000 mi</dd></div><div><dt>Estoques</dt><dd>R$ 2.400 mi</dd></div><div><dt>Passivo circulante</dt><dd>R$ 2.000 mi</dd></div></dl><p class="duelo-res"><span>Liquidez seca</span><b>0,80</b></p></div><div class="duelo-lado"><h3>Clave Software</h3><p>Sem estoque</p><dl><div><dt>Ativo circulante</dt><dd>R$ 4.000 mi</dd></div><div><dt>Estoques</dt><dd>R$ 0 mi</dd></div><div><dt>Passivo circulante</dt><dd>R$ 2.000 mi</dd></div></dl><p class="duelo-res"><span>Liquidez seca</span><b>2,00</b></p></div></div><p>As duas têm liquidez corrente de 2,0. Sem os estoques, a varejista de moda cai para 0,8 e a empresa de software continua em 2,0. A Vitral depende de vender a coleção, que perde valor a cada estação, para pagar as contas do ano. A liquidez seca expõe em um número o que a corrente escondia.</p>
+      <h3>O mesmo indicador em setores diferentes</h3>
+      <ul class="setores"><li><b>Varejo</b><span>Normalmente bem abaixo de 1, pois o estoque é o principal ativo de curto prazo.</span></li><li><b>Indústria</b><span>A diferença para a liquidez corrente revela o peso das matérias-primas e produtos acabados.</span></li><li><b>Tecnologia e serviços</b><span>Quase igual à liquidez corrente; acrescenta pouco.</span></li><li><b>Construção civil</b><span>Indicador essencial, dado o peso dos imóveis em estoque.</span></li></ul>
+    </section>
+    <section class="num" id="limitacoes"><h2>Limitações e ressalvas</h2>
+      <div class="destaque destaque-erro"><b>Erro comum</b><p>Supor que contas a receber são tão seguras quanto caixa. Recebíveis de clientes em dificuldade podem valer menos que o estoque.</p></div>
+      <ul class="ressalvas"><li><b>Recebíveis também têm risco.</b> A provisão para perdas pode estar subestimada.</li><li><b>Exagera em alguns setores.</b> Em supermercados, o estoque gira em dias e é quase tão líquido quanto um recebível.</li><li><b>Fotografia de um dia</b>, sujeita a sazonalidade e a ajustes de fim de período.</li><li><b>Ignora a geração de caixa futura</b> e as linhas de crédito.</li><li><b>Não se aplica a bancos e a empresas de serviços sem estoque</b>, para as quais é igual à liquidez corrente.</li></ul>
+      <p class="nota">Todo indicador calculado com dados passados descreve o que já aconteceu. Usá-lo para projetar o futuro supõe que as condições vão se repetir, o que nem sempre ocorre.</p>
+    </section>
+    <section class="num" id="complementares"><h2>Indicadores complementares</h2>
+      <p>Nenhum indicador responde sozinho. Para uma leitura mais confiável, analise junto:</p>
+      <ul class="junto"><li><a href="indicador-liquidez-corrente.html"><b>Liquidez corrente</b><span>A diferença entre as duas é o peso do estoque.</span></a></li><li><a href="indicador-margem-bruta.html"><b>Margem bruta</b><span>Estoque liquidado com desconto derruba a margem.</span></a></li><li><a href="indicador-fluxo-de-caixa-livre.html"><b>Fluxo de Caixa Livre</b><span>Estoques crescentes consomem caixa.</span></a></li><li><a href="indicador-divida-liquida-ebitda.html"><b>Dívida Líquida/EBITDA</b><span>Contextualiza a dívida de curto prazo.</span></a></li></ul>
+      <p>Veja casos em que um indicador isolado engana em <a href="indicadores-em-conjunto.html">Indicadores em conjunto</a>.</p>
+      <h3>Termos usados nesta página</h3>
+      <ul class="termos"><li><a class="chip" href="glossario.html#estoques">Estoques</a></li><li><a class="chip" href="glossario.html#ativo-circulante">Ativo circulante</a></li><li><a class="chip" href="glossario.html#passivo-circulante">Passivo circulante</a></li><li><a class="chip" href="glossario.html#capital-de-giro">Capital de giro</a></li><li><a class="chip" href="glossario.html#provisao">Provisão</a></li></ul>
+    </section>
+    <div class="marcar"><p><b>Terminou de estudar este indicador?</b> A marcação fica guardada só neste navegador.</p><button type="button" class="btn btn-secundario btn-pequeno" id="marcar-lido" aria-pressed="false">Marcar como estudado</button></div>
+    <nav class="aula-passos" aria-label="Indicadores vizinhos">
+      <a href="indicador-liquidez-corrente.html"><span>Anterior · 3.4</span><b>Liquidez corrente</b></a>
+      <a href="indicador-fluxo-de-caixa-livre.html"><span>Próximo · 3.6</span><b>FCF</b></a>
+    </nav>
+    <div style="margin-top:2rem"><p class="aviso"><b>Conteúdo educacional</b>Não é recomendação de investimento individualizada e não substitui um profissional habilitado. Não há garantia de retorno. A decisão é de quem investe.</p></div>
+  </div>
+  </div>
+</div></article>
+</main>
+<aside class="decida" aria-label="Orientação ao leitor"><div class="dentro">
+  <p class="decida-titulo">Estude. Compare.<br><em>Decida por você.</em></p>
+  <p class="decida-texto">A Cerne explica e oferece ferramentas. Não diz o que comprar nem o que vender. Leia as fontes, forme a sua própria opinião e tome as suas decisões. Elas, e a responsabilidade por elas, são suas.</p>
+  <div class="decida-cena"><svg viewBox="0 0 176 210" aria-hidden="true" focusable="false">
+  <path class="i-sol" d="M120 22 a22 22 0 1 0 22 36 a18 18 0 0 1 -22 -36 Z"/>
+  <circle class="i-lua" cx="34" cy="40" r="2"/><circle class="i-lua" cx="70" cy="18" r="1.6"/><circle class="i-lua" cx="150" cy="96" r="1.8"/><circle class="i-lua" cx="20" cy="110" r="1.4"/>
+  <path class="i-ln-lua" d="M52 210 V124 a36 36 0 0 1 72 0 V210"/>
+  <path class="i-sol" d="M58 210 V125 a30 30 0 0 1 60 0 V210 Z"/>
+  <polygon class="i-ac" points="58,210 58,112 92,128 92,210"/>
+  <circle class="i-lua" cx="86" cy="172" r="2.6"/>
+  <polygon class="i-sol" opacity=".28" points="92,210 118,210 176,236 110,236"/></svg></div>
+</div></aside>
+<footer class="rodape">
+  <div class="dentro">
+    <div class="rodape-grade">
+      <div>
+        <p class="rodape-marca"><svg class="logo" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span>Cerne</span></p>
+        <p>Valor real antes do preço. Educação financeira de base fundamentalista, para quem busca liberdade e tranquilidade com o próprio dinheiro.</p>
+      </div>
+      <div>
+        <h2>Ferramentas</h2>
+        <ul><li><a href="carteira/">Monte sua carteira</a></li><li><a href="juros.html">Juros compostos</a></li><li><a href="liberdade.html">Liberdade financeira</a></li><li><a href="roteiro.html">Checagem do estudo</a></li></ul>
+      </div>
+      <div>
+        <h2>Aprender</h2>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+      </div>
+      <div>
+        <h2>Cerne</h2>
+        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
+      </div>
+    </div>
+    <p class="rodape-legal">Cerne é um projeto educacional. Não é corretora, gestora, consultoria nem analista de valores mobiliários, não tem registro na CVM e não vende produtos financeiros. Nada aqui é recomendação de investimento individualizada nem promessa de retorno. As decisões e os riscos são de quem investe.</p>
+  </div>
+</footer>
+<script src="site/site.js"></script>
+<script src="site/indicadores-calc.js"></script>
+<script src="site/indicadores.js"></script>
+</body>
+</html>

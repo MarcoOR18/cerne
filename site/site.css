@@ -3,38 +3,44 @@
  * Mesma identidade do app de carteira: papel, tinta, régua.
  * ========================================================================== */
 @font-face { font-family: "Bricolage Grotesque"; src: url("fontes/bricolage-grotesque-latin.woff2") format("woff2"); font-weight: 200 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Instrument Serif"; src: url("fontes/instrument-serif-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Instrument Serif"; src: url("fontes/instrument-serif-latin-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
 :root {
-  --bg: #FFFFFF; --surface: #F4F6FA; --surface-2: #E8ECF3; --ink: #172554; --ink-2: #263B67;
-  --line: #D6DBE6; --line-forte: #7C89A6;
-  --primary: #172554; --primary-ink: #FFFFFF; --primary-suave: #FFE9DD;
-  --acento: #FFB38A; --acento-ink: #172554; --menta: #8EDBC0; --menta-suave: #DDF4EC;
-  --azul: #172554; --numeral: #263B67; --miolo: #FFB38A;
-  --alerta: #9B2C1A; --alerta-fundo: #FDECE6; --ocre: var(--acento); --info-fundo: #F4F6FA;
-  --sombra: 0 1px 2px rgba(23, 37, 84, .06), 0 8px 24px rgba(23, 37, 84, .06);
+  --bg: #F5EEDF; --surface: #EDE3CE; --surface-2: #E2D5BA; --ink: #1B1633; --ink-2: #4B4563;
+  --line: #D5C8AC; --line-forte: #8B8298;
+  --primary: #1B1633; --primary-ink: #F5EEDF; --primary-suave: #F9D9C4;
+  --acento: #E4572E; --acento-ink: #1B1633; --menta: #58B8A8; --menta-suave: #D3E9DF;
+  --azul: #1B1633; --numeral: #B3401F; --miolo: #E4572E;
+  --alerta: #9B2C1A; --alerta-fundo: #F7DDD0; --ocre: #E8A93B; --info-fundo: #EDE3CE;
+  --ceu: #BCD9DC; --petroleo: #155E63; --lilas: #8E7CC3; --sol: #E8A93B; --noite: #1B1633; --lua: #F5EEDF; --sombra-cor: #1B1633;
+  --sombra: 6px 6px 0 var(--sombra-cor);
   --serif: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --display: "Instrument Serif", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --sans: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --raio: 6px; --raio-p: 4px;
   color-scheme: light;
 }
 :root[data-tema="escuro"] {
-  --bg: #172554; --surface: #263B67; --surface-2: #31487A; --ink: #F5F7FC; --ink-2: #C5CDE0;
-  --line: #3A4F82; --line-forte: #8494BC;
-  --primary: #8EDBC0; --primary-ink: #172554; --primary-suave: #2F4A78;
-  --acento: #FFB38A; --acento-ink: #172554; --menta: #8EDBC0; --menta-suave: #2B5563;
-  --azul: #8EDBC0; --numeral: #8EDBC0; --miolo: #FFB38A;
-  --alerta: #FFC9B0; --alerta-fundo: #4A3550; --ocre: var(--acento); --info-fundo: #263B67;
-  --sombra: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+  --bg: #15112B; --surface: #211B40; --surface-2: #2C2552; --ink: #F5EEDF; --ink-2: #C9C1D9;
+  --line: #382F63; --line-forte: #8A80B0;
+  --primary: #FFC48A; --primary-ink: #15112B; --primary-suave: #3A2A55;
+  --acento: #FF7A52; --acento-ink: #15112B; --menta: #6FD0BE; --menta-suave: #1F4A52;
+  --azul: #FFC48A; --numeral: #FF9B78; --miolo: #FF7A52;
+  --alerta: #FFB9A3; --alerta-fundo: #4A2638; --ocre: #F2B84B; --info-fundo: #211B40;
+  --ceu: #2F3F78; --petroleo: #6FD0BE; --lilas: #B5A6EE; --sol: #F2B84B; --noite: #0D0A1F; --lua: #F5EEDF; --sombra-cor: #07051A;
+  --sombra: 6px 6px 0 var(--sombra-cor);
   color-scheme: dark;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-tema="claro"]) {
-  --bg: #172554; --surface: #263B67; --surface-2: #31487A; --ink: #F5F7FC; --ink-2: #C5CDE0;
-  --line: #3A4F82; --line-forte: #8494BC;
-  --primary: #8EDBC0; --primary-ink: #172554; --primary-suave: #2F4A78;
-  --acento: #FFB38A; --acento-ink: #172554; --menta: #8EDBC0; --menta-suave: #2B5563;
-  --azul: #8EDBC0; --numeral: #8EDBC0; --miolo: #FFB38A;
-  --alerta: #FFC9B0; --alerta-fundo: #4A3550; --ocre: var(--acento); --info-fundo: #263B67;
-  --sombra: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+  --bg: #15112B; --surface: #211B40; --surface-2: #2C2552; --ink: #F5EEDF; --ink-2: #C9C1D9;
+  --line: #382F63; --line-forte: #8A80B0;
+  --primary: #FFC48A; --primary-ink: #15112B; --primary-suave: #3A2A55;
+  --acento: #FF7A52; --acento-ink: #15112B; --menta: #6FD0BE; --menta-suave: #1F4A52;
+  --azul: #FFC48A; --numeral: #FF9B78; --miolo: #FF7A52;
+  --alerta: #FFB9A3; --alerta-fundo: #4A2638; --ocre: #F2B84B; --info-fundo: #211B40;
+  --ceu: #2F3F78; --petroleo: #6FD0BE; --lilas: #B5A6EE; --sol: #F2B84B; --noite: #0D0A1F; --lua: #F5EEDF; --sombra-cor: #07051A;
+  --sombra: 6px 6px 0 var(--sombra-cor);
     color-scheme: dark;
   }
 }

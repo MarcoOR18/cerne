@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ROA (Retorno sobre o Ativo) — Indicadores — Cerne</title>
+<meta name="description" content="ROA (Retorno sobre o Ativo): Lucro gerado para cada real de ativos, qualquer que seja a origem do dinheiro. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cerne">
+<meta property="og:title" content="ROA (Retorno sobre o Ativo) — Indicadores — Cerne">
+<meta property="og:description" content="ROA (Retorno sobre o Ativo): Lucro gerado para cada real de ativos, qualquer que seja a origem do dinheiro. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta property="og:image" content="https://marcoor18.github.io/cerne/site/og-cerne.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site/site.css">
+<link rel="stylesheet" href="site/vetor.css">
+<script src="carteira/js/tema.js"></script>
+</head>
+<body data-pagina="aprender">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="dentro">
+    <a class="marca" href="index.html" aria-label="Cerne, página inicial"><svg class="logo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span class="marca-nome">Cerne</span></a>
+    <nav class="nav" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+    <div class="topo-acoes">
+      <button type="button" class="btn-topo" id="btn-tema" aria-pressed="false" aria-label="Modo escuro"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="btn-topo" id="btn-nav" aria-expanded="false" aria-controls="nav-movel" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <nav class="nav-movel" id="nav-movel" aria-label="Principal, celular" hidden><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+</header>
+<main id="conteudo">
+<article class="secao" data-indicador="roa"><div class="dentro">
+  <div class="ind-cab">
+    <div>
+      <p class="olho"><a href="aprender.html">Aprender</a> · <a href="indicadores.html">Indicadores</a> · <a href="indicadores.html#rentabilidade">Rentabilidade e eficiência</a> · 2.3</p>
+      <h1 class="titulo">ROA (Retorno sobre o Ativo)</h1>
+      <p class="lead">Lucro gerado para cada real de ativos, qualquer que seja a origem do dinheiro.</p>
+      <p class="ind-tags"><span class="tag tag-contabil" title="Calculada com dados das demonstrações financeiras. Só muda a cada balanço.">Métrica contábil</span><span class="tag tag-lida" id="selo-lido" hidden>Estudado</span></p>
+    </div>
+    <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><circle class="i-sol i-tr" cx="80" cy="118" r="34"/><circle class="i-ln-f" cx="80" cy="118" r="22"/><path class="i-ln" d="M80 84 V36"/><path class="i-men i-tr" d="M80 62 Q44 60 38 28 Q74 26 80 62 Z"/><path class="i-pet i-tr" d="M80 48 Q112 44 122 14 Q88 14 80 48 Z"/><path class="i-bg i-tr" transform="translate(96 60) scale(0.5)" d="M12 44 Q-4 44 -2 30 Q0 18 14 18 Q18 2 36 4 Q52 -6 64 10 Q84 6 88 24 Q102 26 100 38 Q98 44 88 44 Z"/></svg></figure>
+  </div>
+  <div class="aula-grade">
+  <nav class="aula-indice" aria-label="Nesta página">
+    <p>Nesta página</p>
+    <ol><li><a href="#o-que-e">O que é</a></li><li><a href="#o-que-mede">O que mede</a></li><li><a href="#como-calcular">Como calcular</a></li><li><a href="#exemplo">Exemplo prático</a></li><li><a href="#interpretar">Como interpretar</a></li><li><a href="#bom-resultado">O que é um bom resultado</a></li><li><a href="#aplicacao">Aplicação prática</a></li><li><a href="#limitacoes">Limitações e ressalvas</a></li><li><a href="#complementares">Indicadores complementares</a></li></ol>
+  </nav>
+  <div class="ind-corpo">
+    <section class="num" id="o-que-e"><h2>O que é</h2><p>O ROA (return on assets) divide o lucro líquido pelo ativo total da empresa. O ativo total reúne tudo o que a empresa tem: caixa, estoques, contas a receber, máquinas, imóveis, participações e intangíveis.</p></section>
+    <section class="num" id="o-que-mede"><h2>O que mede</h2><p>Mede a eficiência com que a empresa usa o conjunto dos seus ativos para gerar lucro. Como o denominador inclui os ativos financiados por dívida, o ROA é menos sensível à alavancagem do que o ROE.</p>
+      <div class="destaque destaque-ressalva"><b>Métrica contábil</b><p>Calculada com dados das demonstrações financeiras. Só muda a cada balanço. O número depende das escolhas contábeis da empresa e fica parado entre uma divulgação e outra.</p></div>
+    </section>
+    <section class="num" id="como-calcular"><h2>Como calcular</h2>
+      <div class="quadro-formula"><p>ROA = <i>Lucro líquido</i> ÷ <i>Ativo total médio</i></p><p>Também: ROA = Margem líquida × Giro do ativo</p></div>
+      <dl class="variaveis"><div><dt>Lucro líquido</dt><dd>Resultado final do período, em 12 meses.</dd></div><div><dt>Ativo total médio</dt><dd>Média do ativo total entre o início e o fim do período.</dd></div></dl>
+    </section>
+    <section class="num" id="exemplo"><h2>Exemplo prático</h2>
+      <p>A <b>Companhia Alfa</b> é uma empresa fictícia, com números realistas, usada em todas as páginas desta área. A conta, passo a passo:</p>
+      <ol class="passos-ex"><li>Lucro líquido dos últimos 12 meses: R$ 1.500 mi.</li><li>Ativo total médio do período: R$ 25.000 mi.</li><li>ROA = 1.500 ÷ 25.000 = 6,0%.</li><li>Leitura: cada R$ 100 em ativos (de qualquer origem) geraram R$ 6,00 de lucro.</li></ol>
+      <div class="lab" id="laboratorio" data-lab="roa" data-presets="{&quot;padrao&quot;:{&quot;lucro&quot;:1500,&quot;ativo&quot;:25000},&quot;a&quot;:{&quot;lucro&quot;:1800,&quot;ativo&quot;:100000},&quot;b&quot;:{&quot;lucro&quot;:900,&quot;ativo&quot;:10000}}">
+      <div class="lab-topo"><b>Experimente: mude os valores</b>
+        <ul class="chips" aria-label="Carregar valores de exemplo"><li><button type="button" class="chip" data-preset="padrao" aria-pressed="true">Companhia Alfa</button></li><li><button type="button" class="chip" data-preset="a" aria-pressed="false">Banco Serra Alta</button></li><li><button type="button" class="chip" data-preset="b" aria-pressed="false">Tecelagem Aurora</button></li></ul>
+      </div>
+      <div class="lab-grade">
+        <form class="lab-entradas" novalidate>
+        <div class="campo"><label for="lab-lucro">Lucro líquido (12 meses)</label><div class="entrada"><span>R$</span><input id="lab-lucro" data-id="lucro" type="text" inputmode="decimal" autocomplete="off" value="1.500"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-ativo">Ativo total médio</label><div class="entrada"><span>R$</span><input id="lab-ativo" data-id="ativo" type="text" inputmode="decimal" autocomplete="off" value="25.000"><span>milhões</span></div></div>
+        </form>
+        <div class="lab-saida" aria-live="polite">
+          <p class="lab-rotulo">ROA</p>
+          <p class="lab-valor" data-lab-valor>6,0%</p>
+          <div data-lab-medidor><div class="medidor" aria-hidden="true"><i style="left:39.1%"></i></div><div class="medidor-escala" aria-hidden="true"><span>-3%</span><span>20% ou mais</span></div></div>
+          <p class="lab-leitura" data-lab-leitura>Faixa intermediária para empresas não financeiras de ativos pesados.</p>
+          <ol class="lab-passos" data-lab-passos><li>Lucro líquido dos últimos 12 meses: R$ 1.500 mi.</li><li>Ativo total médio do período: R$ 25.000 mi.</li><li>ROA = 1.500 ÷ 25.000 = 6,0%.</li><li>Leitura: cada R$ 100 em ativos (de qualquer origem) geraram R$ 6,00 de lucro.</li></ol>
+        </div>
+      </div>
+      <p class="lab-nota">Empresas e números fictícios. A leitura automática é uma pista para estudo, baseada em faixas genéricas; ela não conhece o setor, o ciclo nem a qualidade dos dados. Não é recomendação.</p>
+    </div>
+    </section>
+    <section class="num" id="interpretar"><h2>Como interpretar</h2>
+      <dl class="faixas"><div><dt>Baixo</dt><dd>Em empresas não financeiras, ativos pouco produtivos. Em bancos, é o nível normal.</dd></div><div><dt>Intermediário</dt><dd>Típico de indústrias e concessões, que precisam de muitos ativos.</dd></div><div><dt>Alto</dt><dd>Negócios leves em ativos: serviços, software, marcas.</dd></div></dl>
+      <div class="destaque"><b>Conceito importante</b><p>ROE = ROA × Alavancagem (ativo ÷ patrimônio). Se o ROA é 6% e o ativo é 3 vezes o patrimônio, o ROE é 18%. A distância entre os dois números é o tamanho da alavancagem.</p></div>
+    </section>
+    <section class="num" id="bom-resultado"><h2>O que é considerado um bom resultado</h2><p>Depende totalmente do setor. Um banco com ROA de 1,5% é muito rentável, porque opera com ativos de dez vezes o patrimônio. Uma indústria com 1,5% está rendendo menos do que qualquer aplicação conservadora. A comparação válida é entre empresas do mesmo setor e modelo de negócio.</p></section>
+    <section class="num" id="aplicacao"><h2>Aplicação prática</h2><p>Em bancos, o ROA é lido ao lado do ROE para separar eficiência de alavancagem. Em empresas de capital intensivo, a evolução do ROA mostra se novos investimentos estão rendendo tanto quanto os antigos.</p>
+      <h3>Duas empresas fictícias, lado a lado</h3>
+      <div class="duelo"><div class="duelo-lado"><h3>Banco Serra Alta</h3><p>Ativo de 10 vezes o patrimônio</p><dl><div><dt>Lucro líquido (12 meses)</dt><dd>R$ 1.800 mi</dd></div><div><dt>Ativo total médio</dt><dd>R$ 100.000 mi</dd></div></dl><p class="duelo-res"><span>ROA</span><b>1,8%</b></p></div><div class="duelo-lado"><h3>Tecelagem Aurora</h3><p>Ativo de 2 vezes o patrimônio</p><dl><div><dt>Lucro líquido (12 meses)</dt><dd>R$ 900 mi</dd></div><div><dt>Ativo total médio</dt><dd>R$ 10.000 mi</dd></div></dl><p class="duelo-res"><span>ROA</span><b>9,0%</b></p></div></div><p>Pelo ROA, a tecelagem parece cinco vezes mais rentável. Multiplicando pela alavancagem, o banco tem ROE de 18% (1,8% × 10) e a tecelagem, também de 18% (9% × 2). Os dois remuneram os sócios igualmente, com modelos opostos: um ganha pouco sobre um ativo enorme; a outra ganha mais sobre um ativo pequeno. O ROA só compara empresas do mesmo tipo.</p>
+      <h3>O mesmo indicador em setores diferentes</h3>
+      <ul class="setores"><li><b>Bancos</b><span>Entre 1% e 2% costuma ser considerado bom, dado o tamanho do ativo.</span></li><li><b>Indústria</b><span>Reflete a produtividade das fábricas; compare empresas de idade de ativos parecida.</span></li><li><b>Tecnologia</b><span>Valores altos, pouco informativos pela ausência de intangíveis no balanço.</span></li><li><b>Varejo</b><span>O IFRS 16 aumentou o ativo (direito de uso de lojas alugadas) e reduziu o ROA divulgado.</span></li></ul>
+    </section>
+    <section class="num" id="limitacoes"><h2>Limitações e ressalvas</h2>
+      <div class="destaque destaque-erro"><b>Erro comum</b><p>Comparar o ROA de um banco com o de uma indústria ou de uma empresa de software. As estruturas de balanço são incomparáveis.</p></div>
+      <ul class="ressalvas"><li><b>Numerador e denominador desalinhados.</b> O lucro líquido já descontou os juros, mas o ativo inclui o que foi financiado pelos credores. Uma versão mais coerente usa o lucro operacional depois de impostos.</li><li><b>Custo histórico e depreciação.</b> Ativos antigos valem pouco no balanço e inflam o ROA.</li><li><b>Ativos fora do balanço.</b> Intangíveis internos não entram, o que favorece negócios leves.</li><li><b>Caixa parado.</b> Muito caixa reduz o ROA sem dizer nada sobre a operação.</li><li><b>Lucro não recorrente</b> distorce como nos demais indicadores de rentabilidade.</li></ul>
+      <p class="nota">Todo indicador calculado com dados passados descreve o que já aconteceu. Usá-lo para projetar o futuro supõe que as condições vão se repetir, o que nem sempre ocorre.</p>
+    </section>
+    <section class="num" id="complementares"><h2>Indicadores complementares</h2>
+      <p>Nenhum indicador responde sozinho. Para uma leitura mais confiável, analise junto:</p>
+      <ul class="junto"><li><a href="indicador-roe.html"><b>ROE</b><span>ROE = ROA × alavancagem.</span></a></li><li><a href="indicador-roic.html"><b>ROIC</b><span>Versão mais precisa para empresas não financeiras.</span></a></li><li><a href="indicador-margem-liquida.html"><b>Margem líquida</b><span>Um dos dois fatores do ROA; o outro é o giro do ativo.</span></a></li><li><a href="indicador-divida-bruta-pl.html"><b>Dívida Bruta/Patrimônio Líquido</b><span>Dimensiona a alavancagem.</span></a></li></ul>
+      <p>Veja casos em que um indicador isolado engana em <a href="indicadores-em-conjunto.html">Indicadores em conjunto</a>.</p>
+      <h3>Termos usados nesta página</h3>
+      <ul class="termos"><li><a class="chip" href="glossario.html#ativo-total">Ativo total</a></li><li><a class="chip" href="glossario.html#lucro-liquido">Lucro líquido</a></li><li><a class="chip" href="glossario.html#alavancagem">Alavancagem financeira</a></li><li><a class="chip" href="glossario.html#giro-do-ativo">Giro do ativo</a></li><li><a class="chip" href="glossario.html#dupont">Decomposição DuPont</a></li></ul>
+    </section>
+    <div class="marcar"><p><b>Terminou de estudar este indicador?</b> A marcação fica guardada só neste navegador.</p><button type="button" class="btn btn-secundario btn-pequeno" id="marcar-lido" aria-pressed="false">Marcar como estudado</button></div>
+    <nav class="aula-passos" aria-label="Indicadores vizinhos">
+      <a href="indicador-roic.html"><span>Anterior · 2.2</span><b>ROIC</b></a>
+      <a href="indicador-margem-bruta.html"><span>Próximo · 2.4</span><b>Margem bruta</b></a>
+    </nav>
+    <div style="margin-top:2rem"><p class="aviso"><b>Conteúdo educacional</b>Não é recomendação de investimento individualizada e não substitui um profissional habilitado. Não há garantia de retorno. A decisão é de quem investe.</p></div>
+  </div>
+  </div>
+</div></article>
+</main>
+<aside class="decida" aria-label="Orientação ao leitor"><div class="dentro">
+  <p class="decida-titulo">Estude. Compare.<br><em>Decida por você.</em></p>
+  <p class="decida-texto">A Cerne explica e oferece ferramentas. Não diz o que comprar nem o que vender. Leia as fontes, forme a sua própria opinião e tome as suas decisões. Elas, e a responsabilidade por elas, são suas.</p>
+  <div class="decida-cena"><svg viewBox="0 0 176 210" aria-hidden="true" focusable="false">
+  <path class="i-sol" d="M120 22 a22 22 0 1 0 22 36 a18 18 0 0 1 -22 -36 Z"/>
+  <circle class="i-lua" cx="34" cy="40" r="2"/><circle class="i-lua" cx="70" cy="18" r="1.6"/><circle class="i-lua" cx="150" cy="96" r="1.8"/><circle class="i-lua" cx="20" cy="110" r="1.4"/>
+  <path class="i-ln-lua" d="M52 210 V124 a36 36 0 0 1 72 0 V210"/>
+  <path class="i-sol" d="M58 210 V125 a30 30 0 0 1 60 0 V210 Z"/>
+  <polygon class="i-ac" points="58,210 58,112 92,128 92,210"/>
+  <circle class="i-lua" cx="86" cy="172" r="2.6"/>
+  <polygon class="i-sol" opacity=".28" points="92,210 118,210 176,236 110,236"/></svg></div>
+</div></aside>
+<footer class="rodape">
+  <div class="dentro">
+    <div class="rodape-grade">
+      <div>
+        <p class="rodape-marca"><svg class="logo" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span>Cerne</span></p>
+        <p>Valor real antes do preço. Educação financeira de base fundamentalista, para quem busca liberdade e tranquilidade com o próprio dinheiro.</p>
+      </div>
+      <div>
+        <h2>Ferramentas</h2>
+        <ul><li><a href="carteira/">Monte sua carteira</a></li><li><a href="juros.html">Juros compostos</a></li><li><a href="liberdade.html">Liberdade financeira</a></li><li><a href="roteiro.html">Checagem do estudo</a></li></ul>
+      </div>
+      <div>
+        <h2>Aprender</h2>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+      </div>
+      <div>
+        <h2>Cerne</h2>
+        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
+      </div>
+    </div>
+    <p class="rodape-legal">Cerne é um projeto educacional. Não é corretora, gestora, consultoria nem analista de valores mobiliários, não tem registro na CVM e não vende produtos financeiros. Nada aqui é recomendação de investimento individualizada nem promessa de retorno. As decisões e os riscos são de quem investe.</p>
+  </div>
+</footer>
+<script src="site/site.js"></script>
+<script src="site/indicadores-calc.js"></script>
+<script src="site/indicadores.js"></script>
+</body>
+</html>

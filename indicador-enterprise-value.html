@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Enterprise Value (EV) — Indicadores — Cerne</title>
+<meta name="description" content="Enterprise Value (EV): O valor do negócio inteiro: o que vale para os acionistas mais o que se deve aos credores, menos o caixa. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cerne">
+<meta property="og:title" content="Enterprise Value (EV) — Indicadores — Cerne">
+<meta property="og:description" content="Enterprise Value (EV): O valor do negócio inteiro: o que vale para os acionistas mais o que se deve aos credores, menos o caixa. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta property="og:image" content="https://marcoor18.github.io/cerne/site/og-cerne.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site/site.css">
+<link rel="stylesheet" href="site/vetor.css">
+<script src="carteira/js/tema.js"></script>
+</head>
+<body data-pagina="aprender">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="dentro">
+    <a class="marca" href="index.html" aria-label="Cerne, página inicial"><svg class="logo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span class="marca-nome">Cerne</span></a>
+    <nav class="nav" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+    <div class="topo-acoes">
+      <button type="button" class="btn-topo" id="btn-tema" aria-pressed="false" aria-label="Modo escuro"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="btn-topo" id="btn-nav" aria-expanded="false" aria-controls="nav-movel" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <nav class="nav-movel" id="nav-movel" aria-label="Principal, celular" hidden><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+</header>
+<main id="conteudo">
+<article class="secao" data-indicador="enterprise-value"><div class="dentro">
+  <div class="ind-cab">
+    <div>
+      <p class="olho"><a href="aprender.html">Aprender</a> · <a href="indicadores.html">Indicadores</a> · <a href="indicadores.html#mercado">Indicadores de mercado e ações</a> · 5.5</p>
+      <h1 class="titulo">Enterprise Value (EV)</h1>
+      <p class="lead">O valor do negócio inteiro: o que vale para os acionistas mais o que se deve aos credores, menos o caixa.</p>
+      <p class="ind-tags"><span class="tag tag-mista" title="Combina preço de mercado com dado contábil.">Mercado + contábil</span><span class="tag tag-lida" id="selo-lido" hidden>Estudado</span></p>
+    </div>
+    <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><circle class="i-ceu i-tr" cx="74" cy="88" r="56"/><path class="i-ac i-tr" d="M86 70 V14 a56 56 0 0 1 48.5 28 Z"/><path class="i-ln-f" d="M74 88 V32 M74 88 L122.5 116 M74 88 L25.5 116"/><circle class="i-bg i-tr" cx="74" cy="88" r="14"/><circle class="i-ink" cx="74" cy="88" r="5"/></svg></figure>
+  </div>
+  <div class="aula-grade">
+  <nav class="aula-indice" aria-label="Nesta página">
+    <p>Nesta página</p>
+    <ol><li><a href="#o-que-e">O que é</a></li><li><a href="#o-que-mede">O que mede</a></li><li><a href="#como-calcular">Como calcular</a></li><li><a href="#exemplo">Exemplo prático</a></li><li><a href="#interpretar">Como interpretar</a></li><li><a href="#bom-resultado">O que é um bom resultado</a></li><li><a href="#aplicacao">Aplicação prática</a></li><li><a href="#limitacoes">Limitações e ressalvas</a></li><li><a href="#complementares">Indicadores complementares</a></li></ol>
+  </nav>
+  <div class="ind-corpo">
+    <section class="num" id="o-que-e"><h2>O que é</h2><p>O Enterprise Value (EV), ou valor da firma, é o valor de mercado das ações somado à dívida líquida. Representa o valor da operação para todos os que a financiam, sócios e credores.</p><p>Combina uma métrica de mercado (o valor das ações) com dados contábeis (dívida e caixa do balanço).</p></section>
+    <section class="num" id="o-que-mede"><h2>O que mede</h2><p>Mede o preço teórico de aquisição do negócio completo. Quem compra 100% das ações de uma empresa herda as dívidas dela e fica com o caixa. O EV é a conta desse comprador: paga as ações, assume a dívida, desconta o caixa.</p>
+      <div class="destaque destaque-ressalva"><b>Mercado + contábil</b><p>Combina preço de mercado com dado contábil. Por isso varia todos os dias, mesmo que nada mude na empresa.</p></div>
+    </section>
+    <section class="num" id="como-calcular"><h2>Como calcular</h2>
+      <div class="quadro-formula"><p>EV = <i>Valor de mercado</i> + <i>Dívida bruta</i> − <i>Caixa</i></p><p>versão completa: + Participação de minoritários + Ações preferenciais + Outros passivos onerosos</p></div>
+      <dl class="variaveis"><div><dt>Valor de mercado</dt><dd>Preço × número de ações.</dd></div><div><dt>Dívida bruta</dt><dd>Empréstimos, financiamentos e títulos de dívida. O ideal seria o valor de mercado da dívida; na prática, usa-se o valor contábil.</dd></div><div><dt>Caixa</dt><dd>Caixa, equivalentes e aplicações financeiras não necessárias à operação.</dd></div><div><dt>Participação de minoritários</dt><dd>Parcela de subsidiárias consolidadas que pertence a outros sócios. Entra no EV porque o EBITDA consolidado inclui 100% dessas subsidiárias.</dd></div></dl>
+    </section>
+    <section class="num" id="exemplo"><h2>Exemplo prático</h2>
+      <p>A <b>Companhia Alfa</b> é uma empresa fictícia, com números realistas, usada em todas as páginas desta área. A conta, passo a passo:</p>
+      <ol class="passos-ex"><li>Valor de mercado (o que valem todas as ações): R$ 12.000 mi.</li><li>Dívida líquida = 5.000 − 2.000 = R$ 3.000 mi.</li><li>EV = 12.000 + 3.000 = R$ 15.000 mi.</li><li>Do valor da firma, 20% corresponde à dívida líquida e o restante aos acionistas.</li></ol>
+      <div class="lab" id="laboratorio" data-lab="enterprise-value" data-presets="{&quot;padrao&quot;:{&quot;vm&quot;:12000,&quot;divida&quot;:5000,&quot;caixa&quot;:2000,&quot;min&quot;:0},&quot;a&quot;:{&quot;vm&quot;:8000,&quot;divida&quot;:4000,&quot;caixa&quot;:3800,&quot;min&quot;:0},&quot;b&quot;:{&quot;vm&quot;:4400,&quot;divida&quot;:4000,&quot;caixa&quot;:200,&quot;min&quot;:0}}">
+      <div class="lab-topo"><b>Experimente: mude os valores</b>
+        <ul class="chips" aria-label="Carregar valores de exemplo"><li><button type="button" class="chip" data-preset="padrao" aria-pressed="true">Companhia Alfa</button></li><li><button type="button" class="chip" data-preset="a" aria-pressed="false">Papel Araucária</button></li><li><button type="button" class="chip" data-preset="b" aria-pressed="false">Papel Cerrado</button></li></ul>
+      </div>
+      <div class="lab-grade">
+        <form class="lab-entradas" novalidate>
+        <div class="campo"><label for="lab-vm">Valor de mercado</label><div class="entrada"><span>R$</span><input id="lab-vm" data-id="vm" type="text" inputmode="decimal" autocomplete="off" value="12.000"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-divida">Dívida bruta</label><div class="entrada"><span>R$</span><input id="lab-divida" data-id="divida" type="text" inputmode="decimal" autocomplete="off" value="5.000"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-caixa">Caixa e aplicações</label><div class="entrada"><span>R$</span><input id="lab-caixa" data-id="caixa" type="text" inputmode="decimal" autocomplete="off" value="2.000"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-min">Participação de minoritários</label><div class="entrada"><span>R$</span><input id="lab-min" data-id="min" type="text" inputmode="decimal" autocomplete="off" value="0"><span>milhões</span></div></div>
+        </form>
+        <div class="lab-saida" aria-live="polite">
+          <p class="lab-rotulo">EV</p>
+          <p class="lab-valor" data-lab-valor>R$ 15.000 mi</p>
+          <div data-lab-medidor><p class="lab-rotulo" style="margin-top:1rem">Dívida líquida como % do EV</p><div class="medidor" aria-hidden="true" style="margin-top:.9rem"><i style="left:33.3%"></i></div><div class="medidor-escala" aria-hidden="true"><span>-20%</span><span>100% ou mais</span></div></div>
+          <p class="lab-leitura" data-lab-leitura>A dívida líquida é parte pequena do valor da firma: a maior parte do EV pertence aos acionistas.</p>
+          <ol class="lab-passos" data-lab-passos><li>Valor de mercado (o que valem todas as ações): R$ 12.000 mi.</li><li>Dívida líquida = 5.000 − 2.000 = R$ 3.000 mi.</li><li>EV = 12.000 + 3.000 = R$ 15.000 mi.</li><li>Do valor da firma, 20% corresponde à dívida líquida e o restante aos acionistas.</li></ol>
+        </div>
+      </div>
+      <p class="lab-nota">Empresas e números fictícios. A leitura automática é uma pista para estudo, baseada em faixas genéricas; ela não conhece o setor, o ciclo nem a qualidade dos dados. Não é recomendação.</p>
+    </div>
+    </section>
+    <section class="num" id="interpretar"><h2>Como interpretar</h2>
+      <dl class="faixas"><div><dt>EV menor que o valor de mercado</dt><dd>A empresa tem caixa líquido.</dd></div><div><dt>EV pouco acima do valor de mercado</dt><dd>Dívida líquida pequena: o valor do negócio pertence quase todo aos acionistas.</dd></div><div><dt>EV muito acima do valor de mercado</dt><dd>Empresa alavancada: boa parte do valor do negócio pertence aos credores. Pequenas mudanças no valor da operação causam grandes mudanças no valor das ações.</dd></div></dl>
+      <div class="destaque"><b>Conceito importante</b><p>O valor de mercado é o preço das ações. O EV é o preço do negócio. Indicadores operacionais (receita, EBITDA, EBIT), que pertencem a sócios e credores, devem ser comparados com o EV; indicadores do acionista (lucro líquido, patrimônio) devem ser comparados com o valor de mercado.</p></div>
+    </section>
+    <section class="num" id="bom-resultado"><h2>O que é considerado um bom resultado</h2><p>O EV não tem nível bom ou ruim. É uma medida de valor, usada como numerador de múltiplos (EV/EBITDA, EV/EBIT, EV/Receita). O que se analisa é a sua composição: que parcela é capital próprio e que parcela é dívida.</p></section>
+    <section class="num" id="aplicacao"><h2>Aplicação prática</h2><p>Use o EV para comparar empresas com estruturas de capital diferentes e para entender a sensibilidade das ações. Exemplo: em uma empresa com EV de 100, sendo 80 de dívida líquida e 20 de valor de mercado, uma queda de 10% no valor do negócio derruba o valor das ações pela metade.</p>
+      <h3>Duas empresas fictícias, lado a lado</h3>
+      <div class="duelo"><div class="duelo-lado"><h3>Papel Araucária</h3><p>Quase sem dívida líquida</p><dl><div><dt>Valor de mercado</dt><dd>R$ 8.000 mi</dd></div><div><dt>Dívida bruta</dt><dd>R$ 4.000 mi</dd></div><div><dt>Caixa e aplicações</dt><dd>R$ 3.800 mi</dd></div><div><dt>Participação de minoritários</dt><dd>R$ 0 mi</dd></div></dl><p class="duelo-res"><span>EV</span><b>R$ 8.200 mi</b></p></div><div class="duelo-lado"><h3>Papel Cerrado</h3><p>Muito alavancada</p><dl><div><dt>Valor de mercado</dt><dd>R$ 4.400 mi</dd></div><div><dt>Dívida bruta</dt><dd>R$ 4.000 mi</dd></div><div><dt>Caixa e aplicações</dt><dd>R$ 200 mi</dd></div><div><dt>Participação de minoritários</dt><dd>R$ 0 mi</dd></div></dl><p class="duelo-res"><span>EV</span><b>R$ 8.200 mi</b></p></div></div><p>As duas operações valem o mesmo, R$ 8.200 milhões, e têm fábricas equivalentes. Na Araucária, 98% desse valor pertence aos acionistas; na Cerrado, só 54%. Se o valor dos dois negócios cair 20% (R$ 1.640 milhões), o valor de mercado da Araucária cai 20,5% e o da Cerrado, 37%. Quem olha só o valor de mercado conclui que a Cerrado é "menor e mais barata"; quem olha o EV vê o mesmo negócio com mais risco para o acionista.</p>
+      <h3>O mesmo indicador em setores diferentes</h3>
+      <ul class="setores"><li><b>Indústria e concessões</b><span>A diferença entre EV e valor de mercado costuma ser grande; ignorá-la distorce a análise.</span></li><li><b>Tecnologia</b><span>Muitas empresas têm caixa líquido, e o EV é menor que o valor de mercado.</span></li><li><b>Varejo</b><span>Decida se os arrendamentos entram no EV e use o EBITDA correspondente.</span></li><li><b>Bancos</b><span>Não se aplica.</span></li></ul>
+    </section>
+    <section class="num" id="limitacoes"><h2>Limitações e ressalvas</h2>
+      <div class="destaque destaque-erro"><b>Erro comum</b><p>Misturar numerador e denominador: dividir o valor de mercado pelo EBITDA, ou o EV pelo lucro líquido. A comparação fica incoerente.</p></div>
+      <ul class="ressalvas"><li><b>Mistura datas.</b> O valor de mercado é de hoje; dívida e caixa são do último balanço, com até três meses de defasagem.</li><li><b>Dívida a valor contábil.</b> Em empresas em dificuldade, a dívida vale menos no mercado do que no balanço.</li><li><b>Caixa nem sempre disponível.</b> Parte dele é necessária à operação, ou está restrita.</li><li><b>Itens omitidos na versão simples.</b> Arrendamentos, passivos de pensão, contingências e minoritários.</li><li><b>Sazonalidade do caixa.</b> O saldo de fim de trimestre pode não representar a média.</li><li><b>Não se aplica a bancos,</b> em que a dívida é parte da operação.</li></ul>
+      <p class="nota">Todo indicador calculado com dados passados descreve o que já aconteceu. Usá-lo para projetar o futuro supõe que as condições vão se repetir, o que nem sempre ocorre.</p>
+    </section>
+    <section class="num" id="complementares"><h2>Indicadores complementares</h2>
+      <p>Nenhum indicador responde sozinho. Para uma leitura mais confiável, analise junto:</p>
+      <ul class="junto"><li><a href="indicador-valor-de-mercado.html"><b>Market Cap</b><span>A parcela do EV que pertence aos acionistas.</span></a></li><li><a href="indicador-ev-ebitda.html"><b>EV/EBITDA</b><span>O múltiplo mais usado com o EV.</span></a></li><li><a href="indicador-ev-ebit.html"><b>EV/EBIT</b><span>Considera a depreciação.</span></a></li><li><a href="indicador-divida-liquida-ebitda.html"><b>Dívida Líquida/EBITDA</b><span>Mede o peso da dívida que compõe o EV.</span></a></li></ul>
+      <p>Veja casos em que um indicador isolado engana em <a href="indicadores-em-conjunto.html">Indicadores em conjunto</a>.</p>
+      <h3>Termos usados nesta página</h3>
+      <ul class="termos"><li><a class="chip" href="glossario.html#enterprise-value">Enterprise Value (EV)</a></li><li><a class="chip" href="glossario.html#valor-de-mercado">Valor de mercado (market cap)</a></li><li><a class="chip" href="glossario.html#divida-liquida">Dívida líquida</a></li><li><a class="chip" href="glossario.html#minoritarios">Participação de minoritários</a></li><li><a class="chip" href="glossario.html#estrutura-de-capital">Estrutura de capital</a></li></ul>
+    </section>
+    <div class="marcar"><p><b>Terminou de estudar este indicador?</b> A marcação fica guardada só neste navegador.</p><button type="button" class="btn btn-secundario btn-pequeno" id="marcar-lido" aria-pressed="false">Marcar como estudado</button></div>
+    <nav class="aula-passos" aria-label="Indicadores vizinhos">
+      <a href="indicador-valor-de-mercado.html"><span>Anterior · 5.4</span><b>Market Cap</b></a>
+      <a href="indicador-volume-medio.html"><span>Próximo · 5.6</span><b>Volume médio</b></a>
+    </nav>
+    <div style="margin-top:2rem"><p class="aviso"><b>Conteúdo educacional</b>Não é recomendação de investimento individualizada e não substitui um profissional habilitado. Não há garantia de retorno. A decisão é de quem investe.</p></div>
+  </div>
+  </div>
+</div></article>
+</main>
+<aside class="decida" aria-label="Orientação ao leitor"><div class="dentro">
+  <p class="decida-titulo">Estude. Compare.<br><em>Decida por você.</em></p>
+  <p class="decida-texto">A Cerne explica e oferece ferramentas. Não diz o que comprar nem o que vender. Leia as fontes, forme a sua própria opinião e tome as suas decisões. Elas, e a responsabilidade por elas, são suas.</p>
+  <div class="decida-cena"><svg viewBox="0 0 176 210" aria-hidden="true" focusable="false">
+  <path class="i-sol" d="M120 22 a22 22 0 1 0 22 36 a18 18 0 0 1 -22 -36 Z"/>
+  <circle class="i-lua" cx="34" cy="40" r="2"/><circle class="i-lua" cx="70" cy="18" r="1.6"/><circle class="i-lua" cx="150" cy="96" r="1.8"/><circle class="i-lua" cx="20" cy="110" r="1.4"/>
+  <path class="i-ln-lua" d="M52 210 V124 a36 36 0 0 1 72 0 V210"/>
+  <path class="i-sol" d="M58 210 V125 a30 30 0 0 1 60 0 V210 Z"/>
+  <polygon class="i-ac" points="58,210 58,112 92,128 92,210"/>
+  <circle class="i-lua" cx="86" cy="172" r="2.6"/>
+  <polygon class="i-sol" opacity=".28" points="92,210 118,210 176,236 110,236"/></svg></div>
+</div></aside>
+<footer class="rodape">
+  <div class="dentro">
+    <div class="rodape-grade">
+      <div>
+        <p class="rodape-marca"><svg class="logo" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span>Cerne</span></p>
+        <p>Valor real antes do preço. Educação financeira de base fundamentalista, para quem busca liberdade e tranquilidade com o próprio dinheiro.</p>
+      </div>
+      <div>
+        <h2>Ferramentas</h2>
+        <ul><li><a href="carteira/">Monte sua carteira</a></li><li><a href="juros.html">Juros compostos</a></li><li><a href="liberdade.html">Liberdade financeira</a></li><li><a href="roteiro.html">Checagem do estudo</a></li></ul>
+      </div>
+      <div>
+        <h2>Aprender</h2>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+      </div>
+      <div>
+        <h2>Cerne</h2>
+        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
+      </div>
+    </div>
+    <p class="rodape-legal">Cerne é um projeto educacional. Não é corretora, gestora, consultoria nem analista de valores mobiliários, não tem registro na CVM e não vende produtos financeiros. Nada aqui é recomendação de investimento individualizada nem promessa de retorno. As decisões e os riscos são de quem investe.</p>
+  </div>
+</footer>
+<script src="site/site.js"></script>
+<script src="site/indicadores-calc.js"></script>
+<script src="site/indicadores.js"></script>
+</body>
+</html>

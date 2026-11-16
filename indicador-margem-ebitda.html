@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Margem EBITDA — Indicadores — Cerne</title>
+<meta name="description" content="Margem EBITDA: Parcela da receita que sobra como resultado operacional antes de depreciação, juros e impostos. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cerne">
+<meta property="og:title" content="Margem EBITDA — Indicadores — Cerne">
+<meta property="og:description" content="Margem EBITDA: Parcela da receita que sobra como resultado operacional antes de depreciação, juros e impostos. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta property="og:image" content="https://marcoor18.github.io/cerne/site/og-cerne.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site/site.css">
+<link rel="stylesheet" href="site/vetor.css">
+<script src="carteira/js/tema.js"></script>
+</head>
+<body data-pagina="aprender">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="dentro">
+    <a class="marca" href="index.html" aria-label="Cerne, página inicial"><svg class="logo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span class="marca-nome">Cerne</span></a>
+    <nav class="nav" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+    <div class="topo-acoes">
+      <button type="button" class="btn-topo" id="btn-tema" aria-pressed="false" aria-label="Modo escuro"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="btn-topo" id="btn-nav" aria-expanded="false" aria-controls="nav-movel" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <nav class="nav-movel" id="nav-movel" aria-label="Principal, celular" hidden><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+</header>
+<main id="conteudo">
+<article class="secao" data-indicador="margem-ebitda"><div class="dentro">
+  <div class="ind-cab">
+    <div>
+      <p class="olho"><a href="aprender.html">Aprender</a> · <a href="indicadores.html">Indicadores</a> · <a href="indicadores.html#rentabilidade">Rentabilidade e eficiência</a> · 2.5</p>
+      <h1 class="titulo">Margem EBITDA</h1>
+      <p class="lead">Parcela da receita que sobra como resultado operacional antes de depreciação, juros e impostos.</p>
+      <p class="ind-tags"><span class="tag tag-contabil" title="Calculada com dados das demonstrações financeiras. Só muda a cada balanço.">Métrica contábil</span><span class="tag tag-lida" id="selo-lido" hidden>Estudado</span></p>
+    </div>
+    <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><circle class="i-sol i-tr" cx="80" cy="118" r="34"/><circle class="i-ln-f" cx="80" cy="118" r="22"/><path class="i-ln" d="M80 84 V36"/><path class="i-men i-tr" d="M80 62 Q44 60 38 28 Q74 26 80 62 Z"/><path class="i-pet i-tr" d="M80 48 Q112 44 122 14 Q88 14 80 48 Z"/><path class="i-bg i-tr" transform="translate(96 60) scale(0.5)" d="M12 44 Q-4 44 -2 30 Q0 18 14 18 Q18 2 36 4 Q52 -6 64 10 Q84 6 88 24 Q102 26 100 38 Q98 44 88 44 Z"/></svg></figure>
+  </div>
+  <div class="aula-grade">
+  <nav class="aula-indice" aria-label="Nesta página">
+    <p>Nesta página</p>
+    <ol><li><a href="#o-que-e">O que é</a></li><li><a href="#o-que-mede">O que mede</a></li><li><a href="#como-calcular">Como calcular</a></li><li><a href="#exemplo">Exemplo prático</a></li><li><a href="#interpretar">Como interpretar</a></li><li><a href="#bom-resultado">O que é um bom resultado</a></li><li><a href="#aplicacao">Aplicação prática</a></li><li><a href="#limitacoes">Limitações e ressalvas</a></li><li><a href="#complementares">Indicadores complementares</a></li></ol>
+  </nav>
+  <div class="ind-corpo">
+    <section class="num" id="o-que-e"><h2>O que é</h2><p>A margem EBITDA é o EBITDA dividido pela receita líquida. O EBITDA é o lucro antes de juros, impostos, depreciação e amortização.</p></section>
+    <section class="num" id="o-que-mede"><h2>O que mede</h2><p>Mede a rentabilidade operacional "bruta" do negócio: quanto as vendas deixam depois de pagos custos e despesas que exigem desembolso corrente (pessoal, insumos, aluguéis não capitalizados, marketing), antes de considerar o desgaste dos ativos, o custo da dívida e os impostos sobre o lucro.</p>
+      <div class="destaque destaque-ressalva"><b>Métrica contábil</b><p>Calculada com dados das demonstrações financeiras. Só muda a cada balanço. O número depende das escolhas contábeis da empresa e fica parado entre uma divulgação e outra.</p></div>
+    </section>
+    <section class="num" id="como-calcular"><h2>Como calcular</h2>
+      <div class="quadro-formula"><p>Margem EBITDA = <i>EBITDA</i> ÷ <i>Receita líquida</i></p><p>EBITDA = EBIT + Depreciação e amortização</p></div>
+      <dl class="variaveis"><div><dt>EBITDA</dt><dd>Pode ser calculado a partir do EBIT, somando depreciação e amortização, ou a partir do lucro líquido, somando impostos sobre o lucro, resultado financeiro líquido e depreciação.</dd></div><div><dt>Receita líquida</dt><dd>Vendas depois de deduções.</dd></div></dl>
+    </section>
+    <section class="num" id="exemplo"><h2>Exemplo prático</h2>
+      <p>A <b>Companhia Alfa</b> é uma empresa fictícia, com números realistas, usada em todas as páginas desta área. A conta, passo a passo:</p>
+      <ol class="passos-ex"><li>EBITDA = EBIT + depreciação e amortização = 2.200 + 800 = R$ 3.000 mi.</li><li>Margem EBITDA = 3.000 ÷ 20.000 = 15,0%.</li><li>Leitura: de cada R$ 100 vendidos, R$ 15,00 ficam como resultado operacional antes de depreciação, juros e impostos.</li></ol>
+      <div class="lab" id="laboratorio" data-lab="margem-ebitda" data-presets="{&quot;padrao&quot;:{&quot;ebit&quot;:2200,&quot;da&quot;:800,&quot;receita&quot;:20000},&quot;a&quot;:{&quot;ebit&quot;:1300,&quot;da&quot;:550,&quot;receita&quot;:2500},&quot;b&quot;:{&quot;ebit&quot;:800,&quot;da&quot;:200,&quot;receita&quot;:20000}}">
+      <div class="lab-topo"><b>Experimente: mude os valores</b>
+        <ul class="chips" aria-label="Carregar valores de exemplo"><li><button type="button" class="chip" data-preset="padrao" aria-pressed="true">Companhia Alfa</button></li><li><button type="button" class="chip" data-preset="a" aria-pressed="false">Transmissora Vale Verde</button></li><li><button type="button" class="chip" data-preset="b" aria-pressed="false">Distribuidora Rota</button></li></ul>
+      </div>
+      <div class="lab-grade">
+        <form class="lab-entradas" novalidate>
+        <div class="campo"><label for="lab-ebit">EBIT (lucro operacional)</label><div class="entrada"><span>R$</span><input id="lab-ebit" data-id="ebit" type="text" inputmode="decimal" autocomplete="off" value="2.200"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-da">Depreciação e amortização</label><div class="entrada"><span>R$</span><input id="lab-da" data-id="da" type="text" inputmode="decimal" autocomplete="off" value="800"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-receita">Receita líquida</label><div class="entrada"><span>R$</span><input id="lab-receita" data-id="receita" type="text" inputmode="decimal" autocomplete="off" value="20.000"><span>milhões</span></div></div>
+        </form>
+        <div class="lab-saida" aria-live="polite">
+          <p class="lab-rotulo">Margem EBITDA</p>
+          <p class="lab-valor" data-lab-valor>15,0%</p>
+          <div data-lab-medidor><div class="medidor" aria-hidden="true"><i style="left:31.3%"></i></div><div class="medidor-escala" aria-hidden="true"><span>-10%</span><span>70% ou mais</span></div></div>
+          <p class="lab-leitura" data-lab-leitura>Faixa intermediária para indústria e serviços.</p>
+          <ol class="lab-passos" data-lab-passos><li>EBITDA = EBIT + depreciação e amortização = 2.200 + 800 = R$ 3.000 mi.</li><li>Margem EBITDA = 3.000 ÷ 20.000 = 15,0%.</li><li>Leitura: de cada R$ 100 vendidos, R$ 15,00 ficam como resultado operacional antes de depreciação, juros e impostos.</li></ol>
+        </div>
+      </div>
+      <p class="lab-nota">Empresas e números fictícios. A leitura automática é uma pista para estudo, baseada em faixas genéricas; ela não conhece o setor, o ciclo nem a qualidade dos dados. Não é recomendação.</p>
+    </div>
+    </section>
+    <section class="num" id="interpretar"><h2>Como interpretar</h2>
+      <dl class="faixas"><div><dt>Baixa</dt><dd>Normal em varejo e distribuição. Em indústrias pesadas, indica operação sob pressão.</dd></div><div><dt>Intermediária</dt><dd>Indústria de transformação, serviços, bens de consumo.</dd></div><div><dt>Alta</dt><dd>Concessões, transmissão de energia, telecom, software. Em vários desses casos, grande parte da margem é consumida por depreciação e reinvestimento.</dd></div></dl>
+      <div class="destaque"><b>Conceito importante</b><p>Margem EBITDA alta em negócio de capital intensivo é quase uma necessidade, e não um mérito: é ela que paga a reposição dos ativos e os juros da dívida que os financiou.</p></div>
+    </section>
+    <section class="num" id="bom-resultado"><h2>O que é considerado um bom resultado</h2><p>O nível varia muito por setor, em boa parte por causa da intensidade de capital. Uma transmissora de energia pode ter margem EBITDA de 80% e uma varejista, de 7%, e a segunda pode ser o melhor negócio. Compare com concorrentes diretos e acompanhe a tendência.</p></section>
+    <section class="num" id="aplicacao"><h2>Aplicação prática</h2><p>Útil para comparar a eficiência operacional de empresas do mesmo setor com níveis de endividamento e políticas de depreciação diferentes. Para uma visão mais completa, coloque ao lado a margem EBIT e a relação capex/receita.</p>
+      <h3>Duas empresas fictícias, lado a lado</h3>
+      <div class="duelo"><div class="duelo-lado"><h3>Transmissora Vale Verde</h3><p>Energia; deprecia 22% da receita</p><dl><div><dt>EBIT (lucro operacional)</dt><dd>R$ 1.300 mi</dd></div><div><dt>Depreciação e amortização</dt><dd>R$ 550 mi</dd></div><div><dt>Receita líquida</dt><dd>R$ 2.500 mi</dd></div></dl><p class="duelo-res"><span>Margem EBITDA</span><b>74,0%</b></p></div><div class="duelo-lado"><h3>Distribuidora Rota</h3><p>Atacado; deprecia 1% da receita</p><dl><div><dt>EBIT (lucro operacional)</dt><dd>R$ 800 mi</dd></div><div><dt>Depreciação e amortização</dt><dd>R$ 200 mi</dd></div><div><dt>Receita líquida</dt><dd>R$ 20.000 mi</dd></div></dl><p class="duelo-res"><span>Margem EBITDA</span><b>5,0%</b></p></div></div><p>A transmissora fica com 74% da receita como EBITDA; a distribuidora, com 5%. Mas a primeira tem R$ 14.000 milhões aplicados em linhas e subestações, e a segunda gira o mesmo dinheiro várias vezes ao ano com R$ 4.000 milhões de capital. O retorno sobre o capital das duas pode ser parecido. A margem diz quanto sobra de cada venda, e não quanto capital foi preciso para vender.</p>
+      <h3>O mesmo indicador em setores diferentes</h3>
+      <ul class="setores"><li><b>Indústria</b><span>Sensível a volume: a margem sobe com a fábrica cheia e cai com ociosidade.</span></li><li><b>Energia e concessões</b><span>Margens altas e estáveis, contrapartida de investimento elevado.</span></li><li><b>Tecnologia</b><span>Verifique se a remuneração em ações foi excluída do EBITDA ajustado.</span></li><li><b>Varejo</b><span>Margens de um dígito são normais; diferenças de 1 ponto percentual são relevantes.</span></li></ul>
+    </section>
+    <section class="num" id="limitacoes"><h2>Limitações e ressalvas</h2>
+      <div class="destaque destaque-erro"><b>Erro comum</b><p>Comparar a margem EBITDA de setores com intensidades de capital diferentes e concluir que a mais alta é a melhor empresa.</p></div>
+      <ul class="ressalvas"><li><b>Ignora o capex.</b> A depreciação representa um gasto real feito no passado e que terá de ser refeito.</li><li><b>EBITDA ajustado.</b> Cada empresa define seus ajustes; leia a conciliação com o lucro líquido.</li><li><b>IFRS 16.</b> Aluguéis saíram das despesas operacionais e viraram depreciação e juros, elevando a margem EBITDA sem mudança econômica.</li><li><b>Não se aplica a bancos.</b></li><li><b>Não é fluxo de caixa.</b> Não considera capital de giro, juros nem impostos.</li></ul>
+      <p class="nota">Todo indicador calculado com dados passados descreve o que já aconteceu. Usá-lo para projetar o futuro supõe que as condições vão se repetir, o que nem sempre ocorre.</p>
+    </section>
+    <section class="num" id="complementares"><h2>Indicadores complementares</h2>
+      <p>Nenhum indicador responde sozinho. Para uma leitura mais confiável, analise junto:</p>
+      <ul class="junto"><li><a href="indicador-margem-ebit.html"><b>Margem EBIT</b><span>A distância entre as duas é o peso da depreciação.</span></a></li><li><a href="indicador-ev-ebitda.html"><b>EV/EBITDA</b><span>Usa o mesmo EBITDA para avaliar o preço.</span></a></li><li><a href="indicador-divida-liquida-ebitda.html"><b>Dívida Líquida/EBITDA</b><span>Usa o EBITDA como medida de capacidade de pagamento.</span></a></li><li><a href="indicador-fluxo-de-caixa-livre.html"><b>Fluxo de Caixa Livre</b><span>Mostra o que resta depois do investimento.</span></a></li><li><a href="indicador-roic.html"><b>ROIC</b><span>Relaciona o resultado com o capital empregado.</span></a></li></ul>
+      <p>Veja casos em que um indicador isolado engana em <a href="indicadores-em-conjunto.html">Indicadores em conjunto</a>.</p>
+      <h3>Termos usados nesta página</h3>
+      <ul class="termos"><li><a class="chip" href="glossario.html#ebitda">EBITDA (LAJIDA)</a></li><li><a class="chip" href="glossario.html#depreciacao">Depreciação</a></li><li><a class="chip" href="glossario.html#amortizacao">Amortização</a></li><li><a class="chip" href="glossario.html#capex">Capex</a></li><li><a class="chip" href="glossario.html#ifrs16">IFRS 16 (CPC 06 R2)</a></li><li><a class="chip" href="glossario.html#intensidade-de-capital">Intensidade de capital</a></li></ul>
+    </section>
+    <div class="marcar"><p><b>Terminou de estudar este indicador?</b> A marcação fica guardada só neste navegador.</p><button type="button" class="btn btn-secundario btn-pequeno" id="marcar-lido" aria-pressed="false">Marcar como estudado</button></div>
+    <nav class="aula-passos" aria-label="Indicadores vizinhos">
+      <a href="indicador-margem-bruta.html"><span>Anterior · 2.4</span><b>Margem bruta</b></a>
+      <a href="indicador-margem-ebit.html"><span>Próximo · 2.6</span><b>Margem EBIT</b></a>
+    </nav>
+    <div style="margin-top:2rem"><p class="aviso"><b>Conteúdo educacional</b>Não é recomendação de investimento individualizada e não substitui um profissional habilitado. Não há garantia de retorno. A decisão é de quem investe.</p></div>
+  </div>
+  </div>
+</div></article>
+</main>
+<aside class="decida" aria-label="Orientação ao leitor"><div class="dentro">
+  <p class="decida-titulo">Estude. Compare.<br><em>Decida por você.</em></p>
+  <p class="decida-texto">A Cerne explica e oferece ferramentas. Não diz o que comprar nem o que vender. Leia as fontes, forme a sua própria opinião e tome as suas decisões. Elas, e a responsabilidade por elas, são suas.</p>
+  <div class="decida-cena"><svg viewBox="0 0 176 210" aria-hidden="true" focusable="false">
+  <path class="i-sol" d="M120 22 a22 22 0 1 0 22 36 a18 18 0 0 1 -22 -36 Z"/>
+  <circle class="i-lua" cx="34" cy="40" r="2"/><circle class="i-lua" cx="70" cy="18" r="1.6"/><circle class="i-lua" cx="150" cy="96" r="1.8"/><circle class="i-lua" cx="20" cy="110" r="1.4"/>
+  <path class="i-ln-lua" d="M52 210 V124 a36 36 0 0 1 72 0 V210"/>
+  <path class="i-sol" d="M58 210 V125 a30 30 0 0 1 60 0 V210 Z"/>
+  <polygon class="i-ac" points="58,210 58,112 92,128 92,210"/>
+  <circle class="i-lua" cx="86" cy="172" r="2.6"/>
+  <polygon class="i-sol" opacity=".28" points="92,210 118,210 176,236 110,236"/></svg></div>
+</div></aside>
+<footer class="rodape">
+  <div class="dentro">
+    <div class="rodape-grade">
+      <div>
+        <p class="rodape-marca"><svg class="logo" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span>Cerne</span></p>
+        <p>Valor real antes do preço. Educação financeira de base fundamentalista, para quem busca liberdade e tranquilidade com o próprio dinheiro.</p>
+      </div>
+      <div>
+        <h2>Ferramentas</h2>
+        <ul><li><a href="carteira/">Monte sua carteira</a></li><li><a href="juros.html">Juros compostos</a></li><li><a href="liberdade.html">Liberdade financeira</a></li><li><a href="roteiro.html">Checagem do estudo</a></li></ul>
+      </div>
+      <div>
+        <h2>Aprender</h2>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+      </div>
+      <div>
+        <h2>Cerne</h2>
+        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
+      </div>
+    </div>
+    <p class="rodape-legal">Cerne é um projeto educacional. Não é corretora, gestora, consultoria nem analista de valores mobiliários, não tem registro na CVM e não vende produtos financeiros. Nada aqui é recomendação de investimento individualizada nem promessa de retorno. As decisões e os riscos são de quem investe.</p>
+  </div>
+</footer>
+<script src="site/site.js"></script>
+<script src="site/indicadores-calc.js"></script>
+<script src="site/indicadores.js"></script>
+</body>
+</html>

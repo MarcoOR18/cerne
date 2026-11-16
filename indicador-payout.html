@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Payout Ratio — Indicadores — Cerne</title>
+<meta name="description" content="Payout Ratio: A parcela do lucro líquido distribuída aos acionistas como proventos. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cerne">
+<meta property="og:title" content="Payout Ratio — Indicadores — Cerne">
+<meta property="og:description" content="Payout Ratio: A parcela do lucro líquido distribuída aos acionistas como proventos. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta property="og:image" content="https://marcoor18.github.io/cerne/site/og-cerne.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site/site.css">
+<link rel="stylesheet" href="site/vetor.css">
+<script src="carteira/js/tema.js"></script>
+</head>
+<body data-pagina="aprender">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="dentro">
+    <a class="marca" href="index.html" aria-label="Cerne, página inicial"><svg class="logo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span class="marca-nome">Cerne</span></a>
+    <nav class="nav" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+    <div class="topo-acoes">
+      <button type="button" class="btn-topo" id="btn-tema" aria-pressed="false" aria-label="Modo escuro"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="btn-topo" id="btn-nav" aria-expanded="false" aria-controls="nav-movel" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <nav class="nav-movel" id="nav-movel" aria-label="Principal, celular" hidden><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+</header>
+<main id="conteudo">
+<article class="secao" data-indicador="payout"><div class="dentro">
+  <div class="ind-cab">
+    <div>
+      <p class="olho"><a href="aprender.html">Aprender</a> · <a href="indicadores.html">Indicadores</a> · <a href="indicadores.html#mercado">Indicadores de mercado e ações</a> · 5.2</p>
+      <h1 class="titulo">Payout Ratio</h1>
+      <p class="lead">A parcela do lucro líquido distribuída aos acionistas como proventos.</p>
+      <p class="ind-tags"><span class="tag tag-contabil" title="Calculada com dados das demonstrações financeiras. Só muda a cada balanço.">Métrica contábil</span><span class="tag tag-lida" id="selo-lido" hidden>Estudado</span></p>
+    </div>
+    <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><circle class="i-ceu i-tr" cx="74" cy="88" r="56"/><path class="i-ac i-tr" d="M86 70 V14 a56 56 0 0 1 48.5 28 Z"/><path class="i-ln-f" d="M74 88 V32 M74 88 L122.5 116 M74 88 L25.5 116"/><circle class="i-bg i-tr" cx="74" cy="88" r="14"/><circle class="i-ink" cx="74" cy="88" r="5"/></svg></figure>
+  </div>
+  <div class="aula-grade">
+  <nav class="aula-indice" aria-label="Nesta página">
+    <p>Nesta página</p>
+    <ol><li><a href="#o-que-e">O que é</a></li><li><a href="#o-que-mede">O que mede</a></li><li><a href="#como-calcular">Como calcular</a></li><li><a href="#exemplo">Exemplo prático</a></li><li><a href="#interpretar">Como interpretar</a></li><li><a href="#bom-resultado">O que é um bom resultado</a></li><li><a href="#aplicacao">Aplicação prática</a></li><li><a href="#limitacoes">Limitações e ressalvas</a></li><li><a href="#complementares">Indicadores complementares</a></li></ol>
+  </nav>
+  <div class="ind-corpo">
+    <section class="num" id="o-que-e"><h2>O que é</h2><p>O payout é o total de proventos distribuídos (dividendos e juros sobre capital próprio) dividido pelo lucro líquido do mesmo período. O complemento, o que fica na empresa, é a taxa de retenção.</p></section>
+    <section class="num" id="o-que-mede"><h2>O que mede</h2><p>Mede a política de distribuição: quanto do lucro a empresa devolve aos sócios e quanto retém para reinvestir, reduzir dívida ou reforçar o caixa. Revela, indiretamente, como a administração enxerga as oportunidades de investimento do negócio.</p>
+      <div class="destaque destaque-ressalva"><b>Métrica contábil</b><p>Calculada com dados das demonstrações financeiras. Só muda a cada balanço. O número depende das escolhas contábeis da empresa e fica parado entre uma divulgação e outra.</p></div>
+    </section>
+    <section class="num" id="como-calcular"><h2>Como calcular</h2>
+      <div class="quadro-formula"><p>Payout = <i>Proventos distribuídos</i> ÷ <i>Lucro líquido</i></p></div>
+      <dl class="variaveis"><div><dt>Proventos distribuídos</dt><dd>Dividendos e JCP declarados em relação ao lucro do período. Pode ser calculado também por ação: proventos por ação ÷ LPA.</dd></div><div><dt>Lucro líquido</dt><dd>Lucro do mesmo período. No Brasil, a Lei das S.A. prevê um dividendo mínimo obrigatório, definido no estatuto (comumente 25% do lucro líquido ajustado).</dd></div></dl>
+    </section>
+    <section class="num" id="exemplo"><h2>Exemplo prático</h2>
+      <p>A <b>Companhia Alfa</b> é uma empresa fictícia, com números realistas, usada em todas as páginas desta área. A conta, passo a passo:</p>
+      <ol class="passos-ex"><li>Proventos distribuídos no período (dividendos e juros sobre capital próprio): R$ 900 mi.</li><li>Lucro líquido do mesmo período: R$ 1.500 mi.</li><li>Payout = 900 ÷ 1.500 = 60,0%.</li><li>O que não foi distribuído, 40,0% do lucro, ficou na empresa (taxa de retenção).</li></ol>
+      <div class="lab" id="laboratorio" data-lab="payout" data-presets="{&quot;padrao&quot;:{&quot;prov&quot;:900,&quot;lucro&quot;:1500},&quot;a&quot;:{&quot;prov&quot;:800,&quot;lucro&quot;:1000},&quot;b&quot;:{&quot;prov&quot;:800,&quot;lucro&quot;:700}}">
+      <div class="lab-topo"><b>Experimente: mude os valores</b>
+        <ul class="chips" aria-label="Carregar valores de exemplo"><li><button type="button" class="chip" data-preset="padrao" aria-pressed="true">Companhia Alfa</button></li><li><button type="button" class="chip" data-preset="a" aria-pressed="false">Elétrica Planalto</button></li><li><button type="button" class="chip" data-preset="b" aria-pressed="false">Varejo Cometa</button></li></ul>
+      </div>
+      <div class="lab-grade">
+        <form class="lab-entradas" novalidate>
+        <div class="campo"><label for="lab-prov">Proventos distribuídos (12 meses)</label><div class="entrada"><span>R$</span><input id="lab-prov" data-id="prov" type="text" inputmode="decimal" autocomplete="off" value="900"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-lucro">Lucro líquido (12 meses)</label><div class="entrada"><span>R$</span><input id="lab-lucro" data-id="lucro" type="text" inputmode="decimal" autocomplete="off" value="1.500"><span>milhões</span></div></div>
+        </form>
+        <div class="lab-saida" aria-live="polite">
+          <p class="lab-rotulo">Payout</p>
+          <p class="lab-valor" data-lab-valor>60,0%</p>
+          <div data-lab-medidor><div class="medidor" aria-hidden="true"><i style="left:40.0%"></i></div><div class="medidor-escala" aria-hidden="true"><span>0%</span><span>150% ou mais</span></div></div>
+          <p class="lab-leitura" data-lab-leitura>Faixa intermediária: parte vai para o acionista, parte fica para reinvestir.</p>
+          <ol class="lab-passos" data-lab-passos><li>Proventos distribuídos no período (dividendos e juros sobre capital próprio): R$ 900 mi.</li><li>Lucro líquido do mesmo período: R$ 1.500 mi.</li><li>Payout = 900 ÷ 1.500 = 60,0%.</li><li>O que não foi distribuído, 40,0% do lucro, ficou na empresa (taxa de retenção).</li></ol>
+        </div>
+      </div>
+      <p class="lab-nota">Empresas e números fictícios. A leitura automática é uma pista para estudo, baseada em faixas genéricas; ela não conhece o setor, o ciclo nem a qualidade dos dados. Não é recomendação.</p>
+    </div>
+    </section>
+    <section class="num" id="interpretar"><h2>Como interpretar</h2>
+      <dl class="faixas"><div><dt>Baixo</dt><dd>Empresa retém lucro. Adequado quando há projetos com retorno acima do custo de capital.</dd></div><div><dt>Intermediário</dt><dd>Equilíbrio entre remunerar o acionista e financiar o crescimento.</dd></div><div><dt>Alto ou acima de 100%</dt><dd>Negócio maduro com pouca necessidade de reinvestir, ou distribuição acima do que o lucro permite, o que não dura.</dd></div></dl>
+      <div class="destaque"><b>Conceito importante</b><p>Crescimento sustentável ≈ ROE × taxa de retenção. Uma empresa com ROE de 20% que distribui 75% do lucro só consegue crescer cerca de 5% ao ano com recursos próprios.</p></div>
+    </section>
+    <section class="num" id="bom-resultado"><h2>O que é considerado um bom resultado</h2><p>O payout adequado depende do retorno que a empresa obtém sobre o capital reinvestido. Se o ROIC é alto e há onde investir, reter é melhor para o acionista. Se não há bons projetos, distribuir é melhor do que acumular caixa ou fazer aquisições ruins. Não há virtude em payout alto nem em payout baixo por si.</p></section>
+    <section class="num" id="aplicacao"><h2>Aplicação prática</h2><p>Verifique a consistência: payout estável ao longo dos anos indica política definida. Compare os proventos com o fluxo de caixa livre, e não só com o lucro: é o caixa que paga. Um payout acima de 100% ou acima do FCF por vários anos é sinal de alerta.</p>
+      <h3>Duas empresas fictícias, lado a lado</h3>
+      <div class="duelo"><div class="duelo-lado"><h3>Elétrica Planalto</h3><p>FCF de 1.100; payout estável há anos</p><dl><div><dt>Proventos distribuídos (12 meses)</dt><dd>R$ 800 mi</dd></div><div><dt>Lucro líquido (12 meses)</dt><dd>R$ 1.000 mi</dd></div></dl><p class="duelo-res"><span>Payout</span><b>80,0%</b></p></div><div class="duelo-lado"><h3>Varejo Cometa</h3><p>FCF de 250; captou dívida no ano</p><dl><div><dt>Proventos distribuídos (12 meses)</dt><dd>R$ 800 mi</dd></div><div><dt>Lucro líquido (12 meses)</dt><dd>R$ 700 mi</dd></div></dl><p class="duelo-res"><span>Payout</span><b>114,3%</b></p></div></div><p>A Planalto distribui 80% do lucro e gera caixa livre maior que os proventos: a política se sustenta. A Cometa distribuiu mais do que lucrou, e seu caixa livre cobre menos de um terço do valor pago; o restante veio de dívida. Um yield atraente hoje, financiado assim, costuma terminar em corte de dividendos.</p>
+      <h3>O mesmo indicador em setores diferentes</h3>
+      <ul class="setores"><li><b>Bancos</b><span>Payouts de 40% a 60% são comuns, limitados pelas exigências de capital.</span></li><li><b>Energia e saneamento</b><span>Payouts altos quando a fase de investimento é leve.</span></li><li><b>Tecnologia</b><span>Baixo ou zero, com retenção para crescimento.</span></li><li><b>Commodities</b><span>Varia muito com o ciclo; algumas empresas adotam fórmula ligada ao caixa.</span></li></ul>
+    </section>
+    <section class="num" id="limitacoes"><h2>Limitações e ressalvas</h2>
+      <div class="destaque destaque-erro"><b>Erro comum</b><p>Considerar payout alto como sinal de qualidade. Empresas em declínio costumam distribuir quase tudo, por não terem onde investir.</p></div>
+      <ul class="ressalvas"><li><b>Baseado no lucro contábil,</b> e não no caixa.</li><li><b>Lucros voláteis</b> fazem o payout saltar sem mudança de política.</li><li><b>Sem sentido com prejuízo.</b></li><li><b>Ignora recompras,</b> que também devolvem capital.</li><li><b>Proventos extraordinários</b> inflam o indicador em um ano.</li><li><b>Defasagem.</b> Proventos pagos em um ano costumam se referir ao lucro do ano anterior; a comparação por data de pagamento distorce.</li></ul>
+      <p class="nota">Todo indicador calculado com dados passados descreve o que já aconteceu. Usá-lo para projetar o futuro supõe que as condições vão se repetir, o que nem sempre ocorre.</p>
+    </section>
+    <section class="num" id="complementares"><h2>Indicadores complementares</h2>
+      <p>Nenhum indicador responde sozinho. Para uma leitura mais confiável, analise junto:</p>
+      <ul class="junto"><li><a href="indicador-dividend-yield.html"><b>Dividend Yield</b><span>O provento em relação ao preço.</span></a></li><li><a href="indicador-fluxo-de-caixa-livre.html"><b>Fluxo de Caixa Livre</b><span>A fonte real do pagamento.</span></a></li><li><a href="indicador-roe.html"><b>ROE</b><span>Com a retenção, define o crescimento sustentável.</span></a></li><li><a href="indicador-divida-liquida-ebitda.html"><b>Dívida Líquida/EBITDA</b><span>Mostra se os proventos pressionam o balanço.</span></a></li><li><a href="indicador-lpa.html"><b>EPS (Lucro por Ação)</b><span>Base do payout por ação.</span></a></li></ul>
+      <p>Veja casos em que um indicador isolado engana em <a href="indicadores-em-conjunto.html">Indicadores em conjunto</a>.</p>
+      <h3>Termos usados nesta página</h3>
+      <ul class="termos"><li><a class="chip" href="glossario.html#proventos">Proventos</a></li><li><a class="chip" href="glossario.html#jcp">Juros sobre capital próprio (JCP)</a></li><li><a class="chip" href="glossario.html#taxa-de-retencao">Taxa de retenção</a></li><li><a class="chip" href="glossario.html#dividendo-minimo">Dividendo mínimo obrigatório</a></li><li><a class="chip" href="glossario.html#recompra">Recompra de ações</a></li></ul>
+    </section>
+    <div class="marcar"><p><b>Terminou de estudar este indicador?</b> A marcação fica guardada só neste navegador.</p><button type="button" class="btn btn-secundario btn-pequeno" id="marcar-lido" aria-pressed="false">Marcar como estudado</button></div>
+    <nav class="aula-passos" aria-label="Indicadores vizinhos">
+      <a href="indicador-lpa.html"><span>Anterior · 5.1</span><b>LPA</b></a>
+      <a href="indicador-beta.html"><span>Próximo · 5.3</span><b>Beta</b></a>
+    </nav>
+    <div style="margin-top:2rem"><p class="aviso"><b>Conteúdo educacional</b>Não é recomendação de investimento individualizada e não substitui um profissional habilitado. Não há garantia de retorno. A decisão é de quem investe.</p></div>
+  </div>
+  </div>
+</div></article>
+</main>
+<aside class="decida" aria-label="Orientação ao leitor"><div class="dentro">
+  <p class="decida-titulo">Estude. Compare.<br><em>Decida por você.</em></p>
+  <p class="decida-texto">A Cerne explica e oferece ferramentas. Não diz o que comprar nem o que vender. Leia as fontes, forme a sua própria opinião e tome as suas decisões. Elas, e a responsabilidade por elas, são suas.</p>
+  <div class="decida-cena"><svg viewBox="0 0 176 210" aria-hidden="true" focusable="false">
+  <path class="i-sol" d="M120 22 a22 22 0 1 0 22 36 a18 18 0 0 1 -22 -36 Z"/>
+  <circle class="i-lua" cx="34" cy="40" r="2"/><circle class="i-lua" cx="70" cy="18" r="1.6"/><circle class="i-lua" cx="150" cy="96" r="1.8"/><circle class="i-lua" cx="20" cy="110" r="1.4"/>
+  <path class="i-ln-lua" d="M52 210 V124 a36 36 0 0 1 72 0 V210"/>
+  <path class="i-sol" d="M58 210 V125 a30 30 0 0 1 60 0 V210 Z"/>
+  <polygon class="i-ac" points="58,210 58,112 92,128 92,210"/>
+  <circle class="i-lua" cx="86" cy="172" r="2.6"/>
+  <polygon class="i-sol" opacity=".28" points="92,210 118,210 176,236 110,236"/></svg></div>
+</div></aside>
+<footer class="rodape">
+  <div class="dentro">
+    <div class="rodape-grade">
+      <div>
+        <p class="rodape-marca"><svg class="logo" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span>Cerne</span></p>
+        <p>Valor real antes do preço. Educação financeira de base fundamentalista, para quem busca liberdade e tranquilidade com o próprio dinheiro.</p>
+      </div>
+      <div>
+        <h2>Ferramentas</h2>
+        <ul><li><a href="carteira/">Monte sua carteira</a></li><li><a href="juros.html">Juros compostos</a></li><li><a href="liberdade.html">Liberdade financeira</a></li><li><a href="roteiro.html">Checagem do estudo</a></li></ul>
+      </div>
+      <div>
+        <h2>Aprender</h2>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+      </div>
+      <div>
+        <h2>Cerne</h2>
+        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
+      </div>
+    </div>
+    <p class="rodape-legal">Cerne é um projeto educacional. Não é corretora, gestora, consultoria nem analista de valores mobiliários, não tem registro na CVM e não vende produtos financeiros. Nada aqui é recomendação de investimento individualizada nem promessa de retorno. As decisões e os riscos são de quem investe.</p>
+  </div>
+</footer>
+<script src="site/site.js"></script>
+<script src="site/indicadores-calc.js"></script>
+<script src="site/indicadores.js"></script>
+</body>
+</html>

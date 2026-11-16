@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>P/S (Preço/Vendas) — Indicadores — Cerne</title>
+<meta name="description" content="P/S (Preço/Vendas): Quanto o mercado paga por cada real de receita, sem olhar para o lucro. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cerne">
+<meta property="og:title" content="P/S (Preço/Vendas) — Indicadores — Cerne">
+<meta property="og:description" content="P/S (Preço/Vendas): Quanto o mercado paga por cada real de receita, sem olhar para o lucro. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta property="og:image" content="https://marcoor18.github.io/cerne/site/og-cerne.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site/site.css">
+<link rel="stylesheet" href="site/vetor.css">
+<script src="carteira/js/tema.js"></script>
+</head>
+<body data-pagina="aprender">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="dentro">
+    <a class="marca" href="index.html" aria-label="Cerne, página inicial"><svg class="logo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span class="marca-nome">Cerne</span></a>
+    <nav class="nav" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+    <div class="topo-acoes">
+      <button type="button" class="btn-topo" id="btn-tema" aria-pressed="false" aria-label="Modo escuro"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="btn-topo" id="btn-nav" aria-expanded="false" aria-controls="nav-movel" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <nav class="nav-movel" id="nav-movel" aria-label="Principal, celular" hidden><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+</header>
+<main id="conteudo">
+<article class="secao" data-indicador="ps"><div class="dentro">
+  <div class="ind-cab">
+    <div>
+      <p class="olho"><a href="aprender.html">Aprender</a> · <a href="indicadores.html">Indicadores</a> · <a href="indicadores.html#valuation">Valuation</a> · 1.5</p>
+      <h1 class="titulo">P/S (Preço/Vendas)</h1>
+      <p class="lead">Quanto o mercado paga por cada real de receita, sem olhar para o lucro.</p>
+      <p class="ind-tags"><span class="tag tag-mista" title="Combina preço de mercado com dado contábil.">Mercado + contábil</span><span class="tag tag-lida" id="selo-lido" hidden>Estudado</span></p>
+    </div>
+    <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><circle class="i-ceu i-tr" cx="80" cy="74" r="62"/><g transform="translate(80 40) scale(0.62)">
+  <polygon class="i-ink" points="-16,96 16,96 0,22"/><rect class="i-ink" x="-34" y="94" width="68" height="8" rx="2"/>
+  <path class="i-ln" d="M-78 34 L78 6"/><circle class="i-sol i-tr" cx="0" cy="20" r="8"/>
+  <path class="i-ln-f" d="M-78 34 L-98 78 M-78 34 L-58 78 M78 6 L58 44 M78 6 L98 44"/>
+  <path class="i-bg i-tr" d="M-104 78 h52 a26 14 0 0 1 -52 0 Z"/><path class="i-bg i-tr" d="M52 44 h52 a26 14 0 0 1 -52 0 Z"/>
+</g><circle class="i-sol i-tr" cx="32" cy="72" r="13"/><text x="32" y="77" text-anchor="middle" class="i-ink" style="font:700 13px sans-serif">$</text><g transform="translate(112 34) scale(0.42)"><polygon class="i-bg i-tr" points="0,14 30,0 60,14 30,28"/><polygon class="i-ac i-tr" points="0,14 30,28 30,62 0,48"/><polygon class="i-ink i-tr" points="60,14 30,28 30,62 60,48"/></g></svg></figure>
+  </div>
+  <div class="aula-grade">
+  <nav class="aula-indice" aria-label="Nesta página">
+    <p>Nesta página</p>
+    <ol><li><a href="#o-que-e">O que é</a></li><li><a href="#o-que-mede">O que mede</a></li><li><a href="#como-calcular">Como calcular</a></li><li><a href="#exemplo">Exemplo prático</a></li><li><a href="#interpretar">Como interpretar</a></li><li><a href="#bom-resultado">O que é um bom resultado</a></li><li><a href="#aplicacao">Aplicação prática</a></li><li><a href="#limitacoes">Limitações e ressalvas</a></li><li><a href="#complementares">Indicadores complementares</a></li></ol>
+  </nav>
+  <div class="ind-corpo">
+    <section class="num" id="o-que-e"><h2>O que é</h2><p>O P/S (price to sales), também chamado de PSR, divide o valor de mercado da empresa pela receita líquida de um ano. Por ação, é o preço dividido pela receita por ação.</p></section>
+    <section class="num" id="o-que-mede"><h2>O que mede</h2><p>Mede o preço em relação ao tamanho das vendas. Como a receita é a primeira linha da demonstração de resultado, ela é menos afetada por critérios contábeis e existe mesmo quando há prejuízo. Isso faz do P/S a alternativa quando o P/L não pode ser calculado.</p><p>O que o P/S <b>não</b> mede é a qualidade dessas vendas: ele trata do mesmo modo R$ 1,00 de receita que deixa R$ 0,30 de lucro e R$ 1,00 que deixa R$ 0,02.</p>
+      <div class="destaque destaque-ressalva"><b>Mercado + contábil</b><p>Combina preço de mercado com dado contábil. Por isso varia todos os dias, mesmo que nada mude na empresa.</p></div>
+    </section>
+    <section class="num" id="como-calcular"><h2>Como calcular</h2>
+      <div class="quadro-formula"><p>P/S = <i>Valor de mercado</i> ÷ <i>Receita líquida</i></p></div>
+      <dl class="variaveis"><div><dt>Valor de mercado</dt><dd>Preço da ação multiplicado pelo número de ações.</dd></div><div><dt>Receita líquida</dt><dd>Vendas do período depois de impostos sobre vendas, devoluções e descontos. Em geral, últimos 12 meses.</dd></div></dl>
+    </section>
+    <section class="num" id="exemplo"><h2>Exemplo prático</h2>
+      <p>A <b>Companhia Alfa</b> é uma empresa fictícia, com números realistas, usada em todas as páginas desta área. A conta, passo a passo:</p>
+      <ol class="passos-ex"><li>Valor de mercado: R$ 12.000 mi.</li><li>Receita líquida dos últimos 12 meses: R$ 20.000 mi.</li><li>P/S = 12.000 ÷ 20.000 = 0,60×.</li><li>Leitura: paga-se R$ 0,60 por cada R$ 1,00 de receita anual. Quanto dessa receita vira lucro depende da margem.</li></ol>
+      <div class="lab" id="laboratorio" data-lab="ps" data-presets="{&quot;padrao&quot;:{&quot;vm&quot;:12000,&quot;receita&quot;:20000},&quot;a&quot;:{&quot;vm&quot;:6000,&quot;receita&quot;:20000},&quot;b&quot;:{&quot;vm&quot;:9600,&quot;receita&quot;:3200}}">
+      <div class="lab-topo"><b>Experimente: mude os valores</b>
+        <ul class="chips" aria-label="Carregar valores de exemplo"><li><button type="button" class="chip" data-preset="padrao" aria-pressed="true">Companhia Alfa</button></li><li><button type="button" class="chip" data-preset="a" aria-pressed="false">Mercado Central</button></li><li><button type="button" class="chip" data-preset="b" aria-pressed="false">Clave Software</button></li></ul>
+      </div>
+      <div class="lab-grade">
+        <form class="lab-entradas" novalidate>
+        <div class="campo"><label for="lab-vm">Valor de mercado</label><div class="entrada"><span>R$</span><input id="lab-vm" data-id="vm" type="text" inputmode="decimal" autocomplete="off" value="12.000"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-receita">Receita líquida (12 meses)</label><div class="entrada"><span>R$</span><input id="lab-receita" data-id="receita" type="text" inputmode="decimal" autocomplete="off" value="20.000"><span>milhões</span></div></div>
+        </form>
+        <div class="lab-saida" aria-live="polite">
+          <p class="lab-rotulo">P/S</p>
+          <p class="lab-valor" data-lab-valor>0,60×</p>
+          <div data-lab-medidor><div class="medidor" aria-hidden="true"><i style="left:6.0%"></i></div><div class="medidor-escala" aria-hidden="true"><span>0×</span><span>10× ou mais</span></div></div>
+          <p class="lab-leitura" data-lab-leitura>Abaixo de 1: comum em varejo e distribuição, que giram muito e ficam com pouco de cada venda. Não é, por si, sinal de barato.</p>
+          <ol class="lab-passos" data-lab-passos><li>Valor de mercado: R$ 12.000 mi.</li><li>Receita líquida dos últimos 12 meses: R$ 20.000 mi.</li><li>P/S = 12.000 ÷ 20.000 = 0,60×.</li><li>Leitura: paga-se R$ 0,60 por cada R$ 1,00 de receita anual. Quanto dessa receita vira lucro depende da margem.</li></ol>
+        </div>
+      </div>
+      <p class="lab-nota">Empresas e números fictícios. A leitura automática é uma pista para estudo, baseada em faixas genéricas; ela não conhece o setor, o ciclo nem a qualidade dos dados. Não é recomendação.</p>
+    </div>
+    </section>
+    <section class="num" id="interpretar"><h2>Como interpretar</h2>
+      <dl class="faixas"><div><dt>Abaixo de 1</dt><dd>A empresa vale menos do que vende em um ano. É o normal em negócios de margem estreita, como supermercados e distribuidoras.</dd></div><div><dt>Entre 1 e 4</dt><dd>Faixa de muitas indústrias e empresas de serviços. A margem define se é muito ou pouco.</dd></div><div><dt>Acima de 4</dt><dd>Frequente em software e em empresas de crescimento acelerado. O preço pressupõe crescimento longo e margens futuras altas.</dd></div></dl>
+      <div class="destaque"><b>Conceito importante</b><p>Receita não é lucro, e lucro não é caixa. O P/S está no degrau mais distante do dinheiro que chega ao acionista, e por isso é o múltiplo que mais depende de hipóteses sobre o futuro.</p></div>
+    </section>
+    <section class="num" id="bom-resultado"><h2>O que é considerado um bom resultado</h2><p>O P/S só pode ser avaliado junto com a margem. A relação é direta: P/S = P/L × margem líquida. Um P/S de 0,5 com margem de 2% equivale a um P/L de 25; um P/S de 3 com margem de 30% equivale a um P/L de 10. O segundo é o mais barato em termos de lucro.</p></section>
+    <section class="num" id="aplicacao"><h2>Aplicação prática</h2><p>É útil para empresas jovens que ainda não dão lucro, para empresas cíclicas em ano de prejuízo e para comparar a série histórica de uma mesma empresa, já que a receita é mais estável do que o lucro. Na comparação entre companhias, use somente entre negócios de margens semelhantes.</p>
+      <h3>Duas empresas fictícias, lado a lado</h3>
+      <div class="duelo"><div class="duelo-lado"><h3>Mercado Central</h3><p>Supermercados, margem líquida de 2%</p><dl><div><dt>Valor de mercado</dt><dd>R$ 6.000 mi</dd></div><div><dt>Receita líquida (12 meses)</dt><dd>R$ 20.000 mi</dd></div></dl><p class="duelo-res"><span>P/S</span><b>0,30×</b></p></div><div class="duelo-lado"><h3>Clave Software</h3><p>Software, margem líquida de 25%</p><dl><div><dt>Valor de mercado</dt><dd>R$ 9.600 mi</dd></div><div><dt>Receita líquida (12 meses)</dt><dd>R$ 3.200 mi</dd></div></dl><p class="duelo-res"><span>P/S</span><b>3,00×</b></p></div></div><p>O Mercado Central vale 0,3 vez a receita; a Clave, 3 vezes: dez vezes mais. Aplicando as margens, o lucro do supermercado é de R$ 400 milhões (P/L de 15) e o da empresa de software, de R$ 800 milhões (P/L de 12). Medida pelo lucro, a empresa de P/S "caro" custa menos.</p>
+      <h3>O mesmo indicador em setores diferentes</h3>
+      <ul class="setores"><li><b>Tecnologia</b><span>Muito usado em software por assinatura, ao lado da margem bruta e da taxa de crescimento.</span></li><li><b>Varejo</b><span>P/S baixo é estrutural. Compare somente com outros varejistas do mesmo formato.</span></li><li><b>Bancos</b><span>Não se aplica: bancos não têm "receita líquida de vendas" comparável.</span></li><li><b>Indústria</b><span>Útil em anos de prejuízo cíclico, quando o P/L desaparece.</span></li></ul>
+    </section>
+    <section class="num" id="limitacoes"><h2>Limitações e ressalvas</h2>
+      <div class="destaque destaque-erro"><b>Erro comum</b><p>Comparar o P/S de setores diferentes. Um supermercado a 0,3 vez a receita e uma empresa de software a 8 vezes não dizem nada um sobre o outro.</p></div>
+      <ul class="ressalvas"><li><b>Ignora a rentabilidade.</b> Vender muito com prejuízo não cria valor.</li><li><b>Ignora a dívida.</b> Usa o valor de mercado, e não o valor da firma. A versão EV/Receita corrige isso.</li><li><b>Reconhecimento de receita.</b> Há diferenças entre receita bruta e líquida, e entre vender como principal ou como intermediário (marketplaces registram só a comissão).</li><li><b>Crescimento comprado.</b> Receita que cresce à custa de descontos e subsídios melhora o P/S e piora o negócio.</li></ul>
+      <p class="nota">Todo indicador calculado com dados passados descreve o que já aconteceu. Usá-lo para projetar o futuro supõe que as condições vão se repetir, o que nem sempre ocorre.</p>
+    </section>
+    <section class="num" id="complementares"><h2>Indicadores complementares</h2>
+      <p>Nenhum indicador responde sozinho. Para uma leitura mais confiável, analise junto:</p>
+      <ul class="junto"><li><a href="indicador-margem-liquida.html"><b>Margem líquida</b><span>Transforma receita em lucro e dá sentido ao P/S.</span></a></li><li><a href="indicador-margem-bruta.html"><b>Margem bruta</b><span>Indica o potencial de lucro de cada real vendido.</span></a></li><li><a href="indicador-cagr-receita.html"><b>CAGR da receita</b><span>O P/S alto só se justifica com crescimento.</span></a></li><li><a href="indicador-pl.html"><b>P/L</b><span>Quando existe lucro, é a referência mais direta.</span></a></li></ul>
+      <p>Veja casos em que um indicador isolado engana em <a href="indicadores-em-conjunto.html">Indicadores em conjunto</a>.</p>
+      <h3>Termos usados nesta página</h3>
+      <ul class="termos"><li><a class="chip" href="glossario.html#receita-liquida">Receita líquida</a></li><li><a class="chip" href="glossario.html#valor-de-mercado">Valor de mercado (market cap)</a></li><li><a class="chip" href="glossario.html#margem">Margem</a></li><li><a class="chip" href="glossario.html#multiplo">Múltiplo</a></li></ul>
+    </section>
+    <div class="marcar"><p><b>Terminou de estudar este indicador?</b> A marcação fica guardada só neste navegador.</p><button type="button" class="btn btn-secundario btn-pequeno" id="marcar-lido" aria-pressed="false">Marcar como estudado</button></div>
+    <nav class="aula-passos" aria-label="Indicadores vizinhos">
+      <a href="indicador-ev-ebit.html"><span>Anterior · 1.4</span><b>EV/EBIT</b></a>
+      <a href="indicador-peg.html"><span>Próximo · 1.6</span><b>PEG</b></a>
+    </nav>
+    <div style="margin-top:2rem"><p class="aviso"><b>Conteúdo educacional</b>Não é recomendação de investimento individualizada e não substitui um profissional habilitado. Não há garantia de retorno. A decisão é de quem investe.</p></div>
+  </div>
+  </div>
+</div></article>
+</main>
+<aside class="decida" aria-label="Orientação ao leitor"><div class="dentro">
+  <p class="decida-titulo">Estude. Compare.<br><em>Decida por você.</em></p>
+  <p class="decida-texto">A Cerne explica e oferece ferramentas. Não diz o que comprar nem o que vender. Leia as fontes, forme a sua própria opinião e tome as suas decisões. Elas, e a responsabilidade por elas, são suas.</p>
+  <div class="decida-cena"><svg viewBox="0 0 176 210" aria-hidden="true" focusable="false">
+  <path class="i-sol" d="M120 22 a22 22 0 1 0 22 36 a18 18 0 0 1 -22 -36 Z"/>
+  <circle class="i-lua" cx="34" cy="40" r="2"/><circle class="i-lua" cx="70" cy="18" r="1.6"/><circle class="i-lua" cx="150" cy="96" r="1.8"/><circle class="i-lua" cx="20" cy="110" r="1.4"/>
+  <path class="i-ln-lua" d="M52 210 V124 a36 36 0 0 1 72 0 V210"/>
+  <path class="i-sol" d="M58 210 V125 a30 30 0 0 1 60 0 V210 Z"/>
+  <polygon class="i-ac" points="58,210 58,112 92,128 92,210"/>
+  <circle class="i-lua" cx="86" cy="172" r="2.6"/>
+  <polygon class="i-sol" opacity=".28" points="92,210 118,210 176,236 110,236"/></svg></div>
+</div></aside>
+<footer class="rodape">
+  <div class="dentro">
+    <div class="rodape-grade">
+      <div>
+        <p class="rodape-marca"><svg class="logo" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span>Cerne</span></p>
+        <p>Valor real antes do preço. Educação financeira de base fundamentalista, para quem busca liberdade e tranquilidade com o próprio dinheiro.</p>
+      </div>
+      <div>
+        <h2>Ferramentas</h2>
+        <ul><li><a href="carteira/">Monte sua carteira</a></li><li><a href="juros.html">Juros compostos</a></li><li><a href="liberdade.html">Liberdade financeira</a></li><li><a href="roteiro.html">Checagem do estudo</a></li></ul>
+      </div>
+      <div>
+        <h2>Aprender</h2>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+      </div>
+      <div>
+        <h2>Cerne</h2>
+        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
+      </div>
+    </div>
+    <p class="rodape-legal">Cerne é um projeto educacional. Não é corretora, gestora, consultoria nem analista de valores mobiliários, não tem registro na CVM e não vende produtos financeiros. Nada aqui é recomendação de investimento individualizada nem promessa de retorno. As decisões e os riscos são de quem investe.</p>
+  </div>
+</footer>
+<script src="site/site.js"></script>
+<script src="site/indicadores-calc.js"></script>
+<script src="site/indicadores.js"></script>
+</body>
+</html>

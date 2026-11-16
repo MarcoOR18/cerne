@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EV/EBITDA — Indicadores — Cerne</title>
+<meta name="description" content="EV/EBITDA: Relaciona o valor da empresa inteira, com a dívida, ao resultado operacional antes da depreciação. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cerne">
+<meta property="og:title" content="EV/EBITDA — Indicadores — Cerne">
+<meta property="og:description" content="EV/EBITDA: Relaciona o valor da empresa inteira, com a dívida, ao resultado operacional antes da depreciação. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta property="og:image" content="https://marcoor18.github.io/cerne/site/og-cerne.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site/site.css">
+<link rel="stylesheet" href="site/vetor.css">
+<script src="carteira/js/tema.js"></script>
+</head>
+<body data-pagina="aprender">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="dentro">
+    <a class="marca" href="index.html" aria-label="Cerne, página inicial"><svg class="logo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span class="marca-nome">Cerne</span></a>
+    <nav class="nav" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+    <div class="topo-acoes">
+      <button type="button" class="btn-topo" id="btn-tema" aria-pressed="false" aria-label="Modo escuro"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="btn-topo" id="btn-nav" aria-expanded="false" aria-controls="nav-movel" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <nav class="nav-movel" id="nav-movel" aria-label="Principal, celular" hidden><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+</header>
+<main id="conteudo">
+<article class="secao" data-indicador="ev-ebitda"><div class="dentro">
+  <div class="ind-cab">
+    <div>
+      <p class="olho"><a href="aprender.html">Aprender</a> · <a href="indicadores.html">Indicadores</a> · <a href="indicadores.html#valuation">Valuation</a> · 1.3</p>
+      <h1 class="titulo">EV/EBITDA</h1>
+      <p class="lead">Relaciona o valor da empresa inteira, com a dívida, ao resultado operacional antes da depreciação.</p>
+      <p class="ind-tags"><span class="tag tag-mista" title="Combina preço de mercado com dado contábil.">Mercado + contábil</span><span class="tag tag-lida" id="selo-lido" hidden>Estudado</span></p>
+    </div>
+    <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><circle class="i-ceu i-tr" cx="80" cy="74" r="62"/><g transform="translate(80 40) scale(0.62)">
+  <polygon class="i-ink" points="-16,96 16,96 0,22"/><rect class="i-ink" x="-34" y="94" width="68" height="8" rx="2"/>
+  <path class="i-ln" d="M-78 34 L78 6"/><circle class="i-sol i-tr" cx="0" cy="20" r="8"/>
+  <path class="i-ln-f" d="M-78 34 L-98 78 M-78 34 L-58 78 M78 6 L58 44 M78 6 L98 44"/>
+  <path class="i-bg i-tr" d="M-104 78 h52 a26 14 0 0 1 -52 0 Z"/><path class="i-bg i-tr" d="M52 44 h52 a26 14 0 0 1 -52 0 Z"/>
+</g><circle class="i-sol i-tr" cx="32" cy="72" r="13"/><text x="32" y="77" text-anchor="middle" class="i-ink" style="font:700 13px sans-serif">$</text><g transform="translate(112 34) scale(0.42)"><polygon class="i-bg i-tr" points="0,14 30,0 60,14 30,28"/><polygon class="i-ac i-tr" points="0,14 30,28 30,62 0,48"/><polygon class="i-ink i-tr" points="60,14 30,28 30,62 60,48"/></g></svg></figure>
+  </div>
+  <div class="aula-grade">
+  <nav class="aula-indice" aria-label="Nesta página">
+    <p>Nesta página</p>
+    <ol><li><a href="#o-que-e">O que é</a></li><li><a href="#o-que-mede">O que mede</a></li><li><a href="#como-calcular">Como calcular</a></li><li><a href="#exemplo">Exemplo prático</a></li><li><a href="#interpretar">Como interpretar</a></li><li><a href="#bom-resultado">O que é um bom resultado</a></li><li><a href="#aplicacao">Aplicação prática</a></li><li><a href="#limitacoes">Limitações e ressalvas</a></li><li><a href="#complementares">Indicadores complementares</a></li></ol>
+  </nav>
+  <div class="ind-corpo">
+    <section class="num" id="o-que-e"><h2>O que é</h2><p>O EV/EBITDA divide o valor da firma (Enterprise Value, EV) pelo EBITDA, sigla em inglês para lucro antes de juros, impostos, depreciação e amortização (em português, LAJIDA).</p><p>O EV soma o valor de mercado das ações à dívida líquida. A ideia é avaliar o negócio como um todo, como faria alguém que comprasse 100% da empresa e assumisse as dívidas dela.</p></section>
+    <section class="num" id="o-que-mede"><h2>O que mede</h2><p>Mede quantas vezes o resultado operacional bruto de um ano cabe no valor total do negócio. Como numerador e denominador pertencem a todos os financiadores (sócios e credores), o múltiplo <b>não é afetado pela estrutura de capital</b>: duas empresas iguais, uma endividada e outra não, terão EV/EBITDA parecidos, embora tenham P/L bem diferentes.</p>
+      <div class="destaque destaque-ressalva"><b>Mercado + contábil</b><p>Combina preço de mercado com dado contábil. Por isso varia todos os dias, mesmo que nada mude na empresa.</p></div>
+    </section>
+    <section class="num" id="como-calcular"><h2>Como calcular</h2>
+      <div class="quadro-formula"><p>EV/EBITDA = <i>Enterprise Value</i> ÷ <i>EBITDA</i></p><p>EV = Valor de mercado + Dívida bruta − Caixa</p></div>
+      <dl class="variaveis"><div><dt>Valor de mercado</dt><dd>Preço da ação multiplicado pelo número de ações.</dd></div><div><dt>Dívida bruta</dt><dd>Empréstimos, financiamentos e debêntures, de curto e longo prazo.</dd></div><div><dt>Caixa</dt><dd>Caixa, equivalentes e aplicações financeiras de liquidez imediata.</dd></div><div><dt>EBITDA</dt><dd>Lucro operacional (EBIT) somado à depreciação e à amortização, em geral dos últimos 12 meses. Não é definido pelas normas contábeis internacionais; no Brasil, a CVM padroniza o cálculo divulgado pelas companhias.</dd></div></dl>
+    </section>
+    <section class="num" id="exemplo"><h2>Exemplo prático</h2>
+      <p>A <b>Companhia Alfa</b> é uma empresa fictícia, com números realistas, usada em todas as páginas desta área. A conta, passo a passo:</p>
+      <ol class="passos-ex"><li>Dívida líquida = 5.000 − 2.000 = R$ 3.000 mi.</li><li>EV = valor de mercado + dívida líquida = 12.000 + 3.000 = R$ 15.000 mi.</li><li>EV/EBITDA = 15.000 ÷ 3.000 = 5,0×.</li><li>Leitura: o valor da empresa inteira (ações mais dívida líquida) equivale a 5,0 anos do EBITDA atual.</li></ol>
+      <div class="lab" id="laboratorio" data-lab="ev-ebitda" data-presets="{&quot;padrao&quot;:{&quot;vm&quot;:12000,&quot;divida&quot;:5000,&quot;caixa&quot;:2000,&quot;ebitda&quot;:3000},&quot;a&quot;:{&quot;vm&quot;:9000,&quot;divida&quot;:6000,&quot;caixa&quot;:1000,&quot;ebitda&quot;:2800},&quot;b&quot;:{&quot;vm&quot;:9600,&quot;divida&quot;:400,&quot;caixa&quot;:1000,&quot;ebitda&quot;:900}}">
+      <div class="lab-topo"><b>Experimente: mude os valores</b>
+        <ul class="chips" aria-label="Carregar valores de exemplo"><li><button type="button" class="chip" data-preset="padrao" aria-pressed="true">Companhia Alfa</button></li><li><button type="button" class="chip" data-preset="a" aria-pressed="false">Rede Fibra</button></li><li><button type="button" class="chip" data-preset="b" aria-pressed="false">Clave Software</button></li></ul>
+      </div>
+      <div class="lab-grade">
+        <form class="lab-entradas" novalidate>
+        <div class="campo"><label for="lab-vm">Valor de mercado</label><div class="entrada"><span>R$</span><input id="lab-vm" data-id="vm" type="text" inputmode="decimal" autocomplete="off" value="12.000"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-divida">Dívida bruta</label><div class="entrada"><span>R$</span><input id="lab-divida" data-id="divida" type="text" inputmode="decimal" autocomplete="off" value="5.000"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-caixa">Caixa e aplicações</label><div class="entrada"><span>R$</span><input id="lab-caixa" data-id="caixa" type="text" inputmode="decimal" autocomplete="off" value="2.000"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-ebitda">EBITDA (12 meses)</label><div class="entrada"><span>R$</span><input id="lab-ebitda" data-id="ebitda" type="text" inputmode="decimal" autocomplete="off" value="3.000"><span>milhões</span></div></div>
+        </form>
+        <div class="lab-saida" aria-live="polite">
+          <p class="lab-rotulo">EV/EBITDA</p>
+          <p class="lab-valor" data-lab-valor>5,00×</p>
+          <div data-lab-medidor><div class="medidor" aria-hidden="true"><i style="left:25.0%"></i></div><div class="medidor-escala" aria-hidden="true"><span>0×</span><span>20× ou mais</span></div></div>
+          <p class="lab-leitura" data-lab-leitura>Faixa intermediária para muitas empresas maduras. Compare com pares do mesmo setor e com a necessidade de investimento (capex) do negócio.</p>
+          <ol class="lab-passos" data-lab-passos><li>Dívida líquida = 5.000 − 2.000 = R$ 3.000 mi.</li><li>EV = valor de mercado + dívida líquida = 12.000 + 3.000 = R$ 15.000 mi.</li><li>EV/EBITDA = 15.000 ÷ 3.000 = 5,0×.</li><li>Leitura: o valor da empresa inteira (ações mais dívida líquida) equivale a 5,0 anos do EBITDA atual.</li></ol>
+        </div>
+      </div>
+      <p class="lab-nota">Empresas e números fictícios. A leitura automática é uma pista para estudo, baseada em faixas genéricas; ela não conhece o setor, o ciclo nem a qualidade dos dados. Não é recomendação.</p>
+    </div>
+    </section>
+    <section class="num" id="interpretar"><h2>Como interpretar</h2>
+      <dl class="faixas"><div><dt>Baixo</dt><dd>Negócio avaliado por poucos anos de EBITDA. Frequente em setores cíclicos no pico e em empresas de capital muito intensivo, nas quais grande parte do EBITDA precisa ser reinvestida.</dd></div><div><dt>Intermediário</dt><dd>Faixa de muitas empresas maduras. O significado depende do setor e de quanto do EBITDA sobra depois dos investimentos.</dd></div><div><dt>Alto</dt><dd>Mercado espera crescimento ou enxerga receita muito previsível. Comum em tecnologia, saúde e marcas de consumo.</dd></div></dl>
+      <div class="destaque"><b>Conceito importante</b><p>O EBITDA não é caixa. Ele ignora quatro saídas reais de dinheiro: juros, impostos, investimentos para repor ativos (capex) e variações do capital de giro.</p></div>
+    </section>
+    <section class="num" id="bom-resultado"><h2>O que é considerado um bom resultado</h2><p>Os múltiplos variam muito entre setores porque o EBITDA de cada um "vale" coisas diferentes. Em uma empresa de software, quase todo o EBITDA vira caixa. Em uma siderúrgica ou companhia aérea, uma parte grande volta para repor máquinas e aeronaves. Por isso, um EV/EBITDA de 5 em capital intensivo pode ser mais caro que um de 10 em um negócio leve.</p><p>Compare com pares do mesmo setor e com o histórico da empresa, e sempre observe quanto do EBITDA se converte em fluxo de caixa livre.</p></section>
+    <section class="num" id="aplicacao"><h2>Aplicação prática</h2><p>É o múltiplo preferido em fusões e aquisições e em comparações entre empresas com níveis diferentes de dívida ou de países com tributações distintas. Use-o para comparar empresas do mesmo setor e, em seguida, refine com EV/EBIT ou FCF yield, que consideram o desgaste dos ativos.</p>
+      <h3>Duas empresas fictícias, lado a lado</h3>
+      <div class="duelo"><div class="duelo-lado"><h3>Rede Fibra</h3><p>Telecom, capex de 70% do EBITDA</p><dl><div><dt>Valor de mercado</dt><dd>R$ 9.000 mi</dd></div><div><dt>Dívida bruta</dt><dd>R$ 6.000 mi</dd></div><div><dt>Caixa e aplicações</dt><dd>R$ 1.000 mi</dd></div><div><dt>EBITDA (12 meses)</dt><dd>R$ 2.800 mi</dd></div></dl><p class="duelo-res"><span>EV/EBITDA</span><b>5,00×</b></p></div><div class="duelo-lado"><h3>Clave Software</h3><p>Software, capex de 8% do EBITDA</p><dl><div><dt>Valor de mercado</dt><dd>R$ 9.600 mi</dd></div><div><dt>Dívida bruta</dt><dd>R$ 400 mi</dd></div><div><dt>Caixa e aplicações</dt><dd>R$ 1.000 mi</dd></div><div><dt>EBITDA (12 meses)</dt><dd>R$ 900 mi</dd></div></dl><p class="duelo-res"><span>EV/EBITDA</span><b>10,0×</b></p></div></div><p>Pelo múltiplo, a Rede Fibra custa metade da Clave. Mas a telecom precisa reinvestir cerca de R$ 1.960 milhões por ano para manter a rede; sobram R$ 840 milhões antes de juros e impostos. A empresa de software reinveste R$ 72 milhões e fica com R$ 828 milhões. O EBITDA que resta depois do capex é quase igual nas duas, para valores de firma de R$ 14.000 e R$ 9.000 milhões. O múltiplo "barato" não era tão barato.</p>
+      <h3>O mesmo indicador em setores diferentes</h3>
+      <ul class="setores"><li><b>Indústria</b><span>Muito usado. Atenção ao ciclo e à intensidade de capital: compare também pelo EV/EBIT.</span></li><li><b>Bancos</b><span>Não se aplica. Use P/L, P/VP e ROE.</span></li><li><b>Tecnologia</b><span>Válido para empresas já lucrativas. Verifique a remuneração em ações, que algumas empresas excluem do EBITDA ajustado embora seja custo real.</span></li><li><b>Varejo</b><span>Deixe claro se o EBITDA é antes ou depois do efeito do IFRS 16; a diferença é grande.</span></li></ul>
+    </section>
+    <section class="num" id="limitacoes"><h2>Limitações e ressalvas</h2>
+      <div class="destaque destaque-erro"><b>Erro comum</b><p>Chamar o EBITDA de "geração de caixa". Uma empresa pode ter EBITDA crescente e queimar caixa todos os anos, se o capex e os juros consumirem mais do que ele produz.</p></div>
+      <ul class="ressalvas"><li><b>Ignora o capex.</b> A depreciação é a contrapartida contábil de um gasto real em ativos. Desconsiderá-la favorece negócios de capital intensivo.</li><li><b>Não se aplica a bancos e seguradoras.</b> Para eles, juros são matéria-prima, e não despesa financeira; o conceito de EBITDA e de dívida líquida não funciona.</li><li><b>EBITDA "ajustado".</b> Empresas divulgam versões ajustadas que excluem despesas rotuladas como não recorrentes. Confira os ajustes: quando se repetem todo ano, são recorrentes.</li><li><b>IFRS 16.</b> Desde 2019, aluguéis passaram a ser registrados como depreciação e juros, o que aumentou o EBITDA de varejistas e aéreas sem mudar o caixa. Séries históricas e comparações precisam usar o mesmo critério.</li><li><b>Itens fora do EV simples.</b> Participação de minoritários, passivos de pensão, arrendamentos e contingências deveriam entrar em um EV rigoroso.</li><li><b>Caixa de fim de período.</b> O caixa do balanço é uma fotografia de um dia e pode não representar a média do ano.</li></ul>
+      <p class="nota">Todo indicador calculado com dados passados descreve o que já aconteceu. Usá-lo para projetar o futuro supõe que as condições vão se repetir, o que nem sempre ocorre.</p>
+    </section>
+    <section class="num" id="complementares"><h2>Indicadores complementares</h2>
+      <p>Nenhum indicador responde sozinho. Para uma leitura mais confiável, analise junto:</p>
+      <ul class="junto"><li><a href="indicador-ev-ebit.html"><b>EV/EBIT</b><span>Desconta a depreciação e trata melhor a intensidade de capital.</span></a></li><li><a href="indicador-fcf-yield.html"><b>FCF Yield</b><span>Mostra o caixa que de fato sobra.</span></a></li><li><a href="indicador-divida-liquida-ebitda.html"><b>Dívida Líquida/EBITDA</b><span>Revela quanto do EV é dívida e o risco associado.</span></a></li><li><a href="indicador-margem-ebitda.html"><b>Margem EBITDA</b><span>Dá a dimensão operacional por trás do EBITDA.</span></a></li><li><a href="indicador-enterprise-value.html"><b>Enterprise Value</b><span>Detalha a construção do numerador.</span></a></li></ul>
+      <p>Veja casos em que um indicador isolado engana em <a href="indicadores-em-conjunto.html">Indicadores em conjunto</a>.</p>
+      <h3>Termos usados nesta página</h3>
+      <ul class="termos"><li><a class="chip" href="glossario.html#ebitda">EBITDA (LAJIDA)</a></li><li><a class="chip" href="glossario.html#enterprise-value">Enterprise Value (EV)</a></li><li><a class="chip" href="glossario.html#divida-liquida">Dívida líquida</a></li><li><a class="chip" href="glossario.html#capex">Capex</a></li><li><a class="chip" href="glossario.html#depreciacao">Depreciação</a></li><li><a class="chip" href="glossario.html#ifrs16">IFRS 16 (CPC 06 R2)</a></li><li><a class="chip" href="glossario.html#estrutura-de-capital">Estrutura de capital</a></li></ul>
+    </section>
+    <div class="marcar"><p><b>Terminou de estudar este indicador?</b> A marcação fica guardada só neste navegador.</p><button type="button" class="btn btn-secundario btn-pequeno" id="marcar-lido" aria-pressed="false">Marcar como estudado</button></div>
+    <nav class="aula-passos" aria-label="Indicadores vizinhos">
+      <a href="indicador-pvp.html"><span>Anterior · 1.2</span><b>P/VP</b></a>
+      <a href="indicador-ev-ebit.html"><span>Próximo · 1.4</span><b>EV/EBIT</b></a>
+    </nav>
+    <div style="margin-top:2rem"><p class="aviso"><b>Conteúdo educacional</b>Não é recomendação de investimento individualizada e não substitui um profissional habilitado. Não há garantia de retorno. A decisão é de quem investe.</p></div>
+  </div>
+  </div>
+</div></article>
+</main>
+<aside class="decida" aria-label="Orientação ao leitor"><div class="dentro">
+  <p class="decida-titulo">Estude. Compare.<br><em>Decida por você.</em></p>
+  <p class="decida-texto">A Cerne explica e oferece ferramentas. Não diz o que comprar nem o que vender. Leia as fontes, forme a sua própria opinião e tome as suas decisões. Elas, e a responsabilidade por elas, são suas.</p>
+  <div class="decida-cena"><svg viewBox="0 0 176 210" aria-hidden="true" focusable="false">
+  <path class="i-sol" d="M120 22 a22 22 0 1 0 22 36 a18 18 0 0 1 -22 -36 Z"/>
+  <circle class="i-lua" cx="34" cy="40" r="2"/><circle class="i-lua" cx="70" cy="18" r="1.6"/><circle class="i-lua" cx="150" cy="96" r="1.8"/><circle class="i-lua" cx="20" cy="110" r="1.4"/>
+  <path class="i-ln-lua" d="M52 210 V124 a36 36 0 0 1 72 0 V210"/>
+  <path class="i-sol" d="M58 210 V125 a30 30 0 0 1 60 0 V210 Z"/>
+  <polygon class="i-ac" points="58,210 58,112 92,128 92,210"/>
+  <circle class="i-lua" cx="86" cy="172" r="2.6"/>
+  <polygon class="i-sol" opacity=".28" points="92,210 118,210 176,236 110,236"/></svg></div>
+</div></aside>
+<footer class="rodape">
+  <div class="dentro">
+    <div class="rodape-grade">
+      <div>
+        <p class="rodape-marca"><svg class="logo" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span>Cerne</span></p>
+        <p>Valor real antes do preço. Educação financeira de base fundamentalista, para quem busca liberdade e tranquilidade com o próprio dinheiro.</p>
+      </div>
+      <div>
+        <h2>Ferramentas</h2>
+        <ul><li><a href="carteira/">Monte sua carteira</a></li><li><a href="juros.html">Juros compostos</a></li><li><a href="liberdade.html">Liberdade financeira</a></li><li><a href="roteiro.html">Checagem do estudo</a></li></ul>
+      </div>
+      <div>
+        <h2>Aprender</h2>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+      </div>
+      <div>
+        <h2>Cerne</h2>
+        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
+      </div>
+    </div>
+    <p class="rodape-legal">Cerne é um projeto educacional. Não é corretora, gestora, consultoria nem analista de valores mobiliários, não tem registro na CVM e não vende produtos financeiros. Nada aqui é recomendação de investimento individualizada nem promessa de retorno. As decisões e os riscos são de quem investe.</p>
+  </div>
+</footer>
+<script src="site/site.js"></script>
+<script src="site/indicadores-calc.js"></script>
+<script src="site/indicadores.js"></script>
+</body>
+</html>

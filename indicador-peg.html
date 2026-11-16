@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PEG Ratio — Indicadores — Cerne</title>
+<meta name="description" content="PEG Ratio: Divide o P/L pela taxa de crescimento esperada do lucro. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cerne">
+<meta property="og:title" content="PEG Ratio — Indicadores — Cerne">
+<meta property="og:description" content="PEG Ratio: Divide o P/L pela taxa de crescimento esperada do lucro. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta property="og:image" content="https://marcoor18.github.io/cerne/site/og-cerne.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site/site.css">
+<link rel="stylesheet" href="site/vetor.css">
+<script src="carteira/js/tema.js"></script>
+</head>
+<body data-pagina="aprender">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="dentro">
+    <a class="marca" href="index.html" aria-label="Cerne, página inicial"><svg class="logo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span class="marca-nome">Cerne</span></a>
+    <nav class="nav" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+    <div class="topo-acoes">
+      <button type="button" class="btn-topo" id="btn-tema" aria-pressed="false" aria-label="Modo escuro"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="btn-topo" id="btn-nav" aria-expanded="false" aria-controls="nav-movel" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <nav class="nav-movel" id="nav-movel" aria-label="Principal, celular" hidden><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+</header>
+<main id="conteudo">
+<article class="secao" data-indicador="peg"><div class="dentro">
+  <div class="ind-cab">
+    <div>
+      <p class="olho"><a href="aprender.html">Aprender</a> · <a href="indicadores.html">Indicadores</a> · <a href="indicadores.html#valuation">Valuation</a> · 1.6</p>
+      <h1 class="titulo">PEG Ratio</h1>
+      <p class="lead">Divide o P/L pela taxa de crescimento esperada do lucro.</p>
+      <p class="ind-tags"><span class="tag tag-mista" title="Combina preço de mercado com dado contábil.">Mercado + contábil</span><span class="tag tag-lida" id="selo-lido" hidden>Estudado</span></p>
+    </div>
+    <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><circle class="i-ceu i-tr" cx="80" cy="74" r="62"/><g transform="translate(80 40) scale(0.62)">
+  <polygon class="i-ink" points="-16,96 16,96 0,22"/><rect class="i-ink" x="-34" y="94" width="68" height="8" rx="2"/>
+  <path class="i-ln" d="M-78 34 L78 6"/><circle class="i-sol i-tr" cx="0" cy="20" r="8"/>
+  <path class="i-ln-f" d="M-78 34 L-98 78 M-78 34 L-58 78 M78 6 L58 44 M78 6 L98 44"/>
+  <path class="i-bg i-tr" d="M-104 78 h52 a26 14 0 0 1 -52 0 Z"/><path class="i-bg i-tr" d="M52 44 h52 a26 14 0 0 1 -52 0 Z"/>
+</g><circle class="i-sol i-tr" cx="32" cy="72" r="13"/><text x="32" y="77" text-anchor="middle" class="i-ink" style="font:700 13px sans-serif">$</text><g transform="translate(112 34) scale(0.42)"><polygon class="i-bg i-tr" points="0,14 30,0 60,14 30,28"/><polygon class="i-ac i-tr" points="0,14 30,28 30,62 0,48"/><polygon class="i-ink i-tr" points="60,14 30,28 30,62 60,48"/></g></svg></figure>
+  </div>
+  <div class="aula-grade">
+  <nav class="aula-indice" aria-label="Nesta página">
+    <p>Nesta página</p>
+    <ol><li><a href="#o-que-e">O que é</a></li><li><a href="#o-que-mede">O que mede</a></li><li><a href="#como-calcular">Como calcular</a></li><li><a href="#exemplo">Exemplo prático</a></li><li><a href="#interpretar">Como interpretar</a></li><li><a href="#bom-resultado">O que é um bom resultado</a></li><li><a href="#aplicacao">Aplicação prática</a></li><li><a href="#limitacoes">Limitações e ressalvas</a></li><li><a href="#complementares">Indicadores complementares</a></li></ol>
+  </nav>
+  <div class="ind-corpo">
+    <section class="num" id="o-que-e"><h2>O que é</h2><p>O PEG (price/earnings to growth) é o P/L dividido pela taxa anual de crescimento esperada do lucro por ação. Foi popularizado pelo gestor Peter Lynch como forma rápida de perguntar se o crescimento de uma empresa já está no preço.</p></section>
+    <section class="num" id="o-que-mede"><h2>O que mede</h2><p>Mede quanto se paga por unidade de crescimento. A lógica: um P/L de 30 pode ser razoável para uma empresa que cresce 30% ao ano e exagerado para uma que cresce 5%.</p>
+      <div class="destaque destaque-ressalva"><b>Mercado + contábil</b><p>Combina preço de mercado com dado contábil. Por isso varia todos os dias, mesmo que nada mude na empresa.</p></div>
+    </section>
+    <section class="num" id="como-calcular"><h2>Como calcular</h2>
+      <div class="quadro-formula"><p>PEG = <i>P/L</i> ÷ <i>Crescimento anual esperado do lucro (em %)</i></p></div>
+      <dl class="variaveis"><div><dt>P/L</dt><dd>Preço dividido pelo lucro por ação, atual ou projetado.</dd></div><div><dt>Crescimento esperado</dt><dd>Taxa anual projetada para o lucro por ação, normalmente para os próximos três a cinco anos, em número percentual (12% entra como 12). É uma estimativa, de analistas ou sua. Há quem use o crescimento passado, o que supõe que o futuro repetirá o histórico.</dd></div></dl>
+    </section>
+    <section class="num" id="exemplo"><h2>Exemplo prático</h2>
+      <p>A <b>Companhia Alfa</b> é uma empresa fictícia, com números realistas, usada em todas as páginas desta área. A conta, passo a passo:</p>
+      <ol class="passos-ex"><li>P/L atual: 15,0×.</li><li>Crescimento anual esperado do lucro por ação: 12,0% (usa-se o número, sem o sinal de %).</li><li>PEG = 15,0 ÷ 12,0 = 1,25.</li><li>Atenção: o resultado é tão confiável quanto a taxa de crescimento usada, que é uma projeção.</li></ol>
+      <div class="lab" id="laboratorio" data-lab="peg" data-presets="{&quot;padrao&quot;:{&quot;pl&quot;:15,&quot;g&quot;:12},&quot;a&quot;:{&quot;pl&quot;:25,&quot;g&quot;:25},&quot;b&quot;:{&quot;pl&quot;:6,&quot;g&quot;:3}}">
+      <div class="lab-topo"><b>Experimente: mude os valores</b>
+        <ul class="chips" aria-label="Carregar valores de exemplo"><li><button type="button" class="chip" data-preset="padrao" aria-pressed="true">Companhia Alfa</button></li><li><button type="button" class="chip" data-preset="a" aria-pressed="false">Nimbo Sistemas</button></li><li><button type="button" class="chip" data-preset="b" aria-pressed="false">Tecelagem Aurora</button></li></ul>
+      </div>
+      <div class="lab-grade">
+        <form class="lab-entradas" novalidate>
+        <div class="campo"><label for="lab-pl">P/L da empresa</label><div class="entrada"><input id="lab-pl" data-id="pl" type="text" inputmode="decimal" autocomplete="off" value="15"></div></div>
+        <div class="campo"><label for="lab-g">Crescimento anual esperado do lucro</label><div class="entrada"><input id="lab-g" data-id="g" type="text" inputmode="decimal" autocomplete="off" value="12"><span>%</span></div></div>
+        </form>
+        <div class="lab-saida" aria-live="polite">
+          <p class="lab-rotulo">PEG</p>
+          <p class="lab-valor" data-lab-valor>1,25</p>
+          <div data-lab-medidor><div class="medidor" aria-hidden="true"><i style="left:31.3%"></i></div><div class="medidor-escala" aria-hidden="true"><span>0</span><span>4 ou mais</span></div></div>
+          <p class="lab-leitura" data-lab-leitura>Entre 1 e 2: faixa em que o preço parece acompanhar o crescimento esperado. A regra de 1 é uma convenção, e não um resultado teórico.</p>
+          <ol class="lab-passos" data-lab-passos><li>P/L atual: 15,0×.</li><li>Crescimento anual esperado do lucro por ação: 12,0% (usa-se o número, sem o sinal de %).</li><li>PEG = 15,0 ÷ 12,0 = 1,25.</li><li>Atenção: o resultado é tão confiável quanto a taxa de crescimento usada, que é uma projeção.</li></ol>
+        </div>
+      </div>
+      <p class="lab-nota">Empresas e números fictícios. A leitura automática é uma pista para estudo, baseada em faixas genéricas; ela não conhece o setor, o ciclo nem a qualidade dos dados. Não é recomendação.</p>
+    </div>
+    </section>
+    <section class="num" id="interpretar"><h2>Como interpretar</h2>
+      <dl class="faixas"><div><dt>Abaixo de 1</dt><dd>P/L menor que o crescimento esperado. Pela regra prática, crescimento "barato".</dd></div><div><dt>Em torno de 1</dt><dd>Pela convenção de Lynch, preço alinhado com o crescimento.</dd></div><div><dt>Acima de 2</dt><dd>Paga-se muito por pouco crescimento, ou a empresa é madura e remunera o acionista mais por dividendos do que por expansão.</dd></div></dl>
+      <div class="destaque"><b>Conceito importante</b><p>Crescimento só cria valor quando o retorno sobre o capital investido supera o custo de capital. Uma empresa pode crescer 20% ao ano destruindo valor, se cada real reinvestido render menos do que custa.</p></div>
+    </section>
+    <section class="num" id="bom-resultado"><h2>O que é considerado um bom resultado</h2><p>A referência de "PEG igual a 1" é uma regra de bolso, sem fundamento teórico rigoroso. O P/L justo depende também dos juros, do risco e de quanto capital a empresa precisa reinvestir para crescer. Em períodos de juros altos, PEGs justos tendem a ser menores.</p></section>
+    <section class="num" id="aplicacao"><h2>Aplicação prática</h2><p>Serve para ordenar empresas de crescimento do mesmo setor e para questionar P/Ls altos. Faça o exercício com mais de uma hipótese de crescimento: se o PEG muda de 0,8 para 2 ao trocar a projeção de 20% para 8%, a conclusão depende inteiramente de uma previsão.</p>
+      <h3>Duas empresas fictícias, lado a lado</h3>
+      <div class="duelo"><div class="duelo-lado"><h3>Nimbo Sistemas</h3><p>P/L 25, crescimento esperado de 25%</p><dl><div><dt>P/L da empresa</dt><dd>25</dd></div><div><dt>Crescimento anual esperado do lucro</dt><dd>25%</dd></div></dl><p class="duelo-res"><span>PEG</span><b>1,00</b></p></div><div class="duelo-lado"><h3>Tecelagem Aurora</h3><p>P/L 6, crescimento esperado de 3%</p><dl><div><dt>P/L da empresa</dt><dd>6</dd></div><div><dt>Crescimento anual esperado do lucro</dt><dd>3%</dd></div></dl><p class="duelo-res"><span>PEG</span><b>2,00</b></p></div></div><p>Pelo P/L, a Aurora (6 vezes) parece muito mais barata que a Nimbo (25 vezes). Pelo PEG, a ordem se inverte: 2,0 contra 1,0. Nenhum dos dois encerra a questão. A Aurora pode distribuir quase todo o lucro em dividendos, o que o PEG ignora; e os 25% da Nimbo são uma promessa. O PEG muda a pergunta de "qual é o múltiplo?" para "o crescimento é crível?".</p>
+      <h3>O mesmo indicador em setores diferentes</h3>
+      <ul class="setores"><li><b>Tecnologia</b><span>Uso mais frequente, justamente onde as projeções são mais incertas.</span></li><li><b>Bancos</b><span>Pouco usado; o crescimento do lucro depende do ciclo de crédito.</span></li><li><b>Indústria cíclica</b><span>Enganoso: a "taxa de crescimento" a partir de um vale de ciclo é recuperação, e não crescimento estrutural.</span></li><li><b>Varejo</b><span>Útil em redes em expansão, se o crescimento vier de lojas novas com retorno comprovado.</span></li></ul>
+    </section>
+    <section class="num" id="limitacoes"><h2>Limitações e ressalvas</h2>
+      <div class="destaque destaque-erro"><b>Erro comum</b><p>Tratar a taxa de crescimento como fato. Projeções de cinco anos erram muito, e o PEG herda todo esse erro com aparência de precisão.</p></div>
+      <ul class="ressalvas"><li><b>Depende de projeção.</b> O denominador é uma estimativa incerta.</li><li><b>Ignora dividendos.</b> Empresas maduras, de crescimento baixo e payout alto, parecem caras pelo PEG. Há uma variante (PEGY) que soma o dividend yield ao crescimento.</li><li><b>Ignora o risco e a qualidade do crescimento.</b> Crescer por aquisições caras ou com endividamento não vale o mesmo que crescer com o próprio caixa.</li><li><b>Não funciona com lucro negativo ou crescimento negativo ou próximo de zero.</b></li><li><b>Relação não linear.</b> Não há razão para o P/L justo ser exatamente proporcional ao crescimento.</li></ul>
+      <p class="nota">Todo indicador calculado com dados passados descreve o que já aconteceu. Usá-lo para projetar o futuro supõe que as condições vão se repetir, o que nem sempre ocorre.</p>
+    </section>
+    <section class="num" id="complementares"><h2>Indicadores complementares</h2>
+      <p>Nenhum indicador responde sozinho. Para uma leitura mais confiável, analise junto:</p>
+      <ul class="junto"><li><a href="indicador-pl.html"><b>P/L</b><span>É o numerador; herda todas as suas distorções.</span></a></li><li><a href="indicador-crescimento-lpa.html"><b>Crescimento do LPA</b><span>O histórico ajuda a julgar a projeção.</span></a></li><li><a href="indicador-roic.html"><b>ROIC</b><span>Diz se o crescimento cria ou destrói valor.</span></a></li><li><a href="indicador-dividend-yield.html"><b>Dividend Yield</b><span>Completa o retorno das empresas maduras.</span></a></li></ul>
+      <p>Veja casos em que um indicador isolado engana em <a href="indicadores-em-conjunto.html">Indicadores em conjunto</a>.</p>
+      <h3>Termos usados nesta página</h3>
+      <ul class="termos"><li><a class="chip" href="glossario.html#lpa">LPA (lucro por ação; EPS)</a></li><li><a class="chip" href="glossario.html#projecao">Projeção</a></li><li><a class="chip" href="glossario.html#custo-de-capital">Custo de capital</a></li><li><a class="chip" href="glossario.html#multiplo">Múltiplo</a></li></ul>
+    </section>
+    <div class="marcar"><p><b>Terminou de estudar este indicador?</b> A marcação fica guardada só neste navegador.</p><button type="button" class="btn btn-secundario btn-pequeno" id="marcar-lido" aria-pressed="false">Marcar como estudado</button></div>
+    <nav class="aula-passos" aria-label="Indicadores vizinhos">
+      <a href="indicador-ps.html"><span>Anterior · 1.5</span><b>P/S</b></a>
+      <a href="indicador-dividend-yield.html"><span>Próximo · 1.7</span><b>DY</b></a>
+    </nav>
+    <div style="margin-top:2rem"><p class="aviso"><b>Conteúdo educacional</b>Não é recomendação de investimento individualizada e não substitui um profissional habilitado. Não há garantia de retorno. A decisão é de quem investe.</p></div>
+  </div>
+  </div>
+</div></article>
+</main>
+<aside class="decida" aria-label="Orientação ao leitor"><div class="dentro">
+  <p class="decida-titulo">Estude. Compare.<br><em>Decida por você.</em></p>
+  <p class="decida-texto">A Cerne explica e oferece ferramentas. Não diz o que comprar nem o que vender. Leia as fontes, forme a sua própria opinião e tome as suas decisões. Elas, e a responsabilidade por elas, são suas.</p>
+  <div class="decida-cena"><svg viewBox="0 0 176 210" aria-hidden="true" focusable="false">
+  <path class="i-sol" d="M120 22 a22 22 0 1 0 22 36 a18 18 0 0 1 -22 -36 Z"/>
+  <circle class="i-lua" cx="34" cy="40" r="2"/><circle class="i-lua" cx="70" cy="18" r="1.6"/><circle class="i-lua" cx="150" cy="96" r="1.8"/><circle class="i-lua" cx="20" cy="110" r="1.4"/>
+  <path class="i-ln-lua" d="M52 210 V124 a36 36 0 0 1 72 0 V210"/>
+  <path class="i-sol" d="M58 210 V125 a30 30 0 0 1 60 0 V210 Z"/>
+  <polygon class="i-ac" points="58,210 58,112 92,128 92,210"/>
+  <circle class="i-lua" cx="86" cy="172" r="2.6"/>
+  <polygon class="i-sol" opacity=".28" points="92,210 118,210 176,236 110,236"/></svg></div>
+</div></aside>
+<footer class="rodape">
+  <div class="dentro">
+    <div class="rodape-grade">
+      <div>
+        <p class="rodape-marca"><svg class="logo" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span>Cerne</span></p>
+        <p>Valor real antes do preço. Educação financeira de base fundamentalista, para quem busca liberdade e tranquilidade com o próprio dinheiro.</p>
+      </div>
+      <div>
+        <h2>Ferramentas</h2>
+        <ul><li><a href="carteira/">Monte sua carteira</a></li><li><a href="juros.html">Juros compostos</a></li><li><a href="liberdade.html">Liberdade financeira</a></li><li><a href="roteiro.html">Checagem do estudo</a></li></ul>
+      </div>
+      <div>
+        <h2>Aprender</h2>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+      </div>
+      <div>
+        <h2>Cerne</h2>
+        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
+      </div>
+    </div>
+    <p class="rodape-legal">Cerne é um projeto educacional. Não é corretora, gestora, consultoria nem analista de valores mobiliários, não tem registro na CVM e não vende produtos financeiros. Nada aqui é recomendação de investimento individualizada nem promessa de retorno. As decisões e os riscos são de quem investe.</p>
+  </div>
+</footer>
+<script src="site/site.js"></script>
+<script src="site/indicadores-calc.js"></script>
+<script src="site/indicadores.js"></script>
+</body>
+</html>

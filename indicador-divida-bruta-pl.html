@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dívida Bruta/Patrimônio Líquido — Indicadores — Cerne</title>
+<meta name="description" content="Dívida Bruta/Patrimônio Líquido: Quanto a empresa deve a credores financeiros para cada real de capital dos sócios. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cerne">
+<meta property="og:title" content="Dívida Bruta/Patrimônio Líquido — Indicadores — Cerne">
+<meta property="og:description" content="Dívida Bruta/Patrimônio Líquido: Quanto a empresa deve a credores financeiros para cada real de capital dos sócios. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta property="og:image" content="https://marcoor18.github.io/cerne/site/og-cerne.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site/site.css">
+<link rel="stylesheet" href="site/vetor.css">
+<script src="carteira/js/tema.js"></script>
+</head>
+<body data-pagina="aprender">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="dentro">
+    <a class="marca" href="index.html" aria-label="Cerne, página inicial"><svg class="logo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span class="marca-nome">Cerne</span></a>
+    <nav class="nav" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+    <div class="topo-acoes">
+      <button type="button" class="btn-topo" id="btn-tema" aria-pressed="false" aria-label="Modo escuro"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="btn-topo" id="btn-nav" aria-expanded="false" aria-controls="nav-movel" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <nav class="nav-movel" id="nav-movel" aria-label="Principal, celular" hidden><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+</header>
+<main id="conteudo">
+<article class="secao" data-indicador="divida-bruta-pl"><div class="dentro">
+  <div class="ind-cab">
+    <div>
+      <p class="olho"><a href="aprender.html">Aprender</a> · <a href="indicadores.html">Indicadores</a> · <a href="indicadores.html#endividamento">Endividamento e saúde financeira</a> · 3.2</p>
+      <h1 class="titulo">Dívida Bruta/Patrimônio Líquido</h1>
+      <p class="lead">Quanto a empresa deve a credores financeiros para cada real de capital dos sócios.</p>
+      <p class="ind-tags"><span class="tag tag-contabil" title="Calculada com dados das demonstrações financeiras. Só muda a cada balanço.">Métrica contábil</span><span class="tag tag-lida" id="selo-lido" hidden>Estudado</span></p>
+    </div>
+    <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><path class="i-ac i-tr" d="M80 12 a36 40 0 0 1 0 80 a36 40 0 0 1 0 -80 Z"/><polygon class="i-ac i-tr" points="74,92 86,92 80,100"/><path class="i-ln-f" d="M80 100 q-10 12 0 22 q8 8 0 14"/><circle class="i-ink" cx="80" cy="140" r="16"/><path class="i-ln-bg" d="M72 138 h16"/><path class="i-ln-f" d="M62 34 q-8 18 2 34"/><ellipse class="i-som" cx="80" cy="157" rx="34" ry="3"/></svg></figure>
+  </div>
+  <div class="aula-grade">
+  <nav class="aula-indice" aria-label="Nesta página">
+    <p>Nesta página</p>
+    <ol><li><a href="#o-que-e">O que é</a></li><li><a href="#o-que-mede">O que mede</a></li><li><a href="#como-calcular">Como calcular</a></li><li><a href="#exemplo">Exemplo prático</a></li><li><a href="#interpretar">Como interpretar</a></li><li><a href="#bom-resultado">O que é um bom resultado</a></li><li><a href="#aplicacao">Aplicação prática</a></li><li><a href="#limitacoes">Limitações e ressalvas</a></li><li><a href="#complementares">Indicadores complementares</a></li></ol>
+  </nav>
+  <div class="ind-corpo">
+    <section class="num" id="o-que-e"><h2>O que é</h2><p>É a dívida bruta dividida pelo patrimônio líquido. Compara as duas fontes de financiamento de longo prazo de uma empresa: o capital de terceiros (onerosos) e o capital próprio.</p></section>
+    <section class="num" id="o-que-mede"><h2>O que mede</h2><p>Mede a estrutura de capital, isto é, a proporção entre dívida e capital dos sócios. É um indicador de balanço: não diz se a empresa consegue pagar, e sim o quanto ela depende de credores.</p>
+      <div class="destaque destaque-ressalva"><b>Métrica contábil</b><p>Calculada com dados das demonstrações financeiras. Só muda a cada balanço. O número depende das escolhas contábeis da empresa e fica parado entre uma divulgação e outra.</p></div>
+    </section>
+    <section class="num" id="como-calcular"><h2>Como calcular</h2>
+      <div class="quadro-formula"><p>Dívida Bruta/PL = <i>Dívida bruta</i> ÷ <i>Patrimônio líquido</i></p></div>
+      <dl class="variaveis"><div><dt>Dívida bruta</dt><dd>Soma de empréstimos, financiamentos e títulos de dívida de curto e longo prazo, sem descontar o caixa.</dd></div><div><dt>Patrimônio líquido</dt><dd>Capital dos sócios mais reservas e lucros retidos, conforme o balanço.</dd></div></dl>
+    </section>
+    <section class="num" id="exemplo"><h2>Exemplo prático</h2>
+      <p>A <b>Companhia Alfa</b> é uma empresa fictícia, com números realistas, usada em todas as páginas desta área. A conta, passo a passo:</p>
+      <ol class="passos-ex"><li>Dívida bruta (empréstimos, financiamentos e debêntures, curto e longo prazo): R$ 5.000 mi.</li><li>Patrimônio líquido: R$ 8.000 mi.</li><li>Dívida bruta/PL = 5.000 ÷ 8.000 = 0,63×.</li><li>Leitura: para cada R$ 1,00 de capital dos sócios, há R$ 0,63 de dívida com credores financeiros.</li></ol>
+      <div class="lab" id="laboratorio" data-lab="divida-bruta-pl" data-presets="{&quot;padrao&quot;:{&quot;divida&quot;:5000,&quot;pl&quot;:8000},&quot;a&quot;:{&quot;divida&quot;:4000,&quot;pl&quot;:4000},&quot;b&quot;:{&quot;divida&quot;:4000,&quot;pl&quot;:4000}}">
+      <div class="lab-topo"><b>Experimente: mude os valores</b>
+        <ul class="chips" aria-label="Carregar valores de exemplo"><li><button type="button" class="chip" data-preset="padrao" aria-pressed="true">Companhia Alfa</button></li><li><button type="button" class="chip" data-preset="a" aria-pressed="false">Papel Araucária</button></li><li><button type="button" class="chip" data-preset="b" aria-pressed="false">Papel Cerrado</button></li></ul>
+      </div>
+      <div class="lab-grade">
+        <form class="lab-entradas" novalidate>
+        <div class="campo"><label for="lab-divida">Dívida bruta</label><div class="entrada"><span>R$</span><input id="lab-divida" data-id="divida" type="text" inputmode="decimal" autocomplete="off" value="5.000"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-pl">Patrimônio líquido</label><div class="entrada"><span>R$</span><input id="lab-pl" data-id="pl" type="text" inputmode="decimal" autocomplete="off" value="8.000"><span>milhões</span></div></div>
+        </form>
+        <div class="lab-saida" aria-live="polite">
+          <p class="lab-rotulo">Dív. Bruta/PL</p>
+          <p class="lab-valor" data-lab-valor>0,63×</p>
+          <div data-lab-medidor><div class="medidor" aria-hidden="true"><i style="left:15.6%"></i></div><div class="medidor-escala" aria-hidden="true"><span>0×</span><span>4× ou mais</span></div></div>
+          <p class="lab-leitura" data-lab-leitura>Faixa intermediária. A capacidade de pagamento depende da geração de caixa: veja dívida líquida/EBITDA e cobertura de juros.</p>
+          <ol class="lab-passos" data-lab-passos><li>Dívida bruta (empréstimos, financiamentos e debêntures, curto e longo prazo): R$ 5.000 mi.</li><li>Patrimônio líquido: R$ 8.000 mi.</li><li>Dívida bruta/PL = 5.000 ÷ 8.000 = 0,63×.</li><li>Leitura: para cada R$ 1,00 de capital dos sócios, há R$ 0,63 de dívida com credores financeiros.</li></ol>
+        </div>
+      </div>
+      <p class="lab-nota">Empresas e números fictícios. A leitura automática é uma pista para estudo, baseada em faixas genéricas; ela não conhece o setor, o ciclo nem a qualidade dos dados. Não é recomendação.</p>
+    </div>
+    </section>
+    <section class="num" id="interpretar"><h2>Como interpretar</h2>
+      <dl class="faixas"><div><dt>Baixo</dt><dd>Empresa financiada sobretudo por capital próprio. Menor risco financeiro; possivelmente menor retorno sobre o patrimônio.</dd></div><div><dt>Em torno de 1</dt><dd>Dívida e capital próprio em proporções semelhantes.</dd></div><div><dt>Alto</dt><dd>Predomínio de dívida. Aceitável em negócios de fluxo estável; arriscado nos demais. Verifique também se o patrimônio não está pequeno por prejuízos acumulados.</dd></div></dl>
+      <div class="destaque"><b>Conceito importante</b><p>Dívida bruta mostra o tamanho da obrigação; dívida líquida desconta o caixa. Uma empresa com muito caixa e muita dívida parece alavancada pela bruta e tranquila pela líquida. As duas visões são necessárias.</p></div>
+    </section>
+    <section class="num" id="bom-resultado"><h2>O que é considerado um bom resultado</h2><p>Não há proporção ideal universal. A teoria de finanças indica que a dívida barateia o capital até certo ponto, pelo benefício fiscal dos juros, e a partir daí encarece, pelo risco de dificuldade financeira. Esse ponto depende da previsibilidade do negócio.</p></section>
+    <section class="num" id="aplicacao"><h2>Aplicação prática</h2><p>É útil para acompanhar a política financeira de uma empresa ao longo do tempo e para comparar empresas do mesmo setor. Complementa os indicadores baseados em EBITDA, que podem enganar quando o resultado está em pico de ciclo.</p>
+      <h3>Duas empresas fictícias, lado a lado</h3>
+      <div class="duelo"><div class="duelo-lado"><h3>Papel Araucária</h3><p>Caixa de 3.800</p><dl><div><dt>Dívida bruta</dt><dd>R$ 4.000 mi</dd></div><div><dt>Patrimônio líquido</dt><dd>R$ 4.000 mi</dd></div></dl><p class="duelo-res"><span>Dív. Bruta/PL</span><b>1,00×</b></p></div><div class="duelo-lado"><h3>Papel Cerrado</h3><p>Caixa de 200</p><dl><div><dt>Dívida bruta</dt><dd>R$ 4.000 mi</dd></div><div><dt>Patrimônio líquido</dt><dd>R$ 4.000 mi</dd></div></dl><p class="duelo-res"><span>Dív. Bruta/PL</span><b>1,00×</b></p></div></div><p>O indicador é idêntico, 1,00. Mas a Araucária mantém R$ 3.800 milhões em caixa: a dívida líquida é de R$ 200 milhões. A Cerrado tem R$ 200 milhões em caixa e dívida líquida de R$ 3.800 milhões. A primeira poderia quitar quase tudo amanhã; a segunda depende da geração de caixa e do refinanciamento. A dívida bruta sobre o patrimônio não enxerga a diferença.</p>
+      <h3>O mesmo indicador em setores diferentes</h3>
+      <ul class="setores"><li><b>Energia e infraestrutura</b><span>Indicadores acima de 1,5 são frequentes, com financiamentos longos atrelados aos projetos.</span></li><li><b>Tecnologia</b><span>Em geral baixo; muitas empresas têm caixa líquido.</span></li><li><b>Indústria</b><span>Varia com o ciclo de investimentos; observe a tendência.</span></li><li><b>Varejo</b><span>A dívida financeira pode parecer pequena, enquanto fornecedores e aluguéis financiam boa parte da operação.</span></li></ul>
+    </section>
+    <section class="num" id="limitacoes"><h2>Limitações e ressalvas</h2>
+      <div class="destaque destaque-erro"><b>Erro comum</b><p>Ver o indicador baixo e concluir que não há risco. Uma empresa pode ter pouca dívida financeira e muitas obrigações com fornecedores, impostos parcelados ou arrendamentos.</p></div>
+      <ul class="ressalvas"><li><b>Patrimônio contábil.</b> Recompras, prejuízos acumulados e baixas reduzem o patrimônio e inflam o indicador; ativos reavaliados fazem o contrário.</li><li><b>Ignora o caixa.</b> Não distingue quem tem reservas de quem não tem.</li><li><b>Ignora a capacidade de pagamento.</b> Não relaciona a dívida com o resultado nem com o caixa gerado.</li><li><b>Ignora prazo e custo.</b></li><li><b>Patrimônio negativo.</b> O indicador perde sentido justamente nos casos mais graves.</li><li><b>Não se aplica a bancos</b>, cuja atividade é captar recursos de terceiros.</li></ul>
+      <p class="nota">Todo indicador calculado com dados passados descreve o que já aconteceu. Usá-lo para projetar o futuro supõe que as condições vão se repetir, o que nem sempre ocorre.</p>
+    </section>
+    <section class="num" id="complementares"><h2>Indicadores complementares</h2>
+      <p>Nenhum indicador responde sozinho. Para uma leitura mais confiável, analise junto:</p>
+      <ul class="junto"><li><a href="indicador-divida-liquida-ebitda.html"><b>Dívida Líquida/EBITDA</b><span>Desconta o caixa e relaciona a dívida com o resultado.</span></a></li><li><a href="indicador-cobertura-de-juros.html"><b>Índice de cobertura de juros</b><span>Mede a capacidade de pagar o custo da dívida.</span></a></li><li><a href="indicador-roe.html"><b>ROE</b><span>A alavancagem explica parte do retorno sobre o patrimônio.</span></a></li><li><a href="indicador-liquidez-corrente.html"><b>Liquidez corrente</b><span>Mostra o aperto de curto prazo.</span></a></li></ul>
+      <p>Veja casos em que um indicador isolado engana em <a href="indicadores-em-conjunto.html">Indicadores em conjunto</a>.</p>
+      <h3>Termos usados nesta página</h3>
+      <ul class="termos"><li><a class="chip" href="glossario.html#divida-bruta">Dívida bruta</a></li><li><a class="chip" href="glossario.html#patrimonio-liquido">Patrimônio líquido</a></li><li><a class="chip" href="glossario.html#estrutura-de-capital">Estrutura de capital</a></li><li><a class="chip" href="glossario.html#alavancagem">Alavancagem financeira</a></li><li><a class="chip" href="glossario.html#divida-liquida">Dívida líquida</a></li></ul>
+    </section>
+    <div class="marcar"><p><b>Terminou de estudar este indicador?</b> A marcação fica guardada só neste navegador.</p><button type="button" class="btn btn-secundario btn-pequeno" id="marcar-lido" aria-pressed="false">Marcar como estudado</button></div>
+    <nav class="aula-passos" aria-label="Indicadores vizinhos">
+      <a href="indicador-divida-liquida-ebitda.html"><span>Anterior · 3.1</span><b>Dív. Líq./EBITDA</b></a>
+      <a href="indicador-cobertura-de-juros.html"><span>Próximo · 3.3</span><b>Cobertura de juros</b></a>
+    </nav>
+    <div style="margin-top:2rem"><p class="aviso"><b>Conteúdo educacional</b>Não é recomendação de investimento individualizada e não substitui um profissional habilitado. Não há garantia de retorno. A decisão é de quem investe.</p></div>
+  </div>
+  </div>
+</div></article>
+</main>
+<aside class="decida" aria-label="Orientação ao leitor"><div class="dentro">
+  <p class="decida-titulo">Estude. Compare.<br><em>Decida por você.</em></p>
+  <p class="decida-texto">A Cerne explica e oferece ferramentas. Não diz o que comprar nem o que vender. Leia as fontes, forme a sua própria opinião e tome as suas decisões. Elas, e a responsabilidade por elas, são suas.</p>
+  <div class="decida-cena"><svg viewBox="0 0 176 210" aria-hidden="true" focusable="false">
+  <path class="i-sol" d="M120 22 a22 22 0 1 0 22 36 a18 18 0 0 1 -22 -36 Z"/>
+  <circle class="i-lua" cx="34" cy="40" r="2"/><circle class="i-lua" cx="70" cy="18" r="1.6"/><circle class="i-lua" cx="150" cy="96" r="1.8"/><circle class="i-lua" cx="20" cy="110" r="1.4"/>
+  <path class="i-ln-lua" d="M52 210 V124 a36 36 0 0 1 72 0 V210"/>
+  <path class="i-sol" d="M58 210 V125 a30 30 0 0 1 60 0 V210 Z"/>
+  <polygon class="i-ac" points="58,210 58,112 92,128 92,210"/>
+  <circle class="i-lua" cx="86" cy="172" r="2.6"/>
+  <polygon class="i-sol" opacity=".28" points="92,210 118,210 176,236 110,236"/></svg></div>
+</div></aside>
+<footer class="rodape">
+  <div class="dentro">
+    <div class="rodape-grade">
+      <div>
+        <p class="rodape-marca"><svg class="logo" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span>Cerne</span></p>
+        <p>Valor real antes do preço. Educação financeira de base fundamentalista, para quem busca liberdade e tranquilidade com o próprio dinheiro.</p>
+      </div>
+      <div>
+        <h2>Ferramentas</h2>
+        <ul><li><a href="carteira/">Monte sua carteira</a></li><li><a href="juros.html">Juros compostos</a></li><li><a href="liberdade.html">Liberdade financeira</a></li><li><a href="roteiro.html">Checagem do estudo</a></li></ul>
+      </div>
+      <div>
+        <h2>Aprender</h2>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+      </div>
+      <div>
+        <h2>Cerne</h2>
+        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
+      </div>
+    </div>
+    <p class="rodape-legal">Cerne é um projeto educacional. Não é corretora, gestora, consultoria nem analista de valores mobiliários, não tem registro na CVM e não vende produtos financeiros. Nada aqui é recomendação de investimento individualizada nem promessa de retorno. As decisões e os riscos são de quem investe.</p>
+  </div>
+</footer>
+<script src="site/site.js"></script>
+<script src="site/indicadores-calc.js"></script>
+<script src="site/indicadores.js"></script>
+</body>
+</html>

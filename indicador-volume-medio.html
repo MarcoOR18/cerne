@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Volume médio negociado — Indicadores — Cerne</title>
+<meta name="description" content="Volume médio negociado: Quanto dinheiro, em média, troca de mãos por dia naquela ação. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cerne">
+<meta property="og:title" content="Volume médio negociado — Indicadores — Cerne">
+<meta property="og:description" content="Volume médio negociado: Quanto dinheiro, em média, troca de mãos por dia naquela ação. O que é, como calcular, exemplo interativo, como interpretar, limitações e indicadores complementares.">
+<meta property="og:image" content="https://marcoor18.github.io/cerne/site/og-cerne.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site/site.css">
+<link rel="stylesheet" href="site/vetor.css">
+<script src="carteira/js/tema.js"></script>
+</head>
+<body data-pagina="aprender">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="dentro">
+    <a class="marca" href="index.html" aria-label="Cerne, página inicial"><svg class="logo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span class="marca-nome">Cerne</span></a>
+    <nav class="nav" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+    <div class="topo-acoes">
+      <button type="button" class="btn-topo" id="btn-tema" aria-pressed="false" aria-label="Modo escuro"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+      <button type="button" class="btn-topo" id="btn-nav" aria-expanded="false" aria-controls="nav-movel" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <nav class="nav-movel" id="nav-movel" aria-label="Principal, celular" hidden><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="aprender.html" aria-current="page">Aprender</a><a href="metodo.html">Método</a><a href="mercado.html">Mercado</a><a href="empresa.html">A empresa</a></nav>
+</header>
+<main id="conteudo">
+<article class="secao" data-indicador="volume-medio"><div class="dentro">
+  <div class="ind-cab">
+    <div>
+      <p class="olho"><a href="aprender.html">Aprender</a> · <a href="indicadores.html">Indicadores</a> · <a href="indicadores.html#mercado">Indicadores de mercado e ações</a> · 5.6</p>
+      <h1 class="titulo">Volume médio negociado</h1>
+      <p class="lead">Quanto dinheiro, em média, troca de mãos por dia naquela ação.</p>
+      <p class="ind-tags"><span class="tag" title="Depende só de preços de mercado. Muda a cada negócio.">Métrica de mercado</span><span class="tag tag-lida" id="selo-lido" hidden>Estudado</span></p>
+    </div>
+    <figure class="cena"><svg viewBox="0 0 160 160" aria-hidden="true" focusable="false"><circle class="i-ceu i-tr" cx="74" cy="88" r="56"/><path class="i-ac i-tr" d="M86 70 V14 a56 56 0 0 1 48.5 28 Z"/><path class="i-ln-f" d="M74 88 V32 M74 88 L122.5 116 M74 88 L25.5 116"/><circle class="i-bg i-tr" cx="74" cy="88" r="14"/><circle class="i-ink" cx="74" cy="88" r="5"/></svg></figure>
+  </div>
+  <div class="aula-grade">
+  <nav class="aula-indice" aria-label="Nesta página">
+    <p>Nesta página</p>
+    <ol><li><a href="#o-que-e">O que é</a></li><li><a href="#o-que-mede">O que mede</a></li><li><a href="#como-calcular">Como calcular</a></li><li><a href="#exemplo">Exemplo prático</a></li><li><a href="#interpretar">Como interpretar</a></li><li><a href="#bom-resultado">O que é um bom resultado</a></li><li><a href="#aplicacao">Aplicação prática</a></li><li><a href="#limitacoes">Limitações e ressalvas</a></li><li><a href="#complementares">Indicadores complementares</a></li></ol>
+  </nav>
+  <div class="ind-corpo">
+    <section class="num" id="o-que-e"><h2>O que é</h2><p>O volume médio negociado é a média do valor financeiro (ou da quantidade de ações) negociado por dia em um ativo, em um período: os últimos 21 pregões (cerca de um mês), 63 (um trimestre) ou mais. No Brasil, é comum a sigla ADTV, de average daily trading volume, em reais.</p></section>
+    <section class="num" id="o-que-mede"><h2>O que mede</h2><p>Mede a liquidez: a facilidade de comprar ou vender uma quantidade relevante sem alterar o preço. É uma característica do <b>papel</b>, e não da empresa: negócios excelentes podem ter ações pouco negociadas.</p>
+      <div class="destaque destaque-ressalva"><b>Métrica de mercado</b><p>Depende só de preços de mercado. Muda a cada negócio. Reflete o comportamento dos preços, e não os fundamentos do negócio.</p></div>
+    </section>
+    <section class="num" id="como-calcular"><h2>Como calcular</h2>
+      <div class="quadro-formula"><p>Volume médio diário = <i>Soma do volume financeiro no período</i> ÷ <i>Número de pregões</i></p></div>
+      <dl class="variaveis"><div><dt>Volume financeiro</dt><dd>Para cada dia, a soma de (preço × quantidade) de todos os negócios. É preferível ao número de ações, porque permite comparar papéis de preços diferentes.</dd></div><div><dt>Número de pregões</dt><dd>Dias em que houve negociação na bolsa no período escolhido.</dd></div></dl>
+    </section>
+    <section class="num" id="exemplo"><h2>Exemplo prático</h2>
+      <p>A <b>Companhia Alfa</b> é uma empresa fictícia, com números realistas, usada em todas as páginas desta área. A conta, passo a passo:</p>
+      <ol class="passos-ex"><li>Volume financeiro negociado, somando todos os pregões do período: R$ 420 mi.</li><li>Número de pregões: 21 (um mês tem cerca de 21).</li><li>Volume médio diário = 420 ÷ 21 = R$ 20 mi por dia.</li><li>Uma ordem de R$ 0,5 mi equivale a 2,5% do que se negocia em um dia típico.</li></ol>
+      <div class="lab" id="laboratorio" data-lab="volume-medio" data-presets="{&quot;padrao&quot;:{&quot;total&quot;:420,&quot;dias&quot;:21,&quot;ordem&quot;:0.5},&quot;a&quot;:{&quot;total&quot;:8400,&quot;dias&quot;:21,&quot;ordem&quot;:0.5},&quot;b&quot;:{&quot;total&quot;:42,&quot;dias&quot;:21,&quot;ordem&quot;:0.5}}">
+      <div class="lab-topo"><b>Experimente: mude os valores</b>
+        <ul class="chips" aria-label="Carregar valores de exemplo"><li><button type="button" class="chip" data-preset="padrao" aria-pressed="true">Companhia Alfa</button></li><li><button type="button" class="chip" data-preset="a" aria-pressed="false">Banco Serra Alta</button></li><li><button type="button" class="chip" data-preset="b" aria-pressed="false">Brinquedos Pião</button></li></ul>
+      </div>
+      <div class="lab-grade">
+        <form class="lab-entradas" novalidate>
+        <div class="campo"><label for="lab-total">Volume financeiro somado no período</label><div class="entrada"><span>R$</span><input id="lab-total" data-id="total" type="text" inputmode="decimal" autocomplete="off" value="420"><span>milhões</span></div></div>
+        <div class="campo"><label for="lab-dias">Número de pregões no período</label><div class="entrada"><input id="lab-dias" data-id="dias" type="text" inputmode="decimal" autocomplete="off" value="21"><span>pregões</span></div></div>
+        <div class="campo"><label for="lab-ordem">Tamanho da sua ordem</label><div class="entrada"><span>R$</span><input id="lab-ordem" data-id="ordem" type="text" inputmode="decimal" autocomplete="off" value="0,5"><span>milhões</span></div></div>
+        </form>
+        <div class="lab-saida" aria-live="polite">
+          <p class="lab-rotulo">Volume médio</p>
+          <p class="lab-valor" data-lab-valor>R$ 20 mi</p>
+          <div data-lab-medidor><p class="lab-rotulo" style="margin-top:1rem">Sua ordem como % do volume diário</p><div class="medidor" aria-hidden="true" style="margin-top:.9rem"><i style="left:8.3%"></i></div><div class="medidor-escala" aria-hidden="true"><span>0%</span><span>30% ou mais</span></div></div>
+          <p class="lab-leitura" data-lab-leitura>Sua ordem já é parte visível do volume do dia. Pode ser preciso dividir a execução ou aceitar algum deslocamento de preço.</p>
+          <ol class="lab-passos" data-lab-passos><li>Volume financeiro negociado, somando todos os pregões do período: R$ 420 mi.</li><li>Número de pregões: 21 (um mês tem cerca de 21).</li><li>Volume médio diário = 420 ÷ 21 = R$ 20 mi por dia.</li><li>Uma ordem de R$ 0,5 mi equivale a 2,5% do que se negocia em um dia típico.</li></ol>
+        </div>
+      </div>
+      <p class="lab-nota">Empresas e números fictícios. A leitura automática é uma pista para estudo, baseada em faixas genéricas; ela não conhece o setor, o ciclo nem a qualidade dos dados. Não é recomendação.</p>
+    </div>
+    </section>
+    <section class="num" id="interpretar"><h2>Como interpretar</h2>
+      <dl class="faixas"><div><dt>Baixo</dt><dd>Papel pouco líquido: diferença grande entre o melhor preço de compra e o de venda (spread), e ordens que mexem no preço.</dd></div><div><dt>Intermediário</dt><dd>Liquidez suficiente para a pessoa física; limitada para fundos grandes.</dd></div><div><dt>Alto</dt><dd>Entrada e saída fáceis, spreads estreitos. Típico das ações que compõem os principais índices.</dd></div></dl>
+      <div class="destaque"><b>Conceito importante</b><p>Liquidez some quando mais se precisa dela. Em quedas fortes, o volume de compradores desaparece, os spreads abrem e sair custa mais caro do que a média sugere.</p></div>
+    </section>
+    <section class="num" id="bom-resultado"><h2>O que é considerado um bom resultado</h2><p>O que é "suficiente" depende do tamanho da sua posição. A referência prática é quanto a sua ordem representa do volume diário: abaixo de 1%, dificilmente há impacto; acima de 10% a 20%, a execução vira um problema. Para o pequeno investidor, quase todas as ações de índice são líquidas o bastante; a atenção deve ir para small caps e para os momentos de crise.</p></section>
+    <section class="num" id="aplicacao"><h2>Aplicação prática</h2><p>Antes de montar uma posição em uma ação pouco negociada, estime quantos dias levaria para vendê-la sem representar mais do que uma fração do volume diário. Considere um desconto de liquidez ao comparar múltiplos: ações ilíquidas costumam negociar com múltiplos menores.</p>
+      <h3>Duas empresas fictícias, lado a lado</h3>
+      <div class="duelo"><div class="duelo-lado"><h3>Banco Serra Alta</h3><p>Ação de índice</p><dl><div><dt>Volume financeiro somado no período</dt><dd>R$ 8.400 mi</dd></div><div><dt>Número de pregões no período</dt><dd>21</dd></div><div><dt>Tamanho da sua ordem</dt><dd>R$ 0,5 mi</dd></div></dl><p class="duelo-res"><span>Volume médio</span><b>R$ 400 mi</b></p></div><div class="duelo-lado"><h3>Brinquedos Pião</h3><p>Small cap</p><dl><div><dt>Volume financeiro somado no período</dt><dd>R$ 42 mi</dd></div><div><dt>Número de pregões no período</dt><dd>21</dd></div><div><dt>Tamanho da sua ordem</dt><dd>R$ 0,5 mi</dd></div></dl><p class="duelo-res"><span>Volume médio</span><b>R$ 2 mi</b></p></div></div><p>Uma ordem de R$ 500 mil representa 0,1% do volume diário do banco e 25% do volume diário da small cap. No banco, é executada em segundos, no preço de tela. Na Pião, seria um quarto de tudo o que se negocia em um dia: comprar empurraria o preço para cima e vender, em um dia ruim, poderia levar semanas. A mesma quantia é uma posição pequena em um papel e uma posição difícil no outro.</p>
+      <h3>O mesmo indicador em setores diferentes</h3>
+      <ul class="setores"><li><b>Bancos e commodities</b><span>Concentram a maior parte do volume da bolsa brasileira.</span></li><li><b>Small caps</b><span>Volume baixo e irregular; atenção redobrada ao tamanho das ordens.</span></li><li><b>Empresas recém-listadas</b><span>Volume alto nos primeiros dias, que costuma cair depois.</span></li><li><b>Fundos imobiliários e BDRs</b><span>Liquidez muito variável de um papel para outro.</span></li></ul>
+    </section>
+    <section class="num" id="limitacoes"><h2>Limitações e ressalvas</h2>
+      <div class="destaque destaque-erro"><b>Erro comum</b><p>Interpretar volume alto como sinal de que a ação vai subir. Volume mede quantidade de negócios, e todo negócio tem um comprador e um vendedor.</p></div>
+      <ul class="ressalvas"><li><b>Média esconde a distribuição.</b> Poucos dias excepcionais (resultado, oferta, rebalanceamento de índice) inflam a média; a mediana é mais confiável.</li><li><b>Liquidez não é estável.</b> Cai em crises e fora dos horários de maior negociação.</li><li><b>Não mede o spread nem a profundidade</b> do livro de ofertas.</li><li><b>Negociações em bloco</b> entram no volume sem estarem disponíveis ao investidor comum.</li><li><b>Não diz nada sobre a qualidade da empresa.</b></li><li><b>Classes diferentes.</b> Na mesma empresa, a ação preferencial pode ser muito mais líquida que a ordinária, ou o contrário.</li></ul>
+      <p class="nota">Todo indicador calculado com dados passados descreve o que já aconteceu. Usá-lo para projetar o futuro supõe que as condições vão se repetir, o que nem sempre ocorre.</p>
+    </section>
+    <section class="num" id="complementares"><h2>Indicadores complementares</h2>
+      <p>Nenhum indicador responde sozinho. Para uma leitura mais confiável, analise junto:</p>
+      <ul class="junto"><li><a href="indicador-free-float.html"><b>Free Float</b><span>Poucas ações em circulação limitam o volume.</span></a></li><li><a href="indicador-valor-de-mercado.html"><b>Market Cap</b><span>Empresas maiores tendem a ter mais liquidez.</span></a></li><li><a href="indicador-beta.html"><b>Beta</b><span>Baixa liquidez distorce a estimativa.</span></a></li></ul>
+      <p>Veja casos em que um indicador isolado engana em <a href="indicadores-em-conjunto.html">Indicadores em conjunto</a>.</p>
+      <h3>Termos usados nesta página</h3>
+      <ul class="termos"><li><a class="chip" href="glossario.html#liquidez">Liquidez</a></li><li><a class="chip" href="glossario.html#spread">Spread de compra e venda</a></li><li><a class="chip" href="glossario.html#livro-de-ofertas">Livro de ofertas</a></li><li><a class="chip" href="glossario.html#pregao">Pregão</a></li><li><a class="chip" href="glossario.html#small-cap">Small cap</a></li></ul>
+    </section>
+    <div class="marcar"><p><b>Terminou de estudar este indicador?</b> A marcação fica guardada só neste navegador.</p><button type="button" class="btn btn-secundario btn-pequeno" id="marcar-lido" aria-pressed="false">Marcar como estudado</button></div>
+    <nav class="aula-passos" aria-label="Indicadores vizinhos">
+      <a href="indicador-enterprise-value.html"><span>Anterior · 5.5</span><b>EV</b></a>
+      <a href="indicador-free-float.html"><span>Próximo · 5.7</span><b>Free Float</b></a>
+    </nav>
+    <div style="margin-top:2rem"><p class="aviso"><b>Conteúdo educacional</b>Não é recomendação de investimento individualizada e não substitui um profissional habilitado. Não há garantia de retorno. A decisão é de quem investe.</p></div>
+  </div>
+  </div>
+</div></article>
+</main>
+<aside class="decida" aria-label="Orientação ao leitor"><div class="dentro">
+  <p class="decida-titulo">Estude. Compare.<br><em>Decida por você.</em></p>
+  <p class="decida-texto">A Cerne explica e oferece ferramentas. Não diz o que comprar nem o que vender. Leia as fontes, forme a sua própria opinião e tome as suas decisões. Elas, e a responsabilidade por elas, são suas.</p>
+  <div class="decida-cena"><svg viewBox="0 0 176 210" aria-hidden="true" focusable="false">
+  <path class="i-sol" d="M120 22 a22 22 0 1 0 22 36 a18 18 0 0 1 -22 -36 Z"/>
+  <circle class="i-lua" cx="34" cy="40" r="2"/><circle class="i-lua" cx="70" cy="18" r="1.6"/><circle class="i-lua" cx="150" cy="96" r="1.8"/><circle class="i-lua" cx="20" cy="110" r="1.4"/>
+  <path class="i-ln-lua" d="M52 210 V124 a36 36 0 0 1 72 0 V210"/>
+  <path class="i-sol" d="M58 210 V125 a30 30 0 0 1 60 0 V210 Z"/>
+  <polygon class="i-ac" points="58,210 58,112 92,128 92,210"/>
+  <circle class="i-lua" cx="86" cy="172" r="2.6"/>
+  <polygon class="i-sol" opacity=".28" points="92,210 118,210 176,236 110,236"/></svg></div>
+</div></aside>
+<footer class="rodape">
+  <div class="dentro">
+    <div class="rodape-grade">
+      <div>
+        <p class="rodape-marca"><svg class="logo" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="14.4" cy="17.2" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12.9" cy="18.4" r="3.3" class="logo-miolo"/></svg><span>Cerne</span></p>
+        <p>Valor real antes do preço. Educação financeira de base fundamentalista, para quem busca liberdade e tranquilidade com o próprio dinheiro.</p>
+      </div>
+      <div>
+        <h2>Ferramentas</h2>
+        <ul><li><a href="carteira/">Monte sua carteira</a></li><li><a href="juros.html">Juros compostos</a></li><li><a href="liberdade.html">Liberdade financeira</a></li><li><a href="roteiro.html">Checagem do estudo</a></li></ul>
+      </div>
+      <div>
+        <h2>Aprender</h2>
+        <ul><li><a href="aprender.html">Trilhas e módulos</a></li><li><a href="indicadores.html">Indicadores de empresas</a></li><li><a href="indicadores-em-conjunto.html">Indicadores em conjunto</a></li><li><a href="glossario.html">Glossário</a></li></ul>
+      </div>
+      <div>
+        <h2>Cerne</h2>
+        <ul><li><a href="metodo.html">Como estudar uma empresa</a></li><li><a href="mercado.html">Panorama de mercado</a></li><li><a href="empresa.html">A empresa</a></li><li><a href="empresa.html#transparencia">Transparência e privacidade</a></li></ul>
+      </div>
+    </div>
+    <p class="rodape-legal">Cerne é um projeto educacional. Não é corretora, gestora, consultoria nem analista de valores mobiliários, não tem registro na CVM e não vende produtos financeiros. Nada aqui é recomendação de investimento individualizada nem promessa de retorno. As decisões e os riscos são de quem investe.</p>
+  </div>
+</footer>
+<script src="site/site.js"></script>
+<script src="site/indicadores-calc.js"></script>
+<script src="site/indicadores.js"></script>
+</body>
+</html>
