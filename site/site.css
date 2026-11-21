@@ -6,13 +6,13 @@
 @font-face { font-family: "Instrument Serif"; src: url("fontes/instrument-serif-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "Instrument Serif"; src: url("fontes/instrument-serif-latin-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
 :root {
-  --bg: #F5EEDF; --surface: #EDE3CE; --surface-2: #E2D5BA; --ink: #1B1633; --ink-2: #4B4563;
-  --line: #D5C8AC; --line-forte: #8B8298;
-  --primary: #1B1633; --primary-ink: #F5EEDF; --primary-suave: #F9D9C4;
-  --acento: #E4572E; --acento-ink: #1B1633; --menta: #58B8A8; --menta-suave: #D3E9DF;
-  --azul: #1B1633; --numeral: #B3401F; --miolo: #E4572E;
-  --alerta: #9B2C1A; --alerta-fundo: #F7DDD0; --ocre: #E8A93B; --info-fundo: #EDE3CE;
-  --ceu: #BCD9DC; --petroleo: #155E63; --lilas: #8E7CC3; --sol: #E8A93B; --noite: #1B1633; --lua: #F5EEDF; --sombra-cor: #1B1633;
+  --bg: #FFF7EA; --surface: #FCEBD6; --surface-2: #F6DCC0; --ink: #15102A; --ink-2: #4A4262;
+  --line: #EBD3B6; --line-forte: #8E8299;
+  --primary: #15102A; --primary-ink: #FFF7EA; --primary-suave: #FFD9EA;
+  --acento: #FF3E8E; --acento-ink: #15102A; --menta: #8BD450; --menta-suave: #E3F5CF;
+  --azul: #15102A; --numeral: #C2125E; --miolo: #FF3E8E;
+  --alerta: #A3172F; --alerta-fundo: #FFDDE4; --ocre: #FFA41C; --info-fundo: #FCEBD6;
+  --ceu: #CDEB3F; --petroleo: #4E9A12; --lilas: #A77BFF; --sol: #FFA41C; --noite: #120D22; --lua: #FFF7EA; --sombra-cor: #15102A;
   --sombra: 6px 6px 0 var(--sombra-cor);
   --serif: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --display: "Instrument Serif", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
@@ -21,25 +21,25 @@
   color-scheme: light;
 }
 :root[data-tema="escuro"] {
-  --bg: #15112B; --surface: #211B40; --surface-2: #2C2552; --ink: #F5EEDF; --ink-2: #C9C1D9;
-  --line: #382F63; --line-forte: #8A80B0;
-  --primary: #FFC48A; --primary-ink: #15112B; --primary-suave: #3A2A55;
-  --acento: #FF7A52; --acento-ink: #15112B; --menta: #6FD0BE; --menta-suave: #1F4A52;
-  --azul: #FFC48A; --numeral: #FF9B78; --miolo: #FF7A52;
-  --alerta: #FFB9A3; --alerta-fundo: #4A2638; --ocre: #F2B84B; --info-fundo: #211B40;
-  --ceu: #2F3F78; --petroleo: #6FD0BE; --lilas: #B5A6EE; --sol: #F2B84B; --noite: #0D0A1F; --lua: #F5EEDF; --sombra-cor: #07051A;
+  --bg: #120D22; --surface: #1E1636; --surface-2: #2A2048; --ink: #FFF7EA; --ink-2: #CFC6DE;
+  --line: #3A2E63; --line-forte: #8F83B5;
+  --primary: #FFB547; --primary-ink: #120D22; --primary-suave: #3B1F4A;
+  --acento: #FF5AA0; --acento-ink: #120D22; --menta: #9BE05E; --menta-suave: #23401E;
+  --azul: #FFB547; --numeral: #FF8EC4; --miolo: #FF5AA0;
+  --alerta: #FFB3C6; --alerta-fundo: #4A1F33; --ocre: #FFB12E; --info-fundo: #1E1636;
+  --ceu: #2E2266; --petroleo: #9BE05E; --lilas: #C3A2FF; --sol: #FFB12E; --noite: #08060F; --lua: #FFF7EA; --sombra-cor: #05030C;
   --sombra: 6px 6px 0 var(--sombra-cor);
   color-scheme: dark;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-tema="claro"]) {
-  --bg: #15112B; --surface: #211B40; --surface-2: #2C2552; --ink: #F5EEDF; --ink-2: #C9C1D9;
-  --line: #382F63; --line-forte: #8A80B0;
-  --primary: #FFC48A; --primary-ink: #15112B; --primary-suave: #3A2A55;
-  --acento: #FF7A52; --acento-ink: #15112B; --menta: #6FD0BE; --menta-suave: #1F4A52;
-  --azul: #FFC48A; --numeral: #FF9B78; --miolo: #FF7A52;
-  --alerta: #FFB9A3; --alerta-fundo: #4A2638; --ocre: #F2B84B; --info-fundo: #211B40;
-  --ceu: #2F3F78; --petroleo: #6FD0BE; --lilas: #B5A6EE; --sol: #F2B84B; --noite: #0D0A1F; --lua: #F5EEDF; --sombra-cor: #07051A;
+  --bg: #120D22; --surface: #1E1636; --surface-2: #2A2048; --ink: #FFF7EA; --ink-2: #CFC6DE;
+  --line: #3A2E63; --line-forte: #8F83B5;
+  --primary: #FFB547; --primary-ink: #120D22; --primary-suave: #3B1F4A;
+  --acento: #FF5AA0; --acento-ink: #120D22; --menta: #9BE05E; --menta-suave: #23401E;
+  --azul: #FFB547; --numeral: #FF8EC4; --miolo: #FF5AA0;
+  --alerta: #FFB3C6; --alerta-fundo: #4A1F33; --ocre: #FFB12E; --info-fundo: #1E1636;
+  --ceu: #2E2266; --petroleo: #9BE05E; --lilas: #C3A2FF; --sol: #FFB12E; --noite: #08060F; --lua: #FFF7EA; --sombra-cor: #05030C;
   --sombra: 6px 6px 0 var(--sombra-cor);
     color-scheme: dark;
   }

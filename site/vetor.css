@@ -74,12 +74,24 @@ a { text-decoration-color: var(--acento); }
 .i-ceu { fill: var(--ceu); } .i-pet { fill: var(--petroleo); } .i-lil { fill: var(--lilas); } .i-s1 { fill: var(--surface); } .i-s2 { fill: var(--surface-2); }
 .i-noite { fill: var(--noite); } .i-lua { fill: var(--lua); } .i-men { fill: var(--menta); } .i-pes { fill: var(--primary-suave); }
 .i-ln { fill: none; stroke: var(--ink); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
-.i-ln-f { fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.i-ln-f { fill: none; stroke: var(--traco); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .i-ln-bg { fill: none; stroke: var(--bg); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 .i-ln-ac { fill: none; stroke: var(--acento); stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
 .i-ln-lua { fill: none; stroke: var(--lua); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-.i-tr { stroke: var(--ink); stroke-width: 2.5; stroke-linejoin: round; }
+.i-ln-m { fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.i-tr { stroke: var(--traco); stroke-width: 2.5; stroke-linejoin: round; }
 .i-som { fill: var(--sombra-cor); opacity: .22; }
+/* cores vivas das ilustrações (nov/2026): rosa-choque, laranja, lima, grama e violeta,
+   como os pôsteres psicodélicos de referência. Só para desenho, nunca para texto. */
+:root { --rosa: #FF3E8E; --laranja: #FFA41C; --lima: #CDEB3F; --grama: #86C232; --violeta: #8F5BFF; --branco: #FFFFFF; --preto: #120D22; --traco: #15102A; }
+:root[data-tema="escuro"] { --rosa: #FF5AA0; --laranja: #FFB12E; --lima: #D6F24E; --grama: #7DB62C; --violeta: #A47CFF; --branco: #FFF7EA; --preto: #08060F; --traco: #08060F; }
+@media (prefers-color-scheme: dark) { :root:not([data-tema="claro"]) { --rosa: #FF5AA0; --laranja: #FFB12E; --lima: #D6F24E; --grama: #7DB62C; --violeta: #A47CFF; --branco: #FFF7EA; --preto: #08060F; --traco: #08060F; } }
+.i-rosa { fill: var(--rosa); } .i-lar { fill: var(--laranja); } .i-lima { fill: var(--lima); } .i-grama { fill: var(--grama); }
+.i-vio { fill: var(--violeta); } .i-branco { fill: var(--branco); } .i-preto { fill: var(--preto); }
+.i-ln-rosa { fill: none; stroke: var(--rosa); stroke-width: 7; stroke-linecap: round; }
+.i-ln-lar { fill: none; stroke: var(--laranja); stroke-width: 7; stroke-linecap: round; }
+.i-ln-lima { fill: none; stroke: var(--lima); stroke-width: 2; stroke-linecap: round; }
+.i-txt { fill: var(--preto); font: 800 15px var(--sans); }
 @media (prefers-reduced-motion: no-preference) {
   .i-flutua { animation: flutua 9s ease-in-out infinite; }
   .i-flutua-2 { animation: flutua 12s ease-in-out -4s infinite; }

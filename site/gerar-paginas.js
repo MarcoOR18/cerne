@@ -8,7 +8,8 @@ const RAIZ = path.join(__dirname, '..');
 const MARCA = 'Cerne';
 const LEMA = 'Valor real antes do preço';
 const URL_SITE = 'https://marcoor18.github.io/cerne';
-const EDICAO = '12/11/2026';
+const EDICAO = '12/11/2026'; /* leitura por setor e setor em foco */
+const EDICAO_PANORAMA = '21/11/2026'; /* visão geral do panorama */
 const { TRILHAS, MODULOS, REFS } = require('./aulas.js');
 const { CENAS } = require('./ilustracoes.js');
 const cena = (nome, legenda) => `<figure class="cena">${CENAS[nome]}${legenda ? `<figcaption>${legenda}</figcaption>` : ''}</figure>`;
@@ -28,8 +29,8 @@ function pagina(o) {
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${o.titulo}</title>
 <meta name="description" content="${o.descricao}">
-<meta name="theme-color" content="#F5EEDF" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#15112B" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FFF7EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#120D22" media="(prefers-color-scheme: dark)">
 <meta name="color-scheme" content="light dark">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.bcb.gov.br https://olinda.bcb.gov.br; object-src 'none'; base-uri 'self'; form-action 'none'">
@@ -559,14 +560,17 @@ const paginas = [
     scripts: ['carteira/js/config.js', 'carteira/js/macro.js', 'site/mercado.js'],
     corpo: `<section class="secao"><div class="dentro">
   <div class="cabeca-cena"><div class="cabeca">
-    <p class="olho">Panorama de mercado · edição de ${EDICAO}</p>
+    <p class="olho">Panorama de mercado · edição de ${EDICAO_PANORAMA}</p>
     <h1 class="manchete">O juro parou de cair.<br><em>O resto ainda se ajusta.</em></h1>
   </div>${cena('mercado')}</div>
   <div style="margin:0 0 2.4rem">${AVISO_MERCADO}</div>
   <div class="visao">
-    <p class="visao-texto">Em 04/11 o Banco Central manteve a Selic em 13,75% ao ano e interrompeu uma sequência de cinco cortes, citando piora do cenário interno e externo. A bolsa vinha da pior semana em seis anos, na última de outubro, com a reavaliação de preços depois das eleições e a dúvida sobre as contas públicas; a semana seguinte foi de estabilidade. A indústria encolheu 0,8% em setembro, quarta queda em cinco meses, enquanto o desemprego ficou em 5,2%, o menor para o período desde 2012.</p>
+    <p class="visao-texto">Na semana de 16 a 19/11 a bolsa caiu 3,53% e fechou em 166.376 pontos, com novembro até aqui em -0,92%. O dólar subiu 4,95% na semana e fechou em R$ 5,932 em 19/11, o maior valor desde abril de 2025, mesmo com venda de US$ 1 bilhão pelo Banco Central. Em 04/11 o Copom manteve a Selic em 13,75% ao ano e interrompeu uma sequência de cinco cortes. Pelo Boletim Focus de 03/11, o mercado via Selic em 13,5% ao fim de 2026 e IPCA de 5,22% em 2026 e 4,76% em 2027. Os estrangeiros retiraram R$ 4,3 bilhões da B3 até 9/11, e o saldo de 2026 segue positivo em R$ 31,2 bilhões. Entre as maiores quedas da semana estão Tenda, Natura, Brava Energia e Cury, todas com perdas perto de 11%.</p>
     <ul class="visao-fontes">
       <li>Copom, decisão de 04/11/2026, via <a href="https://www.oliberal.com/economia/bc-copom-interrompe-ciclo-de-calibracao-e-mantem-taxa-selic-em-13-75-ao-ano-1.1190560" rel="noopener noreferrer" target="_blank">Estadão / O Liberal</a></li>
+      <li>Bolsa e dólar, fechamento de 19/11/2026 (20/11 sem pregão), <a href="https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-19112026/" rel="noopener noreferrer" target="_blank">InfoMoney</a> e <a href="https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-supera-r-593-e-fecha-no-maior-valor-desde-abril-de-2025" rel="noopener noreferrer" target="_blank">Agência Brasil</a></li>
+      <li>Boletim Focus, 03/11/2026, via <a href="https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/mercado-eleva-projecao-para-inflacao-juros-e-dolar-em-2026" rel="noopener noreferrer" target="_blank">Agência Brasil</a></li>
+      <li>Fluxo estrangeiro até 9/11/2026, <a href="https://www.bmcnews.com.br/economia/estrangeiros-retiram-r-43-bilhoes-da-b3-em-novembro/" rel="noopener noreferrer" target="_blank">BM&amp;C</a></li>
       <li>Bolsa, semana até 30/10/2026, <a href="https://diariodocomercio.com.br/financas/ibovespa-tem-pior-semana-om-pressao-externa-e-fiscal/" rel="noopener noreferrer" target="_blank">Diário do Comércio</a>; semana de 2 a 6/11, <a href="https://analisa.genialinvestimentos.com.br/macro-strategy/analises/expresso-bolsa-semanal-petroleo-techs-fiscal" rel="noopener noreferrer" target="_blank">Genial</a></li>
       <li>Indústria, IBGE, divulgado em 05/11/2026, via <a href="https://www.jornaldocomercio.com/economia/2026/11/1269381-producao-industrial-cai-08-em-setembro-ante-agosto-revela-ibge.html" rel="noopener noreferrer" target="_blank">Jornal do Comércio</a></li>
       <li>Desemprego, IBGE, divulgado em 30/10/2026, via <a href="https://agenciagov.ebc.com.br/noticias/202610/taxa-de-desemprego-tem-queda-e-alcanca-menor-resultado-para-setembro-em-14-anos" rel="noopener noreferrer" target="_blank">Agência Gov</a></li>
@@ -633,5 +637,5 @@ MODULOS.forEach((m, i) => paginas.push(paginaAula(m, i)));
 PAGINAS_INDICADORES.forEach((p) => paginas.push(p));
 paginas.push(ANALISE.pagina);
 paginas.forEach((p) => fs.writeFileSync(path.join(RAIZ, p.arquivo), pagina(p)));
-fs.writeFileSync(path.join(__dirname, 'favicon.svg'), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><style>.f{fill:#F5EEDF}.a{stroke:#1B1633}@media (prefers-color-scheme:dark){.f{fill:#15112B}.a{stroke:#F5EEDF}}</style><rect class="f" width="32" height="32" rx="7"/><circle class="a" cx="16" cy="16" r="11.5" fill="none" stroke-width="2.8"/><circle class="a" cx="14.6" cy="17" r="6.3" fill="none" stroke-width="2.8"/><circle fill="#E4572E" cx="13.6" cy="17.9" r="2.6"/></svg>\n`);
+fs.writeFileSync(path.join(__dirname, 'favicon.svg'), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><style>.f{fill:#FFF7EA}.a{stroke:#15102A}@media (prefers-color-scheme:dark){.f{fill:#120D22}.a{stroke:#FFF7EA}}</style><rect class="f" width="32" height="32" rx="7"/><circle class="a" cx="16" cy="16" r="11.5" fill="none" stroke-width="2.8"/><circle class="a" cx="14.6" cy="17" r="6.3" fill="none" stroke-width="2.8"/><circle fill="#FF3E8E" cx="13.6" cy="17.9" r="2.6"/></svg>\n`);
 console.log(paginas.length + ' páginas geradas.');

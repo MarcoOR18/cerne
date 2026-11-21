@@ -265,7 +265,7 @@
    * Monta um SVG independente (sem dados pessoais: só classes e percentuais)
    * e converte em PNG 1080 x 1080 no próprio navegador. */
   function pngAlocacao(itens, nomePerfil, legenda) {
-    var L = 1080, fundo = '#F5EEDF', tinta = '#1B1633', tinta2 = '#4B4563';
+    var L = 1080, fundo = '#FFF7EA', tinta = '#15102A', tinta2 = '#4A4262';
     var serif = '"Bricolage Grotesque", system-ui, "Segoe UI", Arial, sans-serif', sans = 'system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif';
     var r = rosca(itens, { prefixo: 'px-', corFundo: fundo, estatico: true });
     r.removeAttribute('class'); r.removeAttribute('role'); r.removeAttribute('aria-label');
@@ -273,7 +273,7 @@
     var filhos = [
       criarDefs('px-'),
       s('rect', { width: L, height: L, fill: fundo }),
-      s('rect', { x: 70, y: 84, width: 72, height: 6, fill: '#E4572E' }),
+      s('rect', { x: 70, y: 84, width: 72, height: 6, fill: '#FF3E8E' }),
       s('text', { x: 70, y: 170, 'font-family': serif, 'font-size': 68, fill: tinta }, ['Minha carteira']),
       s('text', { x: 70, y: 226, 'font-family': sans, 'font-size': 32, fill: tinta2 }, [legenda]),
       r
